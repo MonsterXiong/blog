@@ -1,10 +1,10 @@
 {
-  "name": "Monster-Blog",
+  "name": "myblog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "vuepress dev docs",
+    "serve": "vuepress dev docs --no-cache",
     "build": "vuepress build docs",
     "deploy": "gh-pages -d docs/.vuepress/dist",
     "commit": "npm run build && npm run deploy"

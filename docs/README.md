@@ -1,9 +1,9 @@
 ---
 home: true
-heroImage: ./assets/logo.jpg
+heroImage: /assets/logo.jpg
 heroText: Monster-Blog
 tagline: 记录
-actionText: 快速上手 →
+actionText: 开始了解 →
 actionLink: /daily/
 features:
 - title: 简洁至上
