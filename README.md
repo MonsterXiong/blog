@@ -1,1 +1,1 @@
-# [blog](www.MonsterXiong.github.io/blog)
+# [blog](https://monsterxiong.github.io/blog/)
