@@ -1,0 +1,27 @@
+# 手撕代码
+
+- call/apply/bind
+- new
+- instanceof
+- eventBus
+- pubsub
+- 浅拷贝/深拷贝
+- promise
+- 数组API
+  - 去重
+  - 合并/切片
+  - 扁平化
+  - 分块
+  - 取差异
+  - 删除部分元素
+  - 得到部分元素
+- 字符串API
+  - 反转
+  - 回文
+  - 截取
+- 节流/防抖
+- 事件委托
+- 数据绑定
+- vite
+- ajax
+- vue

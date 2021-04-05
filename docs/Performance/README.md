@@ -1,0 +1,23 @@
+# 性能优化
+
+- 打包优化
+  - webpack
+    - loader
+    - dll
+    - happypack
+    - 压缩代码
+    - tree shaking
+    - scope hoisting
+    - code splitting
+  - 图片base64,cdn
+- 网络优化
+  - dns
+  - cdn
+  - 缓存
+  - preload/prefetch/懒加载
+  - ssr
+- 代码优化
+  - loading/骨架屏
+  - web worker
+  - 虚拟列表
+  - 懒加载dom/style批量更新
