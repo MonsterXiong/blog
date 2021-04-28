@@ -5,6 +5,7 @@ const { NodeNav } = require("./NodeJS");
 const { EngineeringNav } = require("./Engineering");
 const { InternetNav } = require("./Internet");
 const { OtherNav } = require("./Other");
+const { InterviewNav } = require("./Interview");
 
 module.exports = [
   DailyNav,
@@ -18,6 +19,8 @@ module.exports = [
   EngineeringNav,
   // 网络
   InternetNav,
+  // 面试
+  InterviewNav,
   // 其它
   OtherNav,
 ];

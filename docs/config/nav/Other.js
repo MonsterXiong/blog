@@ -29,5 +29,13 @@ exports.OtherNav = {
       text: "了解",
       link: "/Other/Understand/",
     },
+    {
+      text: "公众号",
+      link: "/Other/Recommendation/",
+    },
+    {
+      text: "VScode",
+      link: "/Other/VScode/",
+    },
   ],
 };
