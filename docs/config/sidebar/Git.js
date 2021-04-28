@@ -22,6 +22,6 @@ exports.GitSidebar = {
     "Tag",
     "Mv",
     "Rm",
-    "Application",
+    ["Application", "实践"],
   ],
 };
