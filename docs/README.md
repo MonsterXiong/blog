@@ -2,9 +2,10 @@
 home: true
 heroImage: /assets/logo.gif
 heroText: Monster-Blog
-tagline: 记录
-actionText: 开始了解 →
+tagline: 宝库 | 奇珍异宝
+actionText: 深入了解 →
 actionLink: /Daily/
+navbar: false
 # features:
 # - title: 简洁至上
 #   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
