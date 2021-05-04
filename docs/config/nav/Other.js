@@ -22,6 +22,10 @@ exports.OtherNav = {
       link: "/Other/MiniProgram/",
     },
     {
+      text: "脚手架",
+      link: "/Other/CLi/",
+    },
+    {
       text: "计划",
       link: "/Other/Plan/",
     },
@@ -36,6 +40,10 @@ exports.OtherNav = {
     {
       text: "VScode",
       link: "/Other/VScode/",
+    },
+    {
+      text: "Window",
+      link: "/Other/Window/",
     },
   ],
 };

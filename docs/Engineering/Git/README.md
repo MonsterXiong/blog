@@ -1,7 +1,5 @@
 ---
-title: Git
-description: "how to learn git"
-metaTitle: Git
+sidebarDepth: 0
 ---
 
 # Git
