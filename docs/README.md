@@ -4,7 +4,7 @@ heroImage: /assets/logo.gif
 heroText: Monster-Blog
 tagline: 宝库 | 奇珍异宝
 actionText: 深入了解 →
-actionLink: /Daily/
+actionLink: /daily/
 navbar: false
 # features:
 # - title: 简洁至上

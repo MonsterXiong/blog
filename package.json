@@ -18,13 +18,6 @@
     "vuepress": "^1.8.2"
   },
   "dependencies": {
-    "@vuepress-reco/vuepress-plugin-back-to-top": "^1.6.0",
-    "@vuepress-reco/vuepress-plugin-bulletin-popover": "^1.6.0",
-    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
-    "@vuepress/plugin-medium-zoom": "^1.8.2",
-    "vuepress-plugin-cursor-effects": "^1.0.2",
-    "vuepress-plugin-meting": "^0.2.3",
-    "vuepress-plugin-nuggets-style-copy": "^1.0.3",
-    "vuepress-theme-reco": "^1.6.6"
+    "@vuepress-reco/vuepress-plugin-back-to-top": "^1.6.0"
   }
 }
