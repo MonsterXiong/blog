@@ -6,7 +6,7 @@ module.exports = {
   title: "Monster",
   description: "个人收藏夹",
   base: "/blog/", // 配合部署项目
-  head: [["link", { rel: "icon", href: "/assets/logo.jpg" }]],
+  head: [["link", { rel: "icon", href: "/assets/favicon.ico" }]],
   repo: "https://github.com/MonsterXiong/blog.git",
   themeConfig: {
     // 导航栏配置

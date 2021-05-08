@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /assets/logo.gif
+heroImage: /assets/logo.png
 heroText: Monster-Blog
 tagline: 宝库 | 奇珍异宝
 actionText: 深入了解 →

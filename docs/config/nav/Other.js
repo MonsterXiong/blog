@@ -22,6 +22,10 @@ exports.OtherNav = {
       link: "/Other/MiniProgram/",
     },
     {
+      text: "测试",
+      link: "/Other/Test/Jest",
+    },
+    {
       text: "脚手架",
       link: "/Other/CLi/",
     },
