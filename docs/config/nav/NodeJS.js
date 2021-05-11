@@ -4,7 +4,7 @@ exports.NodeNav = {
     {
       text: "原生",
       items: [
-        { text: "首页", link: "/NodeJS/" },
+        // { text: "首页", link: "/NodeJS/" },
         { text: "日常", link: "/NodeJS/Original/" },
       ],
     },
