@@ -1,9 +1,19 @@
 ---
 pageClass: daily-page-class
-sidebar: auto
+sidebar: false
 ---
 
-## 精华
+## 项目
+
+[MonsterUI 组件库文档](https://ui.monsterbear.top)
+[个人博客](https://blog.monsterbear.top)
+[工具库函数](#)
+[商业化首页](#)
+[导航](#)
+
+::: details 网站
+
+### 精华
 
 [码力全开](https://maliquankai.com/designnav/)
 [鱼塘热榜](https://mo.fish/)
@@ -20,7 +30,7 @@ sidebar: auto
 [网易云音乐 API](https://neteasecloudmusicapi.vercel.app/#/)
 [前端小课](http://lefex.gitee.io/)
 
-## 影视
+### 影视
 
 [真不卡影院](https://www.zhenbuka.com/)
 [电影先生](http://dianying.im/)
@@ -28,9 +38,9 @@ sidebar: auto
 [牛牛 TV](http://www.ziliao6.com/tv/)
 [哔嘀影视](https://www.bde4.cc/)
 
-## 导航
+### 导航
 
-### 不求人
+#### 不求人
 
 [影视导航](https://video.bqrdh.com/)
 [设计导航](https://design.bqrdh.com/)
@@ -40,11 +50,4 @@ sidebar: auto
 [有趣导航](https://interesting.bqrdh.com/)
 [网赚导航](https://pocket.bqrdh.com/)
 [Java 导航](https://java.bqrdh.com/)
-
-<!--
-<details>
-    <summary style="color:red">精华</summary>
-        <br />
-        <a href="https://maliquankai.com/designnav/" target='_blank'>码力全开</a>
-        <br />
-</details> -->
+:::

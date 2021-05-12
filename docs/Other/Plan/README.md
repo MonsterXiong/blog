@@ -18,11 +18,11 @@
 
 ## 技能
 
-- [ ] Sass
-- [ ] Vue
-- [ ] Git
-- [x] websocket
-- [ ] HTTP
+- Sass
+- Vue
+- Git
+- websocket
+- HTTP
 
 ## 安全
 
@@ -30,27 +30,27 @@
 
 ## 源码
 
-- [x] koa
-- [ ] Axios
-- [ ] Promise
+- koa
+- Axios
+- Promise
 
 ## 工程化
 
-- [ ] Webpack
+- Webpack
   - 分享 15 个 Webpack 实用的插件
   - 总结 18 个 Webpack 插件，总有你想要的
-- [ ] Vite
-- [ ] Vite 和 Webpack
-- [ ] Gulp
+- Vite
+- Vite 和 Webpack
+- Gulp
 
 ## 项目
 
-- [ ] 组件库
+- 组件库
   - 从 Element UI 源码的构建流程来看前端 UI 库设计
   - 手把手教你写一个 Vue 组件发布到 npm 且可外链引入使用
   - 基于 vuecli3 多个 vue 项目公用组件的微前端架构，npm publish 发布到私服
   - 极简 ：开发一个 And-Design 级别组件库的构建与发布流程
-- [ ] cli
+- cli
   - 从 0 开始手撕 cli
-- [ ] 工具函数库
+- 工具函数库
   - JavaScript 工具函数大全（新）
