@@ -1,7 +1,6 @@
 const { sidebarConfig } = require("../config/sidebar/index");
 const navConfig = require("../config/nav/index");
-const NODE_ENV = process.env.NODE_ENV;
-// const base = NODE_ENV === "development" ? "/blog/" : "/";
+
 module.exports = {
   title: "Monster",
   description: "个人收藏夹",

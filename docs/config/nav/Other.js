@@ -23,7 +23,7 @@ exports.OtherNav = {
     },
     {
       text: "测试",
-      link: "/Other/Test/Jest",
+      link: "/Other/Test/",
     },
     {
       text: "脚手架",
@@ -48,6 +48,10 @@ exports.OtherNav = {
     {
       text: "Window",
       link: "/Other/Window/",
+    },
+    {
+      text: "后续",
+      link: "/Other/More/",
     },
   ],
 };
