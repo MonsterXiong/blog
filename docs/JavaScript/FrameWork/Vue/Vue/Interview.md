@@ -6,7 +6,7 @@ sidebar: auto
 
 ## 2.0
 
-### [说一说你对 Vue 的理解](../Vue/面试/说一说你对Vue的理解.md)
+### [说一说你对 Vue 的理解](../面试/说一说你对Vue的理解.md)
 
 ::: details 说一说你对 Vue 的理解
 

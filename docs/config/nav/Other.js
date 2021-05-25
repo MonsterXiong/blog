@@ -26,28 +26,32 @@ exports.OtherNav = {
       link: "/Other/Test/",
     },
     {
+      text: "Window",
+      link: "/Other/Window/",
+    },
+    {
+      text: "Linux",
+      link: "/Other/Linux/",
+    },
+    {
+      text: "数据库",
+      link: "/Other/DataBase/",
+    },
+    {
+      text: "Vuepress",
+      link: "/Other/Vuepress/",
+    },
+    {
       text: "脚手架",
       link: "/Other/CLi/",
-    },
-    {
-      text: "计划",
-      link: "/Other/Plan/",
-    },
-    {
-      text: "了解",
-      link: "/Other/Understand/",
-    },
-    {
-      text: "公众号",
-      link: "/Other/Recommendation/",
     },
     {
       text: "VScode",
       link: "/Other/VScode/",
     },
     {
-      text: "Window",
-      link: "/Other/Window/",
+      text: "计划",
+      link: "/Other/Plan/",
     },
     {
       text: "后续",

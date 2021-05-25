@@ -1,7 +1,13 @@
 exports.JsSidebar = {
-  "/JavaScript/FrameWork/Vue/": [""],
+  "/JavaScript/FrameWork/Vue/Vuex/": [""],
+  "/JavaScript/FrameWork/Vue/Vue-Router/": [""],
+  "/JavaScript/FrameWork/Vue/Vue/": [
+    "",
+    "模板引擎",
+    "虚拟DOM和diff算法",
+    "AST抽象语法树",
+  ],
   "/JavaScript/FrameWork/React/": [""],
-  "/JavaScript/FrameWork/": ["", "Vue/", "React/"],
   // ES6-ES12
   "/JavaScript/ES@NEXT/": [
     "",

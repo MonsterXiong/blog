@@ -4,9 +4,12 @@ exports.OtherSidebar = {
     "",
     ["Note", "计划"],
     ["Vue中文社区优秀文章", "优秀文章"],
+    "公众号",
+    "了解",
     ["more", "更多"],
   ],
-  "/Other/More/": ["", "模板引擎", "虚拟DOM和diff算法", "AST抽象语法树"],
+  "/Other/More/": [""],
+  "/Other/DataBase/": ["", "MySQL", "Redis", "MongoDB"],
   "/Other/DesignModel/": [
     "",
     "面向对象",
@@ -35,4 +38,5 @@ exports.OtherSidebar = {
     "访问器模式",
     "解释器模式",
   ],
+  "/Other/Linux/": ["", "Linux", "Docker", "搭建MySQL集群", "搭建Redis集群"],
 };

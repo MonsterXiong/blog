@@ -15,5 +15,6 @@ exports.NodeNav = {
         { text: "Egg", link: "/NodeJS/FrameWork/Egg/" },
       ],
     },
+    { text: "工具", link: "/NodeJS/Tools/" },
   ],
 };

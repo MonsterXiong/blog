@@ -18,6 +18,18 @@ exports.EngineeringNav = {
       link: "/Engineering/Gulp/",
     },
     {
+      text: "Grunt",
+      link: "/Engineering/Grunt/",
+    },
+    {
+      text: "Snowpack",
+      link: "/Engineering/Snowpack/",
+    },
+    {
+      text: "Parcel",
+      link: "/Engineering/Parcel/",
+    },
+    {
       text: "Git",
       link: "/Engineering/Git/",
     },
