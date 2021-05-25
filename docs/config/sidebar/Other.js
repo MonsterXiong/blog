@@ -9,6 +9,10 @@ exports.OtherSidebar = {
   "/Other/More/": ["", "模板引擎", "虚拟DOM和diff算法", "AST抽象语法树"],
   "/Other/DesignModel/": [
     "",
+    "面向对象",
+    "UML类图",
+    "设计原则",
+    "设计模式",
     "单例模式",
     "工厂模式",
     "观察者模式",
