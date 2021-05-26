@@ -31,3 +31,9 @@ git push -f https://github.com/MonsterXiong/blog.git master:gh-pages
 
 cd -
 ```
+
+执行命令
+
+```sh
+bash deploy.sh
+```

@@ -7,7 +7,7 @@ exports.JsSidebar = {
     "虚拟DOM和diff算法",
     "AST抽象语法树",
   ],
-  "/JavaScript/FrameWork/React/": [""],
+  "/JavaScript/FrameWork/React/React/": [""],
   // ES6-ES12
   "/JavaScript/ES@NEXT/": [
     "",
@@ -19,7 +19,7 @@ exports.JsSidebar = {
     "ES11",
     "ES12",
   ],
-  "/JavaScript/Base/": ["", ["Base", "Base"], ["Web Worker", "Web Worker"]],
+  "/JavaScript/Base/": ["", ["Base", "Base"], "Web Worker", "GC"],
   "/JavaScript/Code/": [""],
   "/JavaScript/": [""],
 };
