@@ -11,8 +11,20 @@ exports.JavaScriptNav = {
         { text: "Vue", link: "/JavaScript/FrameWork/Vue/Vue/" },
         { text: "Vuex", link: "/JavaScript/FrameWork/Vue/Vuex/" },
         {
-          text: "Vue-Router",
-          link: "/JavaScript/FrameWork/Vue/Vue-Router/",
+          text: "Vue Router",
+          link: "/JavaScript/FrameWork/Vue/Vue Router/",
+        },
+        {
+          text: "Vue SSR",
+          link: "/JavaScript/FrameWork/Vue/Vue SSR/",
+        },
+        {
+          text: "Vue CLI",
+          link: "/JavaScript/FrameWork/Vue/Vue CLI/",
+        },
+        {
+          text: "Vue Loader",
+          link: "/JavaScript/FrameWork/Vue/Vue Loader/",
         },
       ],
     },

@@ -2,36 +2,67 @@ exports.EngineeringNav = {
   text: "工程化",
   items: [
     {
-      text: "Vite",
-      link: "/Engineering/Vite/",
-    },
-    {
-      text: "Webpack",
-      link: "/Engineering/Webpack/",
-    },
-    {
-      text: "Rollup",
-      link: "/Engineering/Rollup/",
-    },
-    {
-      text: "Gulp",
-      link: "/Engineering/Gulp/",
-    },
-    {
-      text: "Grunt",
-      link: "/Engineering/Grunt/",
-    },
-    {
-      text: "Snowpack",
-      link: "/Engineering/Snowpack/",
-    },
-    {
-      text: "Parcel",
-      link: "/Engineering/Parcel/",
-    },
-    {
       text: "Git",
       link: "/Engineering/Git/",
+    },
+    {
+      text: "编译构建",
+      items: [
+        {
+          text: "Babel",
+          link: "/Engineering/Babel/",
+        },
+        {
+          text: "Vite",
+          link: "/Engineering/Vite/",
+        },
+        {
+          text: "Webpack",
+          link: "/Engineering/Webpack/",
+        },
+        {
+          text: "Rollup",
+          link: "/Engineering/Rollup/",
+        },
+        {
+          text: "Gulp",
+          link: "/Engineering/Gulp/",
+        },
+        {
+          text: "Grunt",
+          link: "/Engineering/Grunt/",
+        },
+        {
+          text: "Snowpack",
+          link: "/Engineering/Snowpack/",
+        },
+        {
+          text: "Parcel",
+          link: "/Engineering/Parcel/",
+        },
+      ],
+    },
+    {
+      text: "CI/CD",
+      items: [
+        {
+          text: "Github Action",
+          link: "/Engineering/Github Action/",
+        },
+      ],
+    },
+    {
+      text: "其它",
+      items: [
+        {
+          text: "Lerna",
+          link: "/Engineering/Lerna/",
+        },
+        {
+          text: "包管理器",
+          link: "/Engineering/PackageManager/",
+        },
+      ],
     },
   ],
 };

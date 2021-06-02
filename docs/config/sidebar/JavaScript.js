@@ -19,7 +19,14 @@ exports.JsSidebar = {
     "ES11",
     "ES12",
   ],
-  "/JavaScript/Base/": ["", ["Base", "Base"], "Web Worker", "GC"],
+  "/JavaScript/Base/": [
+    "",
+    ["Base", "Base"],
+    "Web Worker",
+    "Promise",
+    "Ajax",
+    "GC",
+  ],
   "/JavaScript/Code/": [""],
   "/JavaScript/": [""],
 };

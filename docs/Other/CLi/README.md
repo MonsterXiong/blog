@@ -6,11 +6,7 @@
 
 **脚手架的效果**
 
-这是一个基本的脚手架，init 一个项目，输入项目名称，版本号等信息，然后从 git 仓库拷贝一份自己需要的项目模板。类似 vue 的 vue-cli 或者 react 的 create-react-app，只是这个比较简单.
-
-基本思路参考下图
-
-这部分参考了掘金@张国钰大佬的思路.
+这是一个基本的脚手架，init 一个项目，输入项目名称，版本号等信息，然后从 git 仓库拷贝一份自己需要的项目模板。
 
 **项目结构**
 
@@ -55,7 +51,7 @@ program
       });
     } else if (templateName === "react") {
       console.log("clone template ...");
-      download("github:zxfjd3g/atguigu-utils.git", projectName, function(err) {
+      download("github:MonsterXiong/blog", projectName, function(err) {
         console.log(err ? "Error" : "Success");
       });
     } else {

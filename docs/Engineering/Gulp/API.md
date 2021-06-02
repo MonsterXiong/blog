@@ -89,18 +89,32 @@ gulp.src("./a/**/*.html");
 
 ## lastRun()
 
-**作用：没有修改的文件不进行构建**
+**作用：**
+检索在当前运行进程中成功完成任务的最后一次时间。最有用的后续任务运行时，监视程序正在运行。当监视程序正在运行时，对于后续的任务运行最有用。
+
+当与 src() 组合时，通过跳过自上次成功完成任务以来没有更改的文件，使增量构建能够加快执行时间。
 
 **语法：**
 
 ```sh
-lastRun(glob)
+lastRun(task, [precision])
 ```
 
 **例子：**
 
 ```js
-lastRun("./abc");
+const { src, dest, lastRun, watch } = require("gulp");
+const imagemin = require("gulp-imagemin");
+
+function images() {
+  return src("src/images/**/*.jpg", { since: lastRun(images) })
+    .pipe(imagemin())
+    .pipe(dest("build/img/"));
+}
+
+exports.default = function() {
+  watch("src/images/**/*.jpg", images);
+};
 ```
 
 ## dest()
