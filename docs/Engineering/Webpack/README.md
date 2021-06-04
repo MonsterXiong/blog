@@ -1,3 +1,7 @@
+---
+sidebar: auto
+---
+
 # Webpack
 
 - webpack 是什么？grunt、gulp 区别

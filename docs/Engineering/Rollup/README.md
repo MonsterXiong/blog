@@ -1,3 +1,7 @@
+---
+sidebar: auto
+---
+
 # Rollup
 
 ## 前言

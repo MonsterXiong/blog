@@ -1,15 +1,3 @@
-## browserify
-
-## live-server
-
-## Node-dev
-
-类似于nodemon
-
-## NVS
-
-类似于nvm
-
 ## 慕课网
 
 ### javascript

@@ -1,6 +1,4 @@
-# 周边
-
-## API
+# API
 
 - console-控制台
 - fs-文件系统

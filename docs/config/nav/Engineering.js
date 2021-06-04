@@ -2,8 +2,17 @@ exports.EngineeringNav = {
   text: "工程化",
   items: [
     {
-      text: "Git",
-      link: "/Engineering/Git/",
+      text: "概述",
+      link: "/Engineering/Summary/",
+    },
+    {
+      text: "规范",
+      items: [
+        {
+          text: "Git",
+          link: "/Engineering/Git/",
+        },
+      ],
     },
     {
       text: "编译构建",
@@ -61,6 +70,10 @@ exports.EngineeringNav = {
         {
           text: "包管理器",
           link: "/Engineering/PackageManager/",
+        },
+        {
+          text: "脚手架",
+          link: "/Engineering/CLI/",
         },
       ],
     },

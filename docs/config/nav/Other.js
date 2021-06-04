@@ -34,16 +34,16 @@ exports.OtherNav = {
       link: "/Other/Linux/",
     },
     {
+      text: "Docker",
+      link: "/Other/Docker/",
+    },
+    {
       text: "数据库",
       link: "/Other/DataBase/",
     },
     {
       text: "Vuepress",
       link: "/Other/Vuepress/",
-    },
-    {
-      text: "脚手架",
-      link: "/Other/CLi/",
     },
     {
       text: "VScode",
