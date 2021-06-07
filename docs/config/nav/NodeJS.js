@@ -13,8 +13,15 @@ exports.NodeNav = {
       items: [
         { text: "Koa", link: "/NodeJS/FrameWork/Koa/" },
         { text: "Egg", link: "/NodeJS/FrameWork/Egg/" },
+        { text: "Nest", link: "/NodeJS/FrameWork/Nest/" },
       ],
     },
-    { text: "工具", link: "/NodeJS/Tools/" },
+    {
+      text: "其它",
+      items: [
+        { text: "实战", link: "/NodeJS/Application/" },
+        { text: "工具", link: "/NodeJS/Tools/" },
+      ],
+    },
   ],
 };

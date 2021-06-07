@@ -36,5 +36,20 @@ exports.OtherSidebar = {
     "访问器模式",
     "解释器模式",
   ],
-  "/Other/Linux/": ["", "Linux", "Docker", "搭建MySQL集群", "搭建Redis集群"],
+  "/Other/Linux/Base/": [
+    "",
+    "Firewall",
+    "Nginx",
+    "NodeJs",
+    "Mysql",
+    "CleanHistory",
+  ],
+  "/Other/Linux/Application/": [
+    "",
+    "Linux",
+    "Docker",
+    "搭建MySQL集群",
+    "搭建Redis集群",
+  ],
+  "/Other/Linux/": ["", "Base/", "Application/"],
 };

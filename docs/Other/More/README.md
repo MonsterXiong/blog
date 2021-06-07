@@ -76,3 +76,7 @@
 ::: details 术语
 
 :::
+
+## windows 命令
+
+https://docs.microsoft.com/zh-cn/windows-server/administration/windows-commands/tree#BKMK_examples

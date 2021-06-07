@@ -46,6 +46,14 @@ exports.OtherNav = {
       link: "/Other/Vuepress/",
     },
     {
+      text: "Markdown",
+      link: "/Other/Markdown/",
+    },
+    {
+      text: "Mock",
+      link: "/Other/Mock/",
+    },
+    {
       text: "VScode",
       link: "/Other/VScode/",
     },

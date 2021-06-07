@@ -13,4 +13,7 @@ $ git log <commit ID>
 # 打印指定数量的最新提交的记录
 $ git log -<指定的数量>
 
+# 命令可以看到分支合并图
+$ git log --graph
+
 ```

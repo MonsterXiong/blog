@@ -6,6 +6,14 @@ sidebar: auto
 
 ## npm
 
+**node package management** 是 nodejs 内置的软件包管理器
+
+npm 由三大独立部分组成：
+
+- 网站：开发者查找包、设置参数以及管理 npm 使用的主要途径，网址为：[点击](<[https://www.npmjs.com/](https://links.jianshu.com/go?to=https%3A%2F%2Fwww.npmjs.com%2F)>)
+- 注册表：是一个巨大的数据库，保存了每个包的基本信息。
+- 命令行工具：开发者与 npm 包打交道的工具。
+
 ```sh
 # 安装nrm
 npm i nrm -g --registry=https://registry.npm.taobao.org
@@ -129,7 +137,7 @@ npm 有一个很棒的包运行器叫做 npx。 pnpm 通过 pnpx 命令提供相
 
 ## nrm
 
-nrm(npm registry manager )是 npm 的镜像源管理工具。
+nrm(npm registry manager )是 npm 的镜像源管理工具,允许你快速地在 npm 源间切换。
 
 ### nrm 操作
 

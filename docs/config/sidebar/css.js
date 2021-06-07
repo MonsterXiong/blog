@@ -4,7 +4,7 @@ exports.CssSidebar = {
   "/CSS/Preprocessing/Stylus/": [""],
   "/CSS/Preprocessing/": ["", "Less/", "Sass/", "Stylus/"],
   "/CSS/Tools/": [""],
-  "/CSS/Original/Base/": [""],
+  "/CSS/Original/Base/": ["", "CSS Variables", "Flex", "Position", "z-index"],
   "/CSS/Original/": ["", "Base/"],
   "/CSS/": ["", "Original/", "Preprocessing/", "Tools/"],
 };
