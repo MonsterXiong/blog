@@ -6,5 +6,5 @@ exports.EngineeringSidebar = {
   ...GitSidebar,
   ...GulpSidebar,
   ...ParcelSidebar,
-  "/Engineering/Webpack/": ["", "快速入门", "快速上手", "http"],
+  "/Engineering/Webpack/": ["", "快速入门"],
 };
