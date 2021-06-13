@@ -1,7 +1,6 @@
 const { DailyNav } = require("./Daily");
 const { CssNav } = require("./CSS");
 const { JavaScriptNav } = require("./JavaScript");
-const { NodeNav } = require("./NodeJS");
 const { EngineeringNav } = require("./Engineering");
 const { InternetNav } = require("./Internet");
 const { OtherNav } = require("./Other");
@@ -14,7 +13,6 @@ module.exports = [
   // JavaScript
   JavaScriptNav,
   // NodeJS
-  NodeNav,
   // 工程化
   EngineeringNav,
   // 网络
@@ -23,4 +21,12 @@ module.exports = [
   InterviewNav,
   // 其它
   OtherNav,
+  {
+    text: "😍 Node",
+    link: "https://monsterxiong.github.io/Node/",
+  },
+  {
+    text: "GitHub👷",
+    link: "https://github.com/MonsterXiong/blog",
+  },
 ];

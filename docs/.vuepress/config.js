@@ -17,7 +17,7 @@ module.exports = {
     // 侧边栏深度2=>h3
     sidebarDepth: 3,
     // 是否展开所有标题
-    displayAllHeaders: true,
+    displayAllHeaders: false,
     collapsable: false,
     // 页面滚动效果
     smoothScroll: true,

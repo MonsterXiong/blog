@@ -16,12 +16,12 @@ lib 文件夹，放项目的主要文件，package.json 不多说
 
 这项目主要用到的几个包
 
-- commander: 命令行工具
-- download-git-repo: 用来下载远程模板
-- ora: 显示 loading 动画
-- chalk: 修改控制台输出内容样式
-- log-symbols: 显示出 √ 或 × 等的图标
-- inquirer.js:命令交互
+- [commander](./Commander.md): 命令行工具
+- [download-git-repo](./DownloadGitRepo.md): 用来下载远程模板
+- [ora](./Ora.md): 显示 loading 动画
+- [chalk](./Chalk.md): 修改控制台输出内容样式
+- [log-symbols](./LogSymbols.md): 显示出 √ 或 × 等的图标
+- [inquirer](./Inquirer.md):命令交互
 - metalsmith：处理项目模板
 - handlebars：模板引擎
 
