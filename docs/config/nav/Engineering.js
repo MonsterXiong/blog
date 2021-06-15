@@ -6,15 +6,6 @@ exports.EngineeringNav = {
       link: "/Engineering/Summary/",
     },
     {
-      text: "规范",
-      items: [
-        {
-          text: "Git",
-          link: "/Engineering/Git/",
-        },
-      ],
-    },
-    {
       text: "编译构建",
       items: [
         {
@@ -49,6 +40,14 @@ exports.EngineeringNav = {
           text: "Parcel",
           link: "/Engineering/Parcel/",
         },
+        {
+          text: "SWC",
+          link: "/Engineering/SWC/",
+        },
+        {
+          text: "Esbuild",
+          link: "/Engineering/Esbuild/",
+        },
       ],
     },
     {
@@ -63,6 +62,10 @@ exports.EngineeringNav = {
     {
       text: "其它",
       items: [
+        {
+          text: "Git",
+          link: "/Engineering/Git/",
+        },
         {
           text: "Lerna",
           link: "/Engineering/Lerna/",

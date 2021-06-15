@@ -28,6 +28,221 @@ npm config list
 npm config rm registry
 ```
 
+### npx
+
+npm 从 5.2 版本开始增加了 npx 命令。
+
+Node 自带 npm 模块，所以可以直接使用 npx 命令，万一不能用，就手动安装一下。
+
+```sh
+npm i -g npx
+```
+
+#### 调用项目安装的模块
+
+npx 想要解决的主要问题就是调用项目内部安装的模块。比如项目内部安装了测试工具 Mocha。
+
+```sh
+npm i -D mocha
+```
+
+一般来说，调用 Mocha，只能在项目脚本和 package.json 的 scripts 字段里面，如果想在命令行下调用，必须像下面这样。
+
+```sh
+# 在项目根目录下执行
+node_modules/.bin/mocha --version
+```
+
+npx 就是想解决这个问题，让项目内部安装的模块用起来更方便，只要像下面这样调用就行可。
+
+```sh
+npx mocha --version
+```
+
+npx 的原理很简单，就是运行的时候，会到 node_modules/.bin 路径和环境变量`$PATH`里面，检查命令是否存在。
+
+由于 npx 会检查环境变量`$PATH`,所以系统命令可以调用。
+
+```sh
+npx ls
+```
+
+主要以，Bash 内置的命令不在`$PATH`里面，所以不能用。比如，cd 是 Bash 命令，因此不能用`npx cd`。
+
+#### 避免全局安装模块
+
+create-react-app 这个模块是全局安装，npx 可以运行它，而且不进行全局安装。
+
+```sh
+npx create-react-app my-react-app
+```
+
+上面代码运行时，npx 将`create-react-app`下载到一个临时目录，使用后再删除。所以，以后再执行上面的命令，会重新下载`create-react-app`。
+
+下载全局模块时，npx 允许指定版本
+
+```sh
+$ npx uglify-js@3.1.0 main.js -o ./dist/main.js
+```
+
+只要 npx 后面的模块无法在本地发现，就会下载同名模块。比如，本地没有安装`http-server`模块，下面的命令就会自动下载该模块，在当前目录启动一个 Web 服务。
+
+```sh
+npx http-server
+```
+
+#### 参数
+
+**--no-install 参数**
+
+如果想让 npx 强制使用本地模块，不下载远程模块，可以使用`--no-install`参数，如果本地不存在该模块就会报错。
+
+```sh
+npx --no-install http-server
+```
+
+**--ignore-existing 参数**
+
+如果忽略本地的同名模块，强制安装使用远程模块，可以使用`--ignore-existing`参数。比如，本地已经全局安装了 create-react-app，但还是想使用远程模块,就用这个参数。
+
+```sh
+npx --ignore-existing create-react-app my-react-app
+```
+
+**-p 参数**
+-p 参数用以指定 npx 所要安装的模块，所以可以这样
+
+```sh
+npx -p node@14.16.0 node-v
+```
+
+先指定安装`node@14.16.0`，然后再执行`node -v`命令
+
+**-c 参数**
+
+如果 npx 安装多个模块，默认情况下，所执行的命令之中，只有第一个可执行项会使用 npx 安装的模块，后面的可执行项还是会交给 Shell 解释。
+
+```sh
+# 会报错
+npx -p lolcatjs -p cowsay 'cowsay hello | lolcatjs'
+
+```
+
+上面代码中，`cowsay hello | lolcatjs`执行时会报错，原因是第一项`cowsay`由 npx 解释，而第二项命令`localcatjs`由 Shell 解释，但是`lolcatjs`并没有全局安装，所以报错。
+
+-c 参数可以将所有命令都用 npx 解释。有了它，下面代码就可以正常执行了。
+
+```sh
+npx -p lolcatjs -p cowsay -c 'cowsay hello | lolcatjs'
+```
+
+`-c`参数的另一个作用，是将环境变量带入所要执行的命令。举例来说，npm 提供当前项目的一些环境变量，可以用下面的命令查看。
+
+```sh
+npm run env | grep npm_
+```
+
+`-c`参数可以把这些 npm 的环境变量带入 npx 命令。
+
+```sh
+npx -c 'echo "$npm_package_name"'
+```
+
+上面代码会输出当前项目的项目名。
+
+#### 使用不同版本的 Node
+
+利用 npx 可以下载模块这个特点，可以指定某个版本的 Node 运行脚本。它的窍门就是使用 npm 的 node 模块。
+
+```sh
+npx node@14.16.0 -v
+```
+
+上面命令会使用 14.16.0 版本的 Node 执行脚本。原理是从 npm 下载这个版本的 node，使用后再删掉。
+
+某些场景下，这个方法用来切换 Node 版本，要比 nvm 那样的版本管理器方便一些。
+
+#### 执行 GitHub 源码
+
+npx 还可以执行 GitHub 上面的模块源码。
+
+```sh
+# 执行 Gist 代码
+npx https://gist.github.com/zkat/4bc19503fe9e9309e2bfaa2c58074d32
+
+# 执行仓库代码
+npx github:piuccio/cowsay hello
+```
+
+注意，远程代码必须是一个模块，即必须包含 package.json 和入口脚本。
+
+### npm link
+
+npm link 用来在本地项目和本地 npm 模块之间建立连接，可以在本地进行模块测试
+
+具体用法：
+
+1. 项目和模块在同一个目录下，可以使用相对路径
+
+npm link ../module
+
+2. 项目和模块不在同一个目录下
+
+cd 到模块目录，npm link，进行全局 link
+
+cd 到项目目录，npm link 模块名(package.json 中的 name)
+
+3. 解除 link
+
+解除项目和模块 link，项目目录下，npm unlink 模块名
+
+解除模块全局 link，模块目录下，npm unlink 模块名
+
+### npm 的困境
+
+通过抽离 npm 包可以进行代码复用。
+
+问题一：
+如果项目 A,以来了某某工具包，工具包里面又依赖了某一个 xxx 模块。某一天 xxx 模块发布了一个新的包，但这个包是有问题了。整体项目没有 package-lock.json 的情况下或者重新安装会出现问题。只能提 issue,进行修复。
+
+问题二：
+通过 lerna 进行项目管理，一个 repo 中有多个 packages,然后通过 lerna publish 发布后。如果出了问题，必须全盘回滚。
+
+因为 A 如果写死了 1.1.0 版本，那么 11.1.0 版本里面的依赖 B，也是 1.1.0，还会安装到 1.1.0 版本，所以还是可能出错。
+
+#### 解决办法
+
+如何来屏蔽他人给我们带来的不确定因素，因为我们自身的代码可以通过单元测试等流程进行保障。
+
+[确定的自己 + [不确定的第三方] ] ?= 稳定
+
+让这个整体变的稳定，大概流程：
+
+- [ 确定的自己 + [不确定的第三方] ] = [ version 包 ]
+- [ version 包 ] = 稳定
+
+通过 ncc 这个工具来解决，ncc 是一个 Node Cli 工具，停驶也能作为 api 将 Node 程序编译到一个 Javascript 文件中。
+
+我们通过 ncc 将我们的 npm 包，打包成一个 JS 文件。
+
+然后我们发布的 npm 包，package.json 里面的 dependencies 也不需要去加对应的依赖，npm 安装的时候，也就不用去安装对应的依赖了。
+
+这样的好处：
+
+1. 将依赖包都固定在发包时刻的包里面的内容，其他包再发包，也不影响我们，因为我们最终发的是 ncc 的产物。
+
+2. 安装速度变快了，比如原来的模式 xxx 依赖 A，B，C，A 又可能引用别的包。最终可能安装一个包，实际安装了几十个包或者上百个包。现在只需要安装 1 个。
+
+3. 安装的结果是变少了，比如原来 node_modules 可能占用了 50M，现在你可能只要安装 900KB 的东西，硬盘不会因为前端项目太多，导致 node_modules 大量占用空间了。
+
+4. 启动速度也能变快，因为原来 xxx 模块，会去引用 A，B，C，都是需要走 require 的流程，这个过程就会耗费一些时间
+
+#### 相关问题
+
+1、ncc 跟 pkg 有什么区别？
+
+ncc 生成的产物是 javascript 文件(text)，而 pkg 工具的产物是 binary 的可执行文件(binary)，ncc 的产物，我们还需要借助 node xxx.js 运行，而 pkg 的产物自带运行时，因此在宿主机未安装 Node 的情况下也可以运行。两者有相同之处，也有各自的应用场景
+
 ## Yarn
 
 快速、可靠、安全的依赖管理工具.

@@ -285,6 +285,10 @@ lighthouse http://www.bilibili.com
 
 ### 图片加载
 
+[懒加载](./Lazy-load.md)
+
+[预加载](./Pre-load.md)
+
 ### 字体优化
 
 ## 构建优化

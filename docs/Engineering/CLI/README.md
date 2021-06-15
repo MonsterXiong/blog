@@ -8,12 +8,6 @@
 
 这是一个基本的脚手架，init 一个项目，输入项目名称，版本号等信息，然后从 git 仓库拷贝一份自己需要的项目模板。
 
-**项目结构**
-
-主要 3 个，一个 bin 文件夹，放执行命令的入口文件
-
-lib 文件夹，放项目的主要文件，package.json 不多说
-
 这项目主要用到的几个包
 
 - [commander](./Commander.md): 命令行工具
@@ -24,6 +18,13 @@ lib 文件夹，放项目的主要文件，package.json 不多说
 - [inquirer](./Inquirer.md):命令交互
 - metalsmith：处理项目模板
 - handlebars：模板引擎
+
+```json
+// package.json
+"bin":{
+  "Monster-cli":"./index.js"
+}
+```
 
 ```js
 #! /usr/bin/env node
