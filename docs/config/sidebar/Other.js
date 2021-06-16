@@ -52,4 +52,5 @@ exports.OtherSidebar = {
     "搭建Redis集群",
   ],
   "/Other/Linux/": ["", "Base/", "Application/"],
+  "/Other/Window/": ["", "电脑快捷键大全"],
 };

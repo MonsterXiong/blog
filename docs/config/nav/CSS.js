@@ -2,7 +2,9 @@ exports.CssNav = {
   text: "CSS",
   items: [
     { text: "介绍", link: "/CSS/Introduce/" },
-    { text: "基础", link: "/CSS/Original/Base/" },
+    { text: "基础", link: "/CSS/Base/" },
+    { text: "架构", link: "/CSS/Structure/" },
+    { text: "工具", link: "/CSS/Tools/" },
     {
       text: "预处理",
       items: [
@@ -11,6 +13,5 @@ exports.CssNav = {
         { text: "Stylus", link: "/CSS/Preprocessing/Stylus/" },
       ],
     },
-    { text: "工具", link: "/CSS/Tools/" },
   ],
 };
