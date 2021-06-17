@@ -1,7 +1,7 @@
 # 测试工具
 
 - Vue Test Utils
-- Jest
+- [Jest](https://jestjs.io/zh-Hans)
 - ava
 - Karma
 - Mocha
