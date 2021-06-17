@@ -20,6 +20,8 @@ alt + shift + d 删除所有 console.log
 
 可以在选中 HTML 标签中外面套一层标签
 
+4. live-server
+
 ```
 
 javascript console utils ctrl+shift+L或D

@@ -4,6 +4,22 @@ sidebarDepth: 0
 
 # 概要
 
+## shim 和 polyfill
+
+一个 shim 是一个库,它将一个新的 API 引入到一个旧的环境中,而且仅靠旧环境中已有的手段实现
+
+一个 polyfill 就是一个用在浏览器 API 上的 shim.我们通常的做法是先检查当前浏览器是否支持某个 API, 如果不支持的话就加载对应的 polyfill.然后新旧浏览器就都可以使用这个 API 了.
+
+例如：有些旧浏览器不支持 Number.isNaN 方法,那咱们就给它添加上去，所谓 Polyfill 就是这样解决 API 的兼容问题的。
+
+```js
+if (!Number.isNaN) {
+  Number.isNaN = function(num) {
+    return num !== num;
+  };
+}
+```
+
 ## 函数
 
 ```js

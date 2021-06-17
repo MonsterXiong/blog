@@ -377,68 +377,6 @@ nrm test npm
 
 ```
 
-## nvm
-
-nvm(node.js version management)是一个 nodejs 的版本管理工具。通过它可以安装和切换不同版本的 nodejs。
-
-::: tip 注意
-安装路径最好不要出现中文和空格。
-:::
-
-### nvm 使用指南
-
-```sh
-# 查看本地安装的所有版本;有可选参数available,显示所有可下载的版本
-nvm list [有可选参数available]
-
-# 列出所有可以安装的node版本号
-nvm ls-remote
-
-# 列出所有已经安装的node版本
-nvm ls
-
-# 当前node版本
-nvm current
-
-# 设置npm镜像。https://github.com/npm/cli/archive/。如果不写url，则使用默认url。设置后可至安装目录settings.txt文件查看，也可直接在该文件操作。
-nvm npm_mirror [url]
-
-# nvm配置淘宝镜像，在setting.txt文件中最后一行添加以下两行
-node_mirror: https://npm.taobao.org/mirrors/node/
-npm_mirror: https://npm.taobao.org/mirrors/npm/
-
-# 使用指定版本node，可指定32/64位
-nvm use [version] [arch]
-
-# 卸载指定版本node
-nvm uninstall [version]
-
-# 安装node,version是指定版本也可以是最新的latest，可选arch是指定安装32位还是64位，默认系统位数
-# 可以添加--insecure绕过远程服务器的SSL
-nvm install <version> [arch]
-
-# 显示node是运行在32位还是64位
-nvm arch
-
-# 开启node.js版本管理
-nvm on
-
-# 关闭node.js管理
-nvm off
-
-# 设置下载代理，不加可选参数url，显示当前代理，将url设置位none则移除代理
-nvm proxy [url]
-
-# 设置存储不同版本node的目录，如果未设置，默认使用当前目录
-nvm root [path]
-
-# 显示nvm版本
-nvm -v
-
-
-
-```
-
 ## nvs
 
 nvs 管理本地 Node 版本
