@@ -1,3 +1,9 @@
+---
+sidebar: auto
+---
+
+# WebSocket
+
 ## 什么是 WebSocket
 
 ## 定义
