@@ -32,6 +32,8 @@ exports.JsSidebar = {
     "Proxy",
     "Scope",
     "Prototype",
+    ["String", "字符串"],
+    ["Array", "数组"],
   ],
   "/JavaScript/Code/": [
     "",
