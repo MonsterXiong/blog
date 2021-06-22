@@ -22,11 +22,15 @@ module.exports = [
   // 其它
   OtherNav,
   {
+    text: "👊源码",
+    link: "/Code/",
+  },
+  {
     text: "😍 Node",
     link: "https://monsterxiong.github.io/Node/",
   },
   {
-    text: "GitHub👷",
+    text: "👷GitHub",
     link: "https://github.com/MonsterXiong/blog",
   },
 ];

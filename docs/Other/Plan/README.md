@@ -16,24 +16,6 @@
 - 十几个救命插件，普渡芸芸众生
 - Server-X：一款可能提升你十倍工作效率的工具
 
-## 技能
-
-- Sass
-- Vue
-- Git
-- websocket
-- HTTP
-
-## 安全
-
-- 你在项目中做过那些安全防范措施
-
-## 源码
-
-- koa
-- Axios
-- Promise
-
 ## 工程化
 
 - Webpack

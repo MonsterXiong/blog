@@ -65,21 +65,6 @@
 - 生命周期
 - Devops
 
-## 深入系列
-
-库系列：
-
-- Jquery
-- underscore
-- axios
-
-## 通信
-
-- ajax
-- jsonp
-- fetch
-- axios
-
 ## 团队协作以及提效
 
 - 前后端分离
