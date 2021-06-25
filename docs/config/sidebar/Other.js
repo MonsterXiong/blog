@@ -53,4 +53,5 @@ exports.OtherSidebar = {
   ],
   "/Other/Linux/": ["", "Base/", "Application/"],
   "/Other/Window/": ["", "电脑快捷键大全"],
+  "/Other/Safe/": ["", "XSS", "CSRF"],
 };

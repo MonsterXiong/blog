@@ -5,6 +5,7 @@ exports.JavaScriptNav = {
     { text: "基础", link: "/JavaScript/Base/" },
     { text: "ES@next", link: "/JavaScript/ES@NEXT/" },
     { text: "手撕代码", link: "/JavaScript/Code/" },
+    { text: "函数式编程", link: "/JavaScript/FP/" },
     {
       text: "Vue",
       items: [
