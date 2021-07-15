@@ -28,8 +28,6 @@
 
 ## 谈谈你对 this、call、apply 和 bind 的理解
 
-详情可看我之前的文章：**「前端料包」一文彻底搞懂 JavaScript 中的 this、call、apply 和 bind**[9]
-
 1. 在浏览器里，在全局范围内 this 指向 window 对象；
 2. 在函数中，this 永远指向最后调用他的那个对象；
 3. 构造函数中，this 指向 new 出来的那个新的对象；

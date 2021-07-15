@@ -301,7 +301,107 @@ lighthouse http://www.bilibili.com
 
 ### Gzip
 
+前端的压缩方式有很多，现在的一些 gulp、webpack 等，基本能压缩 50%以上，**gzip 能在压缩的基础上再进行压缩 50%以上**。
+
+#### gzip 压缩原理
+
+请求头中有个 Accept-Encoding 来标识对压缩的支持。客户端 http 请求头中声明浏览器支持的压缩方式，服务端配置启用压缩，压缩的文件类型，压缩方式。当客户端请求到服务端时，服务器解析请求头，如果客户端支持 gzip 压缩，响应时对请求的资源进行压缩并返回客户端，浏览器按照自己的方式解析，在 http 响应头，如果可以看到 content-encoding：gzip，这是指服务端使用了 gzip 的压缩方式。
+
+#### 启用 gzip
+
+node 端很简单，只要加上 [compress](https://github.com/expressjs/compression) 模块即可
+
+```js
+var compression = require("compression");
+var app = express();
+
+//尽量在其他中间件前使用compression
+app.use(compression());
+```
+
+这是基本用法，如果还要对请求进行过滤的话，还要加上
+
+```js
+app.use(compression({ filter: shouldCompress }));
+
+function shouldCompress(req, res) {
+  if (req.headers["x-no-compression"]) {
+    // 这里就过滤掉了请求头包含'x-no-compression'
+    return false;
+  }
+
+  return compression.filter(req, res);
+}
+```
+
+**koa**
+
+```js
+const compress = require("koa-compress");
+const app = (module.exports = new Koa());
+app.use(compress());
+```
+
+因为 node 读取的是生成目录中的文件，所以要先用 webpack 等其他工具进行压缩成 gzip，webpack 的配置如下
+
+```js
+const CompressionWebpackPlugin = require("compression-webpack-plugin");
+plugins.push(
+  new CompressionWebpackPlugin({
+    asset: "[path].gz[query]", // 目标文件名
+    algorithm: "gzip", // 使用gzip压缩
+    test: new RegExp(
+      "\\.(js|css)$" // 压缩 js 与 css
+    ),
+    threshold: 10240, // 资源文件大于10240B=10kB时会被压缩
+    minRatio: 0.8, // 最小压缩比达到0.8时才会被压缩
+  })
+);
+```
+
+**nginx**
+
+gzip 使用环境:http,server,location,if(x),一般把它定义在 nginx.conf 的 http{…..}之间
+
+- gzip on
+
+  on 为启用，off 为关闭
+
+- gzip_min_length 1k
+
+  设置允许压缩的页面最小字节数，页面字节数从 header 头中的 Content-Length 中进行获取。默认值是 0，不管页面多大都压缩。建议设置成大于 1k 的字节数，小于 1k 可能会越压越大。
+
+- gzip_buffers 4 16k
+
+  获取多少内存用于缓存压缩结果，‘4 16k’表示以 16k\*4 为单位获得
+
+- gzip_comp_level 5
+
+  gzip 压缩比（1~9），越小压缩效果越差，但是越大处理越慢，所以一般取中间值;
+
+- gzip_types text/plain application/x-javascript text/css application/xml text/javascript application/x-httpd-php
+  对特定的 MIME 类型生效,其中'text/html’被系统强制启用
+- gzip_http_version 1.1
+
+  识别 http 协议的版本,早起浏览器可能不支持 gzip 自解压,用户会看到乱码
+
+- gzip_vary on
+
+  启用应答头"Vary: Accept-Encoding"
+
+- gzip_proxied off
+
+  nginx 做为反向代理时启用,off(关闭所有代理结果的数据的压缩),expired(启用压缩,如果 header 头中包括"Expires"头信息),no-cache(启用压缩,header 头中包含"Cache-Control:no-cache"),no-store(启用压缩,header 头中包含"Cache-Control:no-store"),private(启用压缩,header 头中包含"Cache-Control:private"),no_last_modefied(启用压缩,header 头中不包含"Last-Modified"),no_etag(启用压缩,如果 header 头中不包含"Etag"头信息),auth(启用压缩,如果 header 头中包含"Authorization"头信息)
+
+- gzip_disable msie6
+
+  (IE5.5 和 IE6 SP1 使用 msie6 参数来禁止 gzip 压缩 )指定哪些不需要 gzip 压缩的浏览器(将和 User-Agents 进行匹配),依赖于 PCRE 库
+
+以上代码可以插入到 http {...}整个服务器的配置里，也可以插入到虚拟主机的 server {...}或者下面的 location 模块内
+
 ### KeepAlive
+
+[KeepAlive 详解](https://www.jianshu.com/p/9fe2c140fa52)
 
 ### HTTP 缓存
 

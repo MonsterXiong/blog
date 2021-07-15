@@ -142,9 +142,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 ## 细节
 
-### 布局便宜和占位符
+### 布局偏移和占位符
 
-如果没有使用占位符，懒加载会导致页面布局的便宜。除了用户体验不好之外，会导致没必要的浏览器 reflow，性能大幅下载，所以需要用一张固定的图片填充 img 标签或者使用像[LQIP](https://link.jianshu.com/?t=http%3A%2F%2Fwww.guypo.com%2Fintroducing-lqip-low-quality-image-placeholders%2F)和[SQIP](https://link.jianshu.com/?t=https%3A%2F%2Fgithub.com%2Ftechnopagan%2Fsqip)这样的技术在加载之前提示媒体资源的内容。
+如果没有使用占位符，懒加载会导致页面布局的偏移。除了用户体验不好之外，会导致没必要的浏览器 reflow，性能大幅下载，所以需要用一张固定的图片填充 img 标签或者使用像[LQIP](https://link.jianshu.com/?t=http%3A%2F%2Fwww.guypo.com%2Fintroducing-lqip-low-quality-image-placeholders%2F)和[SQIP](https://link.jianshu.com/?t=https%3A%2F%2Fgithub.com%2Ftechnopagan%2Fsqip)这样的技术在加载之前提示媒体资源的内容。
 
 对于 img，src 属性初始化应该只想一张展位图片，最终会被替换成目标图片。
 
