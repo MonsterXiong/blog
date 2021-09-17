@@ -38,6 +38,7 @@ exports.OtherSidebar = {
   ],
   "/Other/Linux/Base/": [
     "",
+    "Git_bash",
     "Firewall",
     "Nginx",
     "NodeJs",
