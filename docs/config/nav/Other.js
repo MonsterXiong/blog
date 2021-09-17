@@ -10,6 +10,10 @@ exports.OtherNav = {
       link: "/Other/DataStructure/",
     },
     {
+      text: "算法",
+      link: "/Other/Algorithm/",
+    },
+    {
       text: "性能优化",
       link: "/Other/Performance/",
     },
