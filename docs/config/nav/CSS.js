@@ -1,5 +1,5 @@
 exports.CssNav = {
-  text: "CSS",
+  text: "🌈 CSS",
   items: [
     { text: "介绍", link: "/CSS/Introduce/" },
     { text: "基础", link: "/CSS/Base/" },

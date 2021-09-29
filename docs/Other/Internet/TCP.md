@@ -1,7 +1,3 @@
----
-sidebar: auto
----
-
 # TCP
 
 ## TCP 的三次握手相关问题

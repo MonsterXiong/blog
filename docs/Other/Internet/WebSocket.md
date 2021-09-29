@@ -1,7 +1,3 @@
----
-sidebar: auto
----
-
 # WebSocket
 
 ## 什么是 WebSocket

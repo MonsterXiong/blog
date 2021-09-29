@@ -1,5 +1,5 @@
 exports.JavaScriptNav = {
-  text: "JS",
+  text: "🚀 JS",
   items: [
     // { text: "概要", link: "/JavaScript/" },
     { text: "基础", link: "/JavaScript/Base/" },

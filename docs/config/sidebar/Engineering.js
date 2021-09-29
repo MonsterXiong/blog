@@ -1,12 +1,45 @@
 const { GitSidebar } = require("./Git");
-const { GulpSidebar } = require("./Gulp");
-const { ParcelSidebar } = require("./Parcel");
-const { CLISidebar } = require("./CLI");
 
 exports.EngineeringSidebar = {
   ...GitSidebar,
-  ...GulpSidebar,
-  ...ParcelSidebar,
-  ...CLISidebar,
   "/Engineering/Webpack/": ["", "快速入门"],
+  "/Engineering/Gulp/": [
+    "",
+    "快速入门",
+    "gulpfile介绍",
+    "创建任务",
+    "异步执行",
+    "处理文件",
+    "Glob详解",
+    "使用插件",
+    "文件监控",
+    "API",
+    "常用插件",
+    "实战",
+  ],
+  "/Engineering/CLI/": [
+    "",
+    "Commander",
+    "Inquirer",
+    "Chalk",
+    "Ora",
+    "DownloadGitRepo",
+    "LogSymbols",
+  ],
+  "/Engineering/Parcel/": [
+    "",
+    "快速入门",
+    "资源",
+    "转换",
+    "代码拆分",
+    "热模块重载",
+    "生产环境",
+    "配方",
+    "CLI",
+    "原理",
+    "资源类型",
+    "API",
+    "Packagers",
+    "插件",
+  ],
 };

@@ -1,5 +1,5 @@
 exports.EngineeringNav = {
-  text: "工程化",
+  text: "🌇 工程化",
   items: [
     {
       text: "概述",
@@ -56,6 +56,10 @@ exports.EngineeringNav = {
         {
           text: "Github Action",
           link: "/Engineering/Github Action/",
+        },
+        {
+          text: "Docker",
+          link: "/Engineering/Docker/",
         },
       ],
     },

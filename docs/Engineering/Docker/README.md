@@ -4,6 +4,8 @@ sidebar: auto
 
 # Docker
 
+![image-20210526030710420](http://img.monsterbear.top/img/Docker%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AE%A1%E7%90%86%E5%91%BD%E4%BB%A4.png)
+
 ## 简介
 
 1. 了解 Docker 的前生 LXC
@@ -61,3 +63,40 @@ https://docs.docker.com
 容器是在 linux 上本机运行，并在其他容器共享主机的内核，它运行的一个独立的进程，不占用其他任何可执行文件的内存，非常轻量。
 
 虚拟机运行的是一个完成的操作系统，通过虚拟机管理程序对主机资源进行虚拟访问，相比之下需要的资源更多。
+
+## other
+
+为什么要安装 docker 虚拟机，在其空间内安装环境和部署项目,非常麻烦
+
+原因：
+
+- 解决隔离性问题，有些程序会占用大量内存占用缓存
+
+- 使用虚拟机部署程序非常方便，需要使用开启，不需要使用删除
+
+> 问题：为什么不在 Linux 内安装 Vmware，Vmware 是重量级虚拟机，Docker 是轻量级虚拟机
+
+#### Docker 虚拟机架构
+
+![image-20210526025416318](http://img.monsterbear.top/img/Docker%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%9E%B6%E6%9E%84.png)
+
+#### 云计算中的 Docker 虚拟机
+
+![image-20210526025717059](http://img.monsterbear.top/img/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%AD%E7%9A%84Docker%E8%99%9A%E6%8B%9F%E6%9C%BA.png)
+
+#### Docker 镜像与容器
+
+- 容器是从镜像中创建出来的虚拟实例
+
+容器用来运行程序，是读写层
+
+镜像用来安装程序，是只读层
+
+#### 安装 Docker 虚拟机
+
+- 先更新 yum 软件管理器，然后再安装 Docker
+
+```sh
+yum -y update
+yum install -y docker(-y代表选择程序安装中的yes选项)
+```

@@ -7,7 +7,6 @@ exports.OtherSidebar = {
     "了解",
   ],
   "/Other/More/": [""],
-  "/Other/DataBase/": ["", "MySQL", "Redis", "MongoDB"],
   "/Other/DesignModel/": [
     "",
     "面向对象",
@@ -36,7 +35,7 @@ exports.OtherSidebar = {
     "访问器模式",
     "解释器模式",
   ],
-  "/Other/Linux/Base/": [
+  "/Other/Linux/": [
     "",
     "Git_bash",
     "Firewall",
@@ -45,14 +44,22 @@ exports.OtherSidebar = {
     "Mysql",
     "CleanHistory",
   ],
-  "/Other/Linux/Application/": [
-    "",
-    "Linux",
-    "Docker",
-    "搭建MySQL集群",
-    "搭建Redis集群",
-  ],
-  "/Other/Linux/": ["", "Base/", "Application/"],
   "/Other/Window/": ["", "电脑快捷键大全"],
   "/Other/Safe/": ["", "XSS", "CSRF"],
+  "/Other/Application/PC/": [""],
+  "/Other/Application/H5/": [""],
+  "/Other/Application/MiniProgram/": [""],
+  "/Other/Internet/": ["", "HTTP", "TCP", "DNS", "WebSocket", "Internet"],
+  "/Other/Interview/": ["", "Url", "Question", "Other"],
+  "/Other/DataBase/MySQL/": ["", "Cluster"],
+  "/Other/DataBase/MongoDB/": [""],
+  "/Other/DataBase/Redis/": [
+    "",
+    "Introduction",
+    "Persistence",
+    "Structure",
+    "Lock",
+    "Cache",
+    "Copy",
+  ],
 };

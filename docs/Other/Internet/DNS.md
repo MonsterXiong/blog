@@ -1,7 +1,3 @@
----
-sidebar: auto
----
-
 # 域名系统 DNS
 
 域名 DNS 系统（Domain Name System）是因特网使用的命名系统，用来把人们使用的机器名字转换为 IP 地址。
