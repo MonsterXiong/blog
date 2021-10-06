@@ -7,7 +7,7 @@ exports.JsSidebar = {
     "虚拟DOM和diff算法",
     "AST抽象语法树",
   ],
-  "/JavaScript/FrameWork/React/React/": ["", "Hook"],
+  "/JavaScript/FrameWork/React/React/": ["", "JSX","Hook","React-Router","Redux"],
   // ES6-ES12
   "/JavaScript/ES@NEXT/": [
     "",

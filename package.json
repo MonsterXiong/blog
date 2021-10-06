@@ -13,8 +13,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
     "cross-env": "^7.0.3",
     "gh-pages": "^3.1.0",
+    "husky": "^7.0.2",
     "vuepress": "^1.8.2"
   },
   "dependencies": {
