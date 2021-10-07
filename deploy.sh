@@ -12,7 +12,7 @@ vuepress build
 cd .vuepress/dist
 
 # 如果是发布到自定义域名
-echo 'blog.monsterbear.top' > CNAME
+# echo 'blog.monsterbear.top' > CNAME
 
 git init
 git config user.name "MonsterXiong"
