@@ -1,9 +1,8 @@
 const { DailyNav } = require("./Daily");
-const { CssNav } = require("./CSS");
 const { JavaScriptNav } = require("./JavaScript");
 const { EngineeringNav } = require("./Engineering");
 const { OtherNav } = require("./Other");
-
+const {CssNav} =require('./CSS')
 module.exports = [
   DailyNav,
   // CSS
