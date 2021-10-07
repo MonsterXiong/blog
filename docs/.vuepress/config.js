@@ -4,7 +4,7 @@ const navConfig = require("../config/nav/index");
 module.exports = {
   title: "Monster",
   description: "个人收藏夹",
-  base: "/", // 配合部署项目
+  base: "/blog/", // 配合部署项目
   head: [["link", { rel: "icon", href: "/assets/favicon.ico" }]],
   repo: "https://github.com/MonsterXiong/blog.git",
   themeConfig: {
