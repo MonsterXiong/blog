@@ -4,14 +4,12 @@
 set -e
 
 # 生成静态文件
-# npm run build
-cd docs
-
-npx vuepress build
+npm run build
+# vuepress build
 
 # 进入生成的文件夹
-# cd docs/.vuepress/dist
-cd .vuepress/dist
+cd docs/.vuepress/dist
+# cd .vuepress/dist
 
 # 如果是发布到自定义域名
 echo 'blog.monsterbear.top' > CNAME
@@ -31,6 +29,6 @@ git commit -m 'feat: deploy'
 git push -f https://${TOKEN}@github.com/MonsterXiong/blog.git master:gh-pages
 
 # Cleanup
-cd -
-# cd ../..
-# rm -rf .vuepress/dist
+# cd -
+cd ../..
+rm -rf .vuepress/dist

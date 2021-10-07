@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "serve": "cross-env NODE_ENV=development vuepress dev docs --no-cache",
-    "build": "cross-env NODE_ENV=production vuepress build docs",
+    "build": "vuepress build docs",
     "deploy": "gh-pages -d docs/.vuepress/dist",
     "commit": "npm run build && npm run deploy",
-    "deploy:docs":"bash ./deploy.sh"
+    "docs": "bash ./deploy.sh"
   },
   "keywords": [],
   "author": "",
