@@ -15,6 +15,8 @@ cd .vuepress/dist
 echo 'blog.monsterbear.top' > CNAME
 
 git init
+git config user.name "MonsterXiong"
+git config user.email "942849672@qq.com"
 git add -A
 git commit -m 'deploy'
 
@@ -22,6 +24,7 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/MonsterXiong/blog.git master:gh-pages
+# git push -f https://github.com/MonsterXiong/blog.git master:gh-pages
+git push -f "https://${TOKEN}@github.com/MonsterXiong/blog.git" "master:gh-pages"
 
 cd -
