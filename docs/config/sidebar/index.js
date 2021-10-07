@@ -1,5 +1,5 @@
 const { EngineeringSidebar } = require("./Engineering");
-const { CssSidebar } = require("./CSS");
+const { CssSidebar } = require("./css");
 const { JsSidebar } = require("./JavaScript");
 const { OtherSidebar } = require("./Other");
 
