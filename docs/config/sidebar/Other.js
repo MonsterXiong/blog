@@ -1,5 +1,5 @@
 exports.OtherSidebar = {
-  "/Other/Test/": ["", "Jest"],
+  "/Other/Test/": ["", "Jest", "Postman"],
   "/Other/Plan/": [
     "",
     ["Note", "计划"],
