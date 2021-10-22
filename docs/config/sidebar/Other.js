@@ -44,7 +44,7 @@ exports.OtherSidebar = {
     "Mysql",
     "CleanHistory",
   ],
-  "/Other/Window/": ["", "电脑快捷键大全"],
+  "/Other/Window/": ["", "电脑快捷键大全", "Power Shell"],
   "/Other/Safe/": ["", "XSS", "CSRF"],
   "/Other/Application/PC/": [""],
   "/Other/Application/H5/": [""],
