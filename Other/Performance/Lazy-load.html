@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>懒加载 | Monster</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/assets/favicon.ico">
+    <meta name="description" content="个人收藏夹">
+    
+    <link rel="preload" href="/assets/css/0.styles.ccbbb76c.css" as="style"><link rel="preload" href="/assets/js/app.51963213.js" as="script"><link rel="preload" href="/assets/js/2.d3d2c42b.js" as="script"><link rel="preload" href="/assets/js/248.16c95d6a.js" as="script"><link rel="prefetch" href="/assets/js/10.26c993fa.js"><link rel="prefetch" href="/assets/js/100.4c3533ca.js"><link rel="prefetch" href="/assets/js/101.83f4c2fa.js"><link rel="prefetch" href="/assets/js/102.a68e5f2f.js"><link rel="prefetch" href="/assets/js/103.30e3f8ad.js"><link rel="prefetch" href="/assets/js/104.e1880ec5.js"><link rel="prefetch" href="/assets/js/105.edd46bf2.js"><link rel="prefetch" href="/assets/js/106.9afe0065.js"><link rel="prefetch" href="/assets/js/107.b27ec771.js"><link rel="prefetch" href="/assets/js/108.b61037b1.js"><link rel="prefetch" href="/assets/js/109.c172e4ec.js"><link rel="prefetch" href="/assets/js/11.0e8e41c3.js"><link rel="prefetch" href="/assets/js/110.b5f429dc.js"><link rel="prefetch" href="/assets/js/111.49dd6d9e.js"><link rel="prefetch" href="/assets/js/112.4c2fd181.js"><link rel="prefetch" href="/assets/js/113.efdd6a66.js"><link rel="prefetch" href="/assets/js/114.da2cae8a.js"><link rel="prefetch" href="/assets/js/115.67aa37ac.js"><link rel="prefetch" href="/assets/js/116.218d2a87.js"><link rel="prefetch" href="/assets/js/117.f1089a5c.js"><link rel="prefetch" href="/assets/js/118.75a378fc.js"><link rel="prefetch" href="/assets/js/119.46a07f3c.js"><link rel="prefetch" href="/assets/js/12.9bea25ca.js"><link rel="prefetch" href="/assets/js/120.42d8c42f.js"><link rel="prefetch" href="/assets/js/121.c2130312.js"><link rel="prefetch" href="/assets/js/122.393993ea.js"><link rel="prefetch" href="/assets/js/123.19f6914b.js"><link rel="prefetch" href="/assets/js/124.e19da728.js"><link rel="prefetch" href="/assets/js/125.1eea5b9b.js"><link rel="prefetch" href="/assets/js/126.bfb7f9e3.js"><link rel="prefetch" href="/assets/js/127.e3e8dd7f.js"><link rel="prefetch" href="/assets/js/128.769ec229.js"><link rel="prefetch" href="/assets/js/129.87cb8905.js"><link rel="prefetch" href="/assets/js/13.905fde5a.js"><link rel="prefetch" href="/assets/js/130.1e4a079b.js"><link rel="prefetch" href="/assets/js/131.962cd205.js"><link rel="prefetch" href="/assets/js/132.d0562ec3.js"><link rel="prefetch" href="/assets/js/133.d148ba67.js"><link rel="prefetch" href="/assets/js/134.00060a1d.js"><link rel="prefetch" href="/assets/js/135.762bedc2.js"><link rel="prefetch" href="/assets/js/136.40ae3720.js"><link rel="prefetch" href="/assets/js/137.fb298d3d.js"><link rel="prefetch" href="/assets/js/138.c1c84826.js"><link rel="prefetch" href="/assets/js/139.c80231ee.js"><link rel="prefetch" href="/assets/js/14.d242a799.js"><link rel="prefetch" href="/assets/js/140.4e8d6c1e.js"><link rel="prefetch" href="/assets/js/141.79feb0cf.js"><link rel="prefetch" href="/assets/js/142.3258ec18.js"><link rel="prefetch" href="/assets/js/143.398996fc.js"><link rel="prefetch" href="/assets/js/144.762572a3.js"><link rel="prefetch" href="/assets/js/145.7ad1e028.js"><link rel="prefetch" href="/assets/js/146.d978186d.js"><link rel="prefetch" href="/assets/js/147.37c6fbc7.js"><link rel="prefetch" href="/assets/js/148.599a5f59.js"><link rel="prefetch" href="/assets/js/149.450675fe.js"><link rel="prefetch" href="/assets/js/15.ce68cc14.js"><link rel="prefetch" href="/assets/js/150.5c90e277.js"><link rel="prefetch" href="/assets/js/151.b99bfd4f.js"><link rel="prefetch" href="/assets/js/152.de3c1075.js"><link rel="prefetch" href="/assets/js/153.3194fef9.js"><link rel="prefetch" href="/assets/js/154.bdf274cf.js"><link rel="prefetch" href="/assets/js/155.ac37a552.js"><link rel="prefetch" href="/assets/js/156.61e9d530.js"><link rel="prefetch" href="/assets/js/157.71861fb1.js"><link rel="prefetch" href="/assets/js/158.ff809b2b.js"><link rel="prefetch" href="/assets/js/159.f66a988b.js"><link rel="prefetch" href="/assets/js/16.b47ab1cb.js"><link rel="prefetch" href="/assets/js/160.1c9cf486.js"><link rel="prefetch" href="/assets/js/161.7e707b5a.js"><link rel="prefetch" href="/assets/js/162.98b088bd.js"><link rel="prefetch" href="/assets/js/163.cd3250f1.js"><link rel="prefetch" href="/assets/js/164.a567c478.js"><link rel="prefetch" href="/assets/js/165.4e9c624e.js"><link rel="prefetch" href="/assets/js/166.d182ed23.js"><link rel="prefetch" href="/assets/js/167.c01dce2e.js"><link rel="prefetch" href="/assets/js/168.abb64f0a.js"><link rel="prefetch" href="/assets/js/169.4455b779.js"><link rel="prefetch" href="/assets/js/17.59927b82.js"><link rel="prefetch" href="/assets/js/170.6106c644.js"><link rel="prefetch" href="/assets/js/171.dddf8d4a.js"><link rel="prefetch" href="/assets/js/172.d22915bd.js"><link rel="prefetch" href="/assets/js/173.9d3388a3.js"><link rel="prefetch" href="/assets/js/174.86a9ecc4.js"><link rel="prefetch" href="/assets/js/175.cca1f469.js"><link rel="prefetch" href="/assets/js/176.0c249788.js"><link rel="prefetch" href="/assets/js/177.b5de8cbd.js"><link rel="prefetch" href="/assets/js/178.27cfa270.js"><link rel="prefetch" href="/assets/js/179.413e87cc.js"><link rel="prefetch" href="/assets/js/18.7e7cf28d.js"><link rel="prefetch" href="/assets/js/180.759b9411.js"><link rel="prefetch" href="/assets/js/181.3a71051e.js"><link rel="prefetch" href="/assets/js/182.cbf716ab.js"><link rel="prefetch" href="/assets/js/183.aeb50482.js"><link rel="prefetch" href="/assets/js/184.29c69bd9.js"><link rel="prefetch" href="/assets/js/185.e51a3da4.js"><link rel="prefetch" href="/assets/js/186.18c287d3.js"><link rel="prefetch" href="/assets/js/187.4b6ff81c.js"><link rel="prefetch" href="/assets/js/188.ff9ceb16.js"><link rel="prefetch" href="/assets/js/189.2403c877.js"><link rel="prefetch" href="/assets/js/19.9b274655.js"><link rel="prefetch" href="/assets/js/190.99b0d1fb.js"><link rel="prefetch" href="/assets/js/191.20398c96.js"><link rel="prefetch" href="/assets/js/192.8a7996c0.js"><link rel="prefetch" href="/assets/js/193.859b0aa5.js"><link rel="prefetch" href="/assets/js/194.cfa3114d.js"><link rel="prefetch" href="/assets/js/195.7a0d211c.js"><link rel="prefetch" href="/assets/js/196.0ecc8a70.js"><link rel="prefetch" href="/assets/js/197.39d4896a.js"><link rel="prefetch" href="/assets/js/198.4c798790.js"><link rel="prefetch" href="/assets/js/199.d55261fa.js"><link rel="prefetch" href="/assets/js/20.cce3fd05.js"><link rel="prefetch" href="/assets/js/200.a049406f.js"><link rel="prefetch" href="/assets/js/201.f10653fb.js"><link rel="prefetch" href="/assets/js/202.f420cb56.js"><link rel="prefetch" href="/assets/js/203.e98347b7.js"><link rel="prefetch" href="/assets/js/204.f72d5b4f.js"><link rel="prefetch" href="/assets/js/205.58aef437.js"><link rel="prefetch" href="/assets/js/206.c923f761.js"><link rel="prefetch" href="/assets/js/207.d0ec7a5c.js"><link rel="prefetch" href="/assets/js/208.018e9653.js"><link rel="prefetch" href="/assets/js/209.dbce6a36.js"><link rel="prefetch" href="/assets/js/21.11cfa259.js"><link rel="prefetch" href="/assets/js/210.b37c9493.js"><link rel="prefetch" href="/assets/js/211.96988e7a.js"><link rel="prefetch" href="/assets/js/212.370f5382.js"><link rel="prefetch" href="/assets/js/213.a1b48312.js"><link rel="prefetch" href="/assets/js/214.7817a6b6.js"><link rel="prefetch" href="/assets/js/215.f4af78fb.js"><link rel="prefetch" href="/assets/js/216.a6d73e28.js"><link rel="prefetch" href="/assets/js/217.1b5f990e.js"><link rel="prefetch" href="/assets/js/218.05bb2023.js"><link rel="prefetch" href="/assets/js/219.f13be346.js"><link rel="prefetch" href="/assets/js/22.366f8c53.js"><link rel="prefetch" href="/assets/js/220.efecc1b4.js"><link rel="prefetch" href="/assets/js/221.0686f8ee.js"><link rel="prefetch" href="/assets/js/222.f4724858.js"><link rel="prefetch" href="/assets/js/223.1363290b.js"><link rel="prefetch" href="/assets/js/224.193196ad.js"><link rel="prefetch" href="/assets/js/225.326eef39.js"><link rel="prefetch" href="/assets/js/226.6cb29260.js"><link rel="prefetch" href="/assets/js/227.d227af20.js"><link rel="prefetch" href="/assets/js/228.70183150.js"><link rel="prefetch" href="/assets/js/229.e09f02e1.js"><link rel="prefetch" href="/assets/js/23.13e428f6.js"><link rel="prefetch" href="/assets/js/230.adb3547f.js"><link rel="prefetch" href="/assets/js/231.9d71788b.js"><link rel="prefetch" href="/assets/js/232.68a4a79a.js"><link rel="prefetch" href="/assets/js/233.adacbde2.js"><link rel="prefetch" href="/assets/js/234.72e40d86.js"><link rel="prefetch" href="/assets/js/235.64174a74.js"><link rel="prefetch" href="/assets/js/236.edf191aa.js"><link rel="prefetch" href="/assets/js/237.f52cf4fa.js"><link rel="prefetch" href="/assets/js/238.800dc15e.js"><link rel="prefetch" href="/assets/js/239.10d056f6.js"><link rel="prefetch" href="/assets/js/24.a75434a8.js"><link rel="prefetch" href="/assets/js/240.deed77e1.js"><link rel="prefetch" href="/assets/js/241.464e9bf0.js"><link rel="prefetch" href="/assets/js/242.7273d677.js"><link rel="prefetch" href="/assets/js/243.99fdcdc5.js"><link rel="prefetch" href="/assets/js/244.047fa678.js"><link rel="prefetch" href="/assets/js/245.bc611e24.js"><link rel="prefetch" href="/assets/js/246.bd893381.js"><link rel="prefetch" href="/assets/js/247.4b316a04.js"><link rel="prefetch" href="/assets/js/249.489a221b.js"><link rel="prefetch" href="/assets/js/25.7c629b84.js"><link rel="prefetch" href="/assets/js/250.b8d57897.js"><link rel="prefetch" href="/assets/js/251.87cd587c.js"><link rel="prefetch" href="/assets/js/252.64208931.js"><link rel="prefetch" href="/assets/js/253.6d3b5f5e.js"><link rel="prefetch" href="/assets/js/254.c2d32b8e.js"><link rel="prefetch" href="/assets/js/255.515dad88.js"><link rel="prefetch" href="/assets/js/256.1df94050.js"><link rel="prefetch" href="/assets/js/257.0bb8f180.js"><link rel="prefetch" href="/assets/js/258.fc156d1e.js"><link rel="prefetch" href="/assets/js/259.f220aad5.js"><link rel="prefetch" href="/assets/js/26.13d5164c.js"><link rel="prefetch" href="/assets/js/260.f9aa733b.js"><link rel="prefetch" href="/assets/js/261.728e6974.js"><link rel="prefetch" href="/assets/js/262.9f5a41d6.js"><link rel="prefetch" href="/assets/js/263.5f9f4654.js"><link rel="prefetch" href="/assets/js/264.7155ed8c.js"><link rel="prefetch" href="/assets/js/265.cebcc996.js"><link rel="prefetch" href="/assets/js/266.78971ec0.js"><link rel="prefetch" href="/assets/js/267.35e0faf0.js"><link rel="prefetch" href="/assets/js/268.b4ccf3dd.js"><link rel="prefetch" href="/assets/js/27.194c4027.js"><link rel="prefetch" href="/assets/js/28.bfeb316f.js"><link rel="prefetch" href="/assets/js/29.65adeb4c.js"><link rel="prefetch" href="/assets/js/3.12c4eb56.js"><link rel="prefetch" href="/assets/js/30.91b0ba37.js"><link rel="prefetch" href="/assets/js/31.2b44dede.js"><link rel="prefetch" href="/assets/js/32.45e8e983.js"><link rel="prefetch" href="/assets/js/33.b9179deb.js"><link rel="prefetch" href="/assets/js/34.64bbbe88.js"><link rel="prefetch" href="/assets/js/35.46e9ec3d.js"><link rel="prefetch" href="/assets/js/36.ea0ca6d7.js"><link rel="prefetch" href="/assets/js/37.c8565b91.js"><link rel="prefetch" href="/assets/js/38.9b3567c5.js"><link rel="prefetch" href="/assets/js/39.69251b47.js"><link rel="prefetch" href="/assets/js/4.409d92c0.js"><link rel="prefetch" href="/assets/js/40.3b0f9976.js"><link rel="prefetch" href="/assets/js/41.268e2ee8.js"><link rel="prefetch" href="/assets/js/42.6cdee852.js"><link rel="prefetch" href="/assets/js/43.ccd86f85.js"><link rel="prefetch" href="/assets/js/44.d5aa9413.js"><link rel="prefetch" href="/assets/js/45.4982e424.js"><link rel="prefetch" href="/assets/js/46.bf810886.js"><link rel="prefetch" href="/assets/js/47.7ec8e205.js"><link rel="prefetch" href="/assets/js/48.58665ce3.js"><link rel="prefetch" href="/assets/js/49.b3dc7130.js"><link rel="prefetch" href="/assets/js/5.b1272c4d.js"><link rel="prefetch" href="/assets/js/50.04ca0c16.js"><link rel="prefetch" href="/assets/js/51.f4b2da0b.js"><link rel="prefetch" href="/assets/js/52.17519a17.js"><link rel="prefetch" href="/assets/js/53.b78b6830.js"><link rel="prefetch" href="/assets/js/54.ca2c50ff.js"><link rel="prefetch" href="/assets/js/55.c31ab05c.js"><link rel="prefetch" href="/assets/js/56.5c22b272.js"><link rel="prefetch" href="/assets/js/57.f352430d.js"><link rel="prefetch" href="/assets/js/58.3ad299f1.js"><link rel="prefetch" href="/assets/js/59.8780a57d.js"><link rel="prefetch" href="/assets/js/6.f48c38d5.js"><link rel="prefetch" href="/assets/js/60.1fe6825d.js"><link rel="prefetch" href="/assets/js/61.2a9797e9.js"><link rel="prefetch" href="/assets/js/62.3508bbc0.js"><link rel="prefetch" href="/assets/js/63.5dd3c7ec.js"><link rel="prefetch" href="/assets/js/64.f4ef7806.js"><link rel="prefetch" href="/assets/js/65.31325a9c.js"><link rel="prefetch" href="/assets/js/66.18715d65.js"><link rel="prefetch" href="/assets/js/67.45ed5066.js"><link rel="prefetch" href="/assets/js/68.bf97b711.js"><link rel="prefetch" href="/assets/js/69.3fca1c15.js"><link rel="prefetch" href="/assets/js/7.967862d3.js"><link rel="prefetch" href="/assets/js/70.a85182b0.js"><link rel="prefetch" href="/assets/js/71.dae87348.js"><link rel="prefetch" href="/assets/js/72.eb2f1490.js"><link rel="prefetch" href="/assets/js/73.81784cd9.js"><link rel="prefetch" href="/assets/js/74.df09c1ac.js"><link rel="prefetch" href="/assets/js/75.2b0ad4b6.js"><link rel="prefetch" href="/assets/js/76.66b47957.js"><link rel="prefetch" href="/assets/js/77.b62c7a01.js"><link rel="prefetch" href="/assets/js/78.28c5811a.js"><link rel="prefetch" href="/assets/js/79.95d475d5.js"><link rel="prefetch" href="/assets/js/8.673a7c19.js"><link rel="prefetch" href="/assets/js/80.2d75d773.js"><link rel="prefetch" href="/assets/js/81.cfda913f.js"><link rel="prefetch" href="/assets/js/82.9e763e4c.js"><link rel="prefetch" href="/assets/js/83.01d9915e.js"><link rel="prefetch" href="/assets/js/84.e226c26e.js"><link rel="prefetch" href="/assets/js/85.5d0b08f7.js"><link rel="prefetch" href="/assets/js/86.e830df14.js"><link rel="prefetch" href="/assets/js/87.3de70613.js"><link rel="prefetch" href="/assets/js/88.f8d2125b.js"><link rel="prefetch" href="/assets/js/89.0e7414a0.js"><link rel="prefetch" href="/assets/js/9.063ff9b8.js"><link rel="prefetch" href="/assets/js/90.38486cc7.js"><link rel="prefetch" href="/assets/js/91.f8e110f3.js"><link rel="prefetch" href="/assets/js/92.493e9700.js"><link rel="prefetch" href="/assets/js/93.5e93d215.js"><link rel="prefetch" href="/assets/js/94.3afd7f6b.js"><link rel="prefetch" href="/assets/js/95.2bbb27a0.js"><link rel="prefetch" href="/assets/js/96.aa439df5.js"><link rel="prefetch" href="/assets/js/97.962d08ca.js"><link rel="prefetch" href="/assets/js/98.e6b9d371.js"><link rel="prefetch" href="/assets/js/99.f7ed391d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ccbbb76c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Monster</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Daily/" class="nav-link">
+  😇 日常
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌈 CSS" class="dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌈 CSS" class="mobile-dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/CSS/Introduce/" class="nav-link">
+  介绍
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Structure/" class="nav-link">
+  架构
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Tools/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><h4>
+          预处理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Less/" class="nav-link">
+  Less
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Sass/" class="nav-link">
+  Sass
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Stylus/" class="nav-link">
+  Stylus
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🚀 JS" class="dropdown-title"><span class="title">🚀 JS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🚀 JS" class="mobile-dropdown-title"><span class="title">🚀 JS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/JavaScript/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/ES@NEXT/" class="nav-link">
+  ES@next
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/Code/" class="nav-link">
+  手撕代码
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/FP/" class="nav-link">
+  函数式编程
+</a></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vuex/" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Router/" class="nav-link">
+  Vue Router
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue SSR/" class="nav-link">
+  Vue SSR
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue CLI/" class="nav-link">
+  Vue CLI
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Loader/" class="nav-link">
+  Vue Loader
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/React/React/" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌇 工程化" class="dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌇 工程化" class="mobile-dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Engineering/Summary/" class="nav-link">
+  概述
+</a></li><li class="dropdown-item"><h4>
+          编译构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Babel/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Vite/" class="nav-link">
+  Vite
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Rollup/" class="nav-link">
+  Rollup
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Gulp/" class="nav-link">
+  Gulp
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Grunt/" class="nav-link">
+  Grunt
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Snowpack/" class="nav-link">
+  Snowpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Parcel/" class="nav-link">
+  Parcel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/SWC/" class="nav-link">
+  SWC
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Esbuild/" class="nav-link">
+  Esbuild
+</a></li></ul></li><li class="dropdown-item"><h4>
+          CI/CD
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Github Action/" class="nav-link">
+  Github Action
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Docker/" class="nav-link">
+  Docker
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Lerna/" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-subitem"><a href="/Engineering/PackageManager/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-subitem"><a href="/Engineering/CLI/" class="nav-link">
+  脚手架
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎁 其它" class="dropdown-title"><span class="title">🎁 其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎁 其它" class="mobile-dropdown-title"><span class="title">🎁 其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Other/DataStructure/" class="nav-link">
+  🛠 数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/Other/DesignModel/" class="nav-link">
+  🖊 设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Internet/" class="nav-link">
+  🔗 网络协议
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Performance/" class="nav-link router-link-active">
+  ⏳ 性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Safe/" class="nav-link">
+  🚨 安全
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Test/" class="nav-link">
+  💯 测试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Interview/" class="nav-link">
+  🀄 面试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Window/" class="nav-link">
+  💻 Window
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Linux/" class="nav-link">
+  🖥 Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Mock/" class="nav-link">
+  ❌ Mock
+</a></li><li class="dropdown-item"><!----> <a href="/Other/VScode/" class="nav-link">
+  🆚 VScode
+</a></li><li class="dropdown-item"><h4>
+          📖 文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-subitem"><a href="/Other/Markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/Other/Plan/" class="nav-link">
+  计划
+</a></li><li class="dropdown-subitem"><a href="/Other/More/" class="nav-link">
+  后续
+</a></li></ul></li><li class="dropdown-item"><h4>
+          🛢 数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/DataBase/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/MongoDB/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/Redis/" class="nav-link">
+  Redis
+</a></li></ul></li><li class="dropdown-item"><h4>
+          📲 应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Application/MiniProgram/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/PC/" class="nav-link">
+  PC
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/H5/" class="nav-link">
+  H5
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Code/" class="nav-link">
+  👊源码
+</a></div><div class="nav-item"><a href="https://monsterxiong.github.io/Node/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  😍 Node
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/MonsterXiong/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  👷GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Daily/" class="nav-link">
+  😇 日常
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌈 CSS" class="dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌈 CSS" class="mobile-dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/CSS/Introduce/" class="nav-link">
+  介绍
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Structure/" class="nav-link">
+  架构
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Tools/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><h4>
+          预处理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Less/" class="nav-link">
+  Less
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Sass/" class="nav-link">
+  Sass
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Stylus/" class="nav-link">
+  Stylus
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🚀 JS" class="dropdown-title"><span class="title">🚀 JS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🚀 JS" class="mobile-dropdown-title"><span class="title">🚀 JS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/JavaScript/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/ES@NEXT/" class="nav-link">
+  ES@next
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/Code/" class="nav-link">
+  手撕代码
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/FP/" class="nav-link">
+  函数式编程
+</a></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vuex/" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Router/" class="nav-link">
+  Vue Router
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue SSR/" class="nav-link">
+  Vue SSR
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue CLI/" class="nav-link">
+  Vue CLI
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Loader/" class="nav-link">
+  Vue Loader
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/React/React/" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌇 工程化" class="dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌇 工程化" class="mobile-dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Engineering/Summary/" class="nav-link">
+  概述
+</a></li><li class="dropdown-item"><h4>
+          编译构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Babel/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Vite/" class="nav-link">
+  Vite
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Rollup/" class="nav-link">
+  Rollup
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Gulp/" class="nav-link">
+  Gulp
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Grunt/" class="nav-link">
+  Grunt
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Snowpack/" class="nav-link">
+  Snowpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Parcel/" class="nav-link">
+  Parcel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/SWC/" class="nav-link">
+  SWC
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Esbuild/" class="nav-link">
+  Esbuild
+</a></li></ul></li><li class="dropdown-item"><h4>
+          CI/CD
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Github Action/" class="nav-link">
+  Github Action
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Docker/" class="nav-link">
+  Docker
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Lerna/" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-subitem"><a href="/Engineering/PackageManager/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-subitem"><a href="/Engineering/CLI/" class="nav-link">
+  脚手架
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎁 其它" class="dropdown-title"><span class="title">🎁 其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎁 其它" class="mobile-dropdown-title"><span class="title">🎁 其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Other/DataStructure/" class="nav-link">
+  🛠 数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/Other/DesignModel/" class="nav-link">
+  🖊 设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Internet/" class="nav-link">
+  🔗 网络协议
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Performance/" class="nav-link router-link-active">
+  ⏳ 性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Safe/" class="nav-link">
+  🚨 安全
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Test/" class="nav-link">
+  💯 测试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Interview/" class="nav-link">
+  🀄 面试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Window/" class="nav-link">
+  💻 Window
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Linux/" class="nav-link">
+  🖥 Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Mock/" class="nav-link">
+  ❌ Mock
+</a></li><li class="dropdown-item"><!----> <a href="/Other/VScode/" class="nav-link">
+  🆚 VScode
+</a></li><li class="dropdown-item"><h4>
+          📖 文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-subitem"><a href="/Other/Markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/Other/Plan/" class="nav-link">
+  计划
+</a></li><li class="dropdown-subitem"><a href="/Other/More/" class="nav-link">
+  后续
+</a></li></ul></li><li class="dropdown-item"><h4>
+          🛢 数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/DataBase/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/MongoDB/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/Redis/" class="nav-link">
+  Redis
+</a></li></ul></li><li class="dropdown-item"><h4>
+          📲 应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Application/MiniProgram/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/PC/" class="nav-link">
+  PC
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/H5/" class="nav-link">
+  H5
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Code/" class="nav-link">
+  👊源码
+</a></div><div class="nav-item"><a href="https://monsterxiong.github.io/Node/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  😍 Node
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/MonsterXiong/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  👷GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>懒加载</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Other/Performance/Lazy-load.html#常见场景" class="sidebar-link">常见场景</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Other/Performance/Lazy-load.html#图片懒加载" class="sidebar-link">图片懒加载</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/Performance/Lazy-load.html#两种加载情况" class="sidebar-link">两种加载情况：</a></li><li class="sidebar-sub-header"><a href="/Other/Performance/Lazy-load.html#图片懒加载的优点" class="sidebar-link">图片懒加载的优点</a></li><li class="sidebar-sub-header"><a href="/Other/Performance/Lazy-load.html#实现的方法" class="sidebar-link">实现的方法：</a></li><li class="sidebar-sub-header"><a href="/Other/Performance/Lazy-load.html#最佳实践" class="sidebar-link">最佳实践</a></li></ul></li><li><a href="/Other/Performance/Lazy-load.html#懒加载视频" class="sidebar-link">懒加载视频</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/Performance/Lazy-load.html#视频不需要自动播放" class="sidebar-link">视频不需要自动播放</a></li><li class="sidebar-sub-header"><a href="/Other/Performance/Lazy-load.html#用视频模拟-gif" class="sidebar-link">用视频模拟 Gif</a></li></ul></li><li><a href="/Other/Performance/Lazy-load.html#细节" class="sidebar-link">细节</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/Performance/Lazy-load.html#布局偏移和占位符" class="sidebar-link">布局偏移和占位符</a></li><li class="sidebar-sub-header"><a href="/Other/Performance/Lazy-load.html#延迟图片解码" class="sidebar-link">延迟图片解码</a></li><li class="sidebar-sub-header"><a href="/Other/Performance/Lazy-load.html#加载失败" class="sidebar-link">加载失败</a></li></ul></li><li><a href="/Other/Performance/Lazy-load.html#懒加载库" class="sidebar-link">懒加载库</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="懒加载"><a href="#懒加载" class="header-anchor">#</a> 懒加载</h1> <p>懒加载就是延时加载一些非关键资源的技术，需要用到的时候再去加载,也就是按需加载。</p> <h2 id="常见场景"><a href="#常见场景" class="header-anchor">#</a> 常见场景</h2> <ul><li>懒加载图片</li> <li>懒加载视频
+<a href="https://www.jianshu.com/p/e86c61468285" target="_blank" rel="noopener noreferrer">具体可以看<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="图片懒加载"><a href="#图片懒加载" class="header-anchor">#</a> 图片懒加载</h2> <ol><li>我们要知道页面中的 img 元素，如果没有 src 属性，浏览器就不会发出请求去下载图片，只有通过 javascript 设置了图片路径，浏览器才会发送请求。</li> <li>加载图片的过程时异步的</li></ol> <p>图片懒加载就是当图片出现到页面的可视化区域，或者到达某一个触发条件时，会动态的将伪属性替换成 src 属性或者利用 css 图像，完成图片加载。</p> <h3 id="两种加载情况"><a href="#两种加载情况" class="header-anchor">#</a> 两种加载情况：</h3> <ul><li>条件加载：符合某些条件，或触发了某些事件，才将自定义属性中的地址存储到 src 属性中，开始异步加载。</li> <li>可视区加载：仅加载用户可以看到的区域。当 js 监听到该图片元素进入到可视窗口时，将自定义属性中的地址存储到 src 属性中，开始异步加载。</li></ul> <h3 id="图片懒加载的优点"><a href="#图片懒加载的优点" class="header-anchor">#</a> 图片懒加载的优点</h3> <ul><li>防止页面一次性向服务器响应大量请求导致服务器响应慢，页面卡顿或崩溃等问题。</li> <li>减少请求数或延迟请求数，是页面加载速度快，用户体验好。</li></ul> <h3 id="实现的方法"><a href="#实现的方法" class="header-anchor">#</a> 实现的方法：</h3> <ol><li>元素的位置</li></ol> <ul><li>offsetTop：直接通过 img.offsetTop 就可以获取；</li> <li>scrollTop：通过 document.documentElement.scrollTop 获取；</li> <li>clientHeight：通过 document.documentElement.clientHeight 获取；</li></ul> <ol start="2"><li>getBoundClientRect()</li> <li>intersectionObeserver</li> <li>loading=lazy 属性</li></ol> <h3 id="最佳实践"><a href="#最佳实践" class="header-anchor">#</a> 最佳实践</h3> <ol><li>加载默认或者 loading 图片</li> <li>判断哪些图片要加载</li> <li>隐形加载图片</li> <li>替换真图片</li></ol> <p>其中需要监听滚动事件，可以做节流优化
+已经加载的图片不需要再进行判断
+刷新是否需要回到顶部，则根据实际情况考虑</p> <h2 id="懒加载视频"><a href="#懒加载视频" class="header-anchor">#</a> 懒加载视频</h2> <p>播放视频会用到 video，懒加载视频取决于特定的场景</p> <h3 id="视频不需要自动播放"><a href="#视频不需要自动播放" class="header-anchor">#</a> 视频不需要自动播放</h3> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video</span> <span class="token attr-name">controls</span> <span class="token attr-name">preload</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>none<span class="token punctuation">&quot;</span></span> <span class="token attr-name">poster</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>one-does-not-simply-placeholder.jpg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>one-does-not-simply.webm<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>video/webm<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>one-does-not-simply.mp4<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>video/mp4<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>video</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>我们需要添加一个 poster 属性给 video 标签，相当于一个占位符。preload 属性则规定是否在页面加载后载入视频，鉴于浏览器之间的 preload 默认值差异，显式定义会更改具有兼容性。在这种情况下，当用户点击播放视频时，视频才会被加载，预加载视频就简单的实现了。</p> <h3 id="用视频模拟-gif"><a href="#用视频模拟-gif" class="header-anchor">#</a> 用视频模拟 Gif</h3> <p>GIF 在很多地方都不及视频，特别是文件大小方面。在相同质量下，视频的尺寸一般会比 GIF 文件小得多。当然，利用视频取代 GIF 并不是直接用 video 取代 img 标签那么简单。因为 GIF 图片有三种要注意的行为：</p> <ol><li>加载完成后自动播放</li> <li>不停地循环播放</li> <li>没有音轨</li></ol> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video</span> <span class="token attr-name">autoplay</span> <span class="token attr-name">muted</span> <span class="token attr-name">loop</span> <span class="token attr-name">playsinline</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>one-does-not-simply.webm<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>video/webm<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>one-does-not-simply.mp4<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>video/mp4<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>video</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>autoplay、muted 和 loop 的作用就是为了实现上述三个功能，playsinline 是为了兼容 IOS 的 autoplay。现在我们有一个跨平台的视频模板用于取代 GIF 图片了。Chrome 会帮我们自动完成这项工作，但不能保证所有浏览器都能做到这个。</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video</span>
+  <span class="token attr-name">autoplay</span>
+  <span class="token attr-name">muted</span>
+  <span class="token attr-name">loop</span>
+  <span class="token attr-name">playsinline</span>
+  <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>610<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>254<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">poster</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>one-does-not-simply.jpg<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">data-src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>one-does-not-simply.webm<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>video/webm<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">data-src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>one-does-not-simply.mp4<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>video/mp4<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>video</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>poster 属性是一个占位符，在被懒加载之前，poster 里面指定的内容会在 video 中显示，我们指定真正的 url 在每个 source 的 data-src 中。</p> <div class="language-js extra-class"><pre class="language-js"><code>document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;DOMContentLoaded&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> lazyVideos <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">&quot;video.lazy&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">&quot;IntersectionObserver&quot;</span> <span class="token keyword">in</span> window<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> lazyVideoObserver <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">IntersectionObserver</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>
+      <span class="token parameter">entries<span class="token punctuation">,</span>
+      observer</span>
+    <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      entries<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">video</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>video<span class="token punctuation">.</span>isIntersecting<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> source <span class="token keyword">in</span> video<span class="token punctuation">.</span>target<span class="token punctuation">.</span>children<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">var</span> videoSource <span class="token operator">=</span> video<span class="token punctuation">.</span>target<span class="token punctuation">.</span>children<span class="token punctuation">[</span>source<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>
+              <span class="token keyword">typeof</span> videoSource<span class="token punctuation">.</span>tagName <span class="token operator">===</span> <span class="token string">&quot;string&quot;</span> <span class="token operator">&amp;&amp;</span>
+              videoSource<span class="token punctuation">.</span>tagName <span class="token operator">===</span> <span class="token string">&quot;SOURCE&quot;</span>
+            <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              videoSource<span class="token punctuation">.</span>src <span class="token operator">=</span> videoSource<span class="token punctuation">.</span>dataset<span class="token punctuation">.</span>src<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+
+          video<span class="token punctuation">.</span>target<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          video<span class="token punctuation">.</span>target<span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token string">&quot;lazy&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          lazyVideoObserver<span class="token punctuation">.</span><span class="token function">unobserve</span><span class="token punctuation">(</span>video<span class="token punctuation">.</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    lazyVideos<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">lazyVideo</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      lazyVideoObserver<span class="token punctuation">.</span><span class="token function">observe</span><span class="token punctuation">(</span>lazyVideo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>当懒加载一个视频时，首先要迭代 video 里面的每一个 source，然后将 data-src 中的 url 分配给 src 属性。然后调用元素的 load 方法，视频就可以自动播放了。</p> <p>这是一个模拟 GIF 动画的视频解决方案，不会消耗带宽加载不必要的媒体资源，而且还能实现懒加载。</p> <h2 id="细节"><a href="#细节" class="header-anchor">#</a> 细节</h2> <h3 id="布局偏移和占位符"><a href="#布局偏移和占位符" class="header-anchor">#</a> 布局偏移和占位符</h3> <p>如果没有使用占位符，懒加载会导致页面布局的偏移。除了用户体验不好之外，会导致没必要的浏览器 reflow，性能大幅下载，所以需要用一张固定的图片填充 img 标签或者使用像<a href="https://link.jianshu.com/?t=http%3A%2F%2Fwww.guypo.com%2Fintroducing-lqip-low-quality-image-placeholders%2F" target="_blank" rel="noopener noreferrer">LQIP<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>和<a href="https://link.jianshu.com/?t=https%3A%2F%2Fgithub.com%2Ftechnopagan%2Fsqip" target="_blank" rel="noopener noreferrer">SQIP<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>这样的技术在加载之前提示媒体资源的内容。</p> <p>对于 img，src 属性初始化应该只想一张展位图片，最终会被替换成目标图片。</p> <p>对于 video，可以使用 poster 属性制定占位符。</p> <p>除此之外对于 img 和 video 来说，显式声明 width 和 height 属性都是十分必要的，这可以保证从占位符切换到目标资源的过程都不会导致浏览器 reflow。</p> <h3 id="延迟图片解码"><a href="#延迟图片解码" class="header-anchor">#</a> 延迟图片解码</h3> <p>用 JS 加载一些比较大的图片会阻塞线程，导致网页短暂地失去交互能力。可以用 decode 方法异步解码图片，可以避免阻塞线程。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> newImage <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Image</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+newImage<span class="token punctuation">.</span>src <span class="token operator">=</span> <span class="token string">&quot;my-awesome-image.jpg&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">&quot;decode&quot;</span> <span class="token keyword">in</span> newImage<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Fancy decoding logic</span>
+  newImage<span class="token punctuation">.</span><span class="token function">decode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    imageContainer<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>newImage<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Regular image load</span>
+  imageContainer<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>newImage<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><a href="https://link.jianshu.com/?t=https%3A%2F%2Fcodepen.io%2Fmalchata%2Fpen%2FWzeZGW" target="_blank" rel="noopener noreferrer">具体可以看这里<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，如果图片不是太大，可以选择直接同步加载。</p> <h3 id="加载失败"><a href="#加载失败" class="header-anchor">#</a> 加载失败</h3> <p>有时候媒体资源回家再失败，一个网页设置了 HTML 短时间的缓存（5 分钟），然后用户打开了 tab 几个小时之后再浏览这个网页，在这个过程的某个时间，缓存会重新部署，基于 hasg 的版本号会改变或者丢失，如果这时候懒加载图片，会导致失败。</p> <p>这种情况虽然优点极端，但是一般会有策略来应对图片加载失败着中国情况。例如可以使用一个按钮替代图片填充，用户可以点击这个按钮重新加载图片，或者提示用户发生了错误。</p> <h2 id="懒加载库"><a href="#懒加载库" class="header-anchor">#</a> 懒加载库</h2> <p>如果你不关心懒加载背后是如何实现的，你只是想找一个库去实现这个功能，可供选择的有：</p> <ul><li>lazysizes 是一个功能十分强大的懒加载库，主要用于加载图片和 iframes。你只需要指定 data-src/data-srcset 属性，lazysizes 会帮你自动懒加载内容。值得注意的是，lazysizes 基于 intersection observer，因此你需要一个 polyfill。你还可以通过一些插件扩展库的功能以用于懒加载视频。</li> <li>lozad.js 是一个轻量级、高性能的懒加载库，基于 intersection observer，你同样需要提供一个相关的 polyfill。</li> <li>blazy 是一个轻量级的懒加载库，大小仅为 1.4KB。相对于 lazysizes，它不需要任何的外部依赖，并且兼容 IE7+。你可能猜测到了，blazy 不支持 intersection observer，性能相对较差。</li> <li>yall.js 是作者本人写的一个懒加载库，基于 IntersectionObserver 和事件，兼容 IE11 和大部分的浏览器。</li> <li>如果你想寻找一个基于 React 的懒加载工具，react-lazyload 可能是你的选择。</li></ul> <p>上述每个懒加载库的文档都写得很好，同时提供了大量的标记模式。如果你不想深究懒加载的技术细节，就选择任意一个去使用，这能节省你很多的时间和功夫。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.51963213.js" defer></script><script src="/assets/js/2.d3d2c42b.js" defer></script><script src="/assets/js/248.16c95d6a.js" defer></script>
+  </body>
+</html>

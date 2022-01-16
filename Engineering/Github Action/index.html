@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Github Action | Monster</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/assets/favicon.ico">
+    <meta name="description" content="个人收藏夹">
+    
+    <link rel="preload" href="/assets/css/0.styles.ccbbb76c.css" as="style"><link rel="preload" href="/assets/js/app.51963213.js" as="script"><link rel="preload" href="/assets/js/2.d3d2c42b.js" as="script"><link rel="preload" href="/assets/js/62.3508bbc0.js" as="script"><link rel="prefetch" href="/assets/js/10.26c993fa.js"><link rel="prefetch" href="/assets/js/100.4c3533ca.js"><link rel="prefetch" href="/assets/js/101.83f4c2fa.js"><link rel="prefetch" href="/assets/js/102.a68e5f2f.js"><link rel="prefetch" href="/assets/js/103.30e3f8ad.js"><link rel="prefetch" href="/assets/js/104.e1880ec5.js"><link rel="prefetch" href="/assets/js/105.edd46bf2.js"><link rel="prefetch" href="/assets/js/106.9afe0065.js"><link rel="prefetch" href="/assets/js/107.b27ec771.js"><link rel="prefetch" href="/assets/js/108.b61037b1.js"><link rel="prefetch" href="/assets/js/109.c172e4ec.js"><link rel="prefetch" href="/assets/js/11.0e8e41c3.js"><link rel="prefetch" href="/assets/js/110.b5f429dc.js"><link rel="prefetch" href="/assets/js/111.49dd6d9e.js"><link rel="prefetch" href="/assets/js/112.4c2fd181.js"><link rel="prefetch" href="/assets/js/113.efdd6a66.js"><link rel="prefetch" href="/assets/js/114.da2cae8a.js"><link rel="prefetch" href="/assets/js/115.67aa37ac.js"><link rel="prefetch" href="/assets/js/116.218d2a87.js"><link rel="prefetch" href="/assets/js/117.f1089a5c.js"><link rel="prefetch" href="/assets/js/118.75a378fc.js"><link rel="prefetch" href="/assets/js/119.46a07f3c.js"><link rel="prefetch" href="/assets/js/12.9bea25ca.js"><link rel="prefetch" href="/assets/js/120.42d8c42f.js"><link rel="prefetch" href="/assets/js/121.c2130312.js"><link rel="prefetch" href="/assets/js/122.393993ea.js"><link rel="prefetch" href="/assets/js/123.19f6914b.js"><link rel="prefetch" href="/assets/js/124.e19da728.js"><link rel="prefetch" href="/assets/js/125.1eea5b9b.js"><link rel="prefetch" href="/assets/js/126.bfb7f9e3.js"><link rel="prefetch" href="/assets/js/127.e3e8dd7f.js"><link rel="prefetch" href="/assets/js/128.769ec229.js"><link rel="prefetch" href="/assets/js/129.87cb8905.js"><link rel="prefetch" href="/assets/js/13.905fde5a.js"><link rel="prefetch" href="/assets/js/130.1e4a079b.js"><link rel="prefetch" href="/assets/js/131.962cd205.js"><link rel="prefetch" href="/assets/js/132.d0562ec3.js"><link rel="prefetch" href="/assets/js/133.d148ba67.js"><link rel="prefetch" href="/assets/js/134.00060a1d.js"><link rel="prefetch" href="/assets/js/135.762bedc2.js"><link rel="prefetch" href="/assets/js/136.40ae3720.js"><link rel="prefetch" href="/assets/js/137.fb298d3d.js"><link rel="prefetch" href="/assets/js/138.c1c84826.js"><link rel="prefetch" href="/assets/js/139.c80231ee.js"><link rel="prefetch" href="/assets/js/14.d242a799.js"><link rel="prefetch" href="/assets/js/140.4e8d6c1e.js"><link rel="prefetch" href="/assets/js/141.79feb0cf.js"><link rel="prefetch" href="/assets/js/142.3258ec18.js"><link rel="prefetch" href="/assets/js/143.398996fc.js"><link rel="prefetch" href="/assets/js/144.762572a3.js"><link rel="prefetch" href="/assets/js/145.7ad1e028.js"><link rel="prefetch" href="/assets/js/146.d978186d.js"><link rel="prefetch" href="/assets/js/147.37c6fbc7.js"><link rel="prefetch" href="/assets/js/148.599a5f59.js"><link rel="prefetch" href="/assets/js/149.450675fe.js"><link rel="prefetch" href="/assets/js/15.ce68cc14.js"><link rel="prefetch" href="/assets/js/150.5c90e277.js"><link rel="prefetch" href="/assets/js/151.b99bfd4f.js"><link rel="prefetch" href="/assets/js/152.de3c1075.js"><link rel="prefetch" href="/assets/js/153.3194fef9.js"><link rel="prefetch" href="/assets/js/154.bdf274cf.js"><link rel="prefetch" href="/assets/js/155.ac37a552.js"><link rel="prefetch" href="/assets/js/156.61e9d530.js"><link rel="prefetch" href="/assets/js/157.71861fb1.js"><link rel="prefetch" href="/assets/js/158.ff809b2b.js"><link rel="prefetch" href="/assets/js/159.f66a988b.js"><link rel="prefetch" href="/assets/js/16.b47ab1cb.js"><link rel="prefetch" href="/assets/js/160.1c9cf486.js"><link rel="prefetch" href="/assets/js/161.7e707b5a.js"><link rel="prefetch" href="/assets/js/162.98b088bd.js"><link rel="prefetch" href="/assets/js/163.cd3250f1.js"><link rel="prefetch" href="/assets/js/164.a567c478.js"><link rel="prefetch" href="/assets/js/165.4e9c624e.js"><link rel="prefetch" href="/assets/js/166.d182ed23.js"><link rel="prefetch" href="/assets/js/167.c01dce2e.js"><link rel="prefetch" href="/assets/js/168.abb64f0a.js"><link rel="prefetch" href="/assets/js/169.4455b779.js"><link rel="prefetch" href="/assets/js/17.59927b82.js"><link rel="prefetch" href="/assets/js/170.6106c644.js"><link rel="prefetch" href="/assets/js/171.dddf8d4a.js"><link rel="prefetch" href="/assets/js/172.d22915bd.js"><link rel="prefetch" href="/assets/js/173.9d3388a3.js"><link rel="prefetch" href="/assets/js/174.86a9ecc4.js"><link rel="prefetch" href="/assets/js/175.cca1f469.js"><link rel="prefetch" href="/assets/js/176.0c249788.js"><link rel="prefetch" href="/assets/js/177.b5de8cbd.js"><link rel="prefetch" href="/assets/js/178.27cfa270.js"><link rel="prefetch" href="/assets/js/179.413e87cc.js"><link rel="prefetch" href="/assets/js/18.7e7cf28d.js"><link rel="prefetch" href="/assets/js/180.759b9411.js"><link rel="prefetch" href="/assets/js/181.3a71051e.js"><link rel="prefetch" href="/assets/js/182.cbf716ab.js"><link rel="prefetch" href="/assets/js/183.aeb50482.js"><link rel="prefetch" href="/assets/js/184.29c69bd9.js"><link rel="prefetch" href="/assets/js/185.e51a3da4.js"><link rel="prefetch" href="/assets/js/186.18c287d3.js"><link rel="prefetch" href="/assets/js/187.4b6ff81c.js"><link rel="prefetch" href="/assets/js/188.ff9ceb16.js"><link rel="prefetch" href="/assets/js/189.2403c877.js"><link rel="prefetch" href="/assets/js/19.9b274655.js"><link rel="prefetch" href="/assets/js/190.99b0d1fb.js"><link rel="prefetch" href="/assets/js/191.20398c96.js"><link rel="prefetch" href="/assets/js/192.8a7996c0.js"><link rel="prefetch" href="/assets/js/193.859b0aa5.js"><link rel="prefetch" href="/assets/js/194.cfa3114d.js"><link rel="prefetch" href="/assets/js/195.7a0d211c.js"><link rel="prefetch" href="/assets/js/196.0ecc8a70.js"><link rel="prefetch" href="/assets/js/197.39d4896a.js"><link rel="prefetch" href="/assets/js/198.4c798790.js"><link rel="prefetch" href="/assets/js/199.d55261fa.js"><link rel="prefetch" href="/assets/js/20.cce3fd05.js"><link rel="prefetch" href="/assets/js/200.a049406f.js"><link rel="prefetch" href="/assets/js/201.f10653fb.js"><link rel="prefetch" href="/assets/js/202.f420cb56.js"><link rel="prefetch" href="/assets/js/203.e98347b7.js"><link rel="prefetch" href="/assets/js/204.f72d5b4f.js"><link rel="prefetch" href="/assets/js/205.58aef437.js"><link rel="prefetch" href="/assets/js/206.c923f761.js"><link rel="prefetch" href="/assets/js/207.d0ec7a5c.js"><link rel="prefetch" href="/assets/js/208.018e9653.js"><link rel="prefetch" href="/assets/js/209.dbce6a36.js"><link rel="prefetch" href="/assets/js/21.11cfa259.js"><link rel="prefetch" href="/assets/js/210.b37c9493.js"><link rel="prefetch" href="/assets/js/211.96988e7a.js"><link rel="prefetch" href="/assets/js/212.370f5382.js"><link rel="prefetch" href="/assets/js/213.a1b48312.js"><link rel="prefetch" href="/assets/js/214.7817a6b6.js"><link rel="prefetch" href="/assets/js/215.f4af78fb.js"><link rel="prefetch" href="/assets/js/216.a6d73e28.js"><link rel="prefetch" href="/assets/js/217.1b5f990e.js"><link rel="prefetch" href="/assets/js/218.05bb2023.js"><link rel="prefetch" href="/assets/js/219.f13be346.js"><link rel="prefetch" href="/assets/js/22.366f8c53.js"><link rel="prefetch" href="/assets/js/220.efecc1b4.js"><link rel="prefetch" href="/assets/js/221.0686f8ee.js"><link rel="prefetch" href="/assets/js/222.f4724858.js"><link rel="prefetch" href="/assets/js/223.1363290b.js"><link rel="prefetch" href="/assets/js/224.193196ad.js"><link rel="prefetch" href="/assets/js/225.326eef39.js"><link rel="prefetch" href="/assets/js/226.6cb29260.js"><link rel="prefetch" href="/assets/js/227.d227af20.js"><link rel="prefetch" href="/assets/js/228.70183150.js"><link rel="prefetch" href="/assets/js/229.e09f02e1.js"><link rel="prefetch" href="/assets/js/23.13e428f6.js"><link rel="prefetch" href="/assets/js/230.adb3547f.js"><link rel="prefetch" href="/assets/js/231.9d71788b.js"><link rel="prefetch" href="/assets/js/232.68a4a79a.js"><link rel="prefetch" href="/assets/js/233.adacbde2.js"><link rel="prefetch" href="/assets/js/234.72e40d86.js"><link rel="prefetch" href="/assets/js/235.64174a74.js"><link rel="prefetch" href="/assets/js/236.edf191aa.js"><link rel="prefetch" href="/assets/js/237.f52cf4fa.js"><link rel="prefetch" href="/assets/js/238.800dc15e.js"><link rel="prefetch" href="/assets/js/239.10d056f6.js"><link rel="prefetch" href="/assets/js/24.a75434a8.js"><link rel="prefetch" href="/assets/js/240.deed77e1.js"><link rel="prefetch" href="/assets/js/241.464e9bf0.js"><link rel="prefetch" href="/assets/js/242.7273d677.js"><link rel="prefetch" href="/assets/js/243.99fdcdc5.js"><link rel="prefetch" href="/assets/js/244.047fa678.js"><link rel="prefetch" href="/assets/js/245.bc611e24.js"><link rel="prefetch" href="/assets/js/246.bd893381.js"><link rel="prefetch" href="/assets/js/247.4b316a04.js"><link rel="prefetch" href="/assets/js/248.16c95d6a.js"><link rel="prefetch" href="/assets/js/249.489a221b.js"><link rel="prefetch" href="/assets/js/25.7c629b84.js"><link rel="prefetch" href="/assets/js/250.b8d57897.js"><link rel="prefetch" href="/assets/js/251.87cd587c.js"><link rel="prefetch" href="/assets/js/252.64208931.js"><link rel="prefetch" href="/assets/js/253.6d3b5f5e.js"><link rel="prefetch" href="/assets/js/254.c2d32b8e.js"><link rel="prefetch" href="/assets/js/255.515dad88.js"><link rel="prefetch" href="/assets/js/256.1df94050.js"><link rel="prefetch" href="/assets/js/257.0bb8f180.js"><link rel="prefetch" href="/assets/js/258.fc156d1e.js"><link rel="prefetch" href="/assets/js/259.f220aad5.js"><link rel="prefetch" href="/assets/js/26.13d5164c.js"><link rel="prefetch" href="/assets/js/260.f9aa733b.js"><link rel="prefetch" href="/assets/js/261.728e6974.js"><link rel="prefetch" href="/assets/js/262.9f5a41d6.js"><link rel="prefetch" href="/assets/js/263.5f9f4654.js"><link rel="prefetch" href="/assets/js/264.7155ed8c.js"><link rel="prefetch" href="/assets/js/265.cebcc996.js"><link rel="prefetch" href="/assets/js/266.78971ec0.js"><link rel="prefetch" href="/assets/js/267.35e0faf0.js"><link rel="prefetch" href="/assets/js/268.b4ccf3dd.js"><link rel="prefetch" href="/assets/js/27.194c4027.js"><link rel="prefetch" href="/assets/js/28.bfeb316f.js"><link rel="prefetch" href="/assets/js/29.65adeb4c.js"><link rel="prefetch" href="/assets/js/3.12c4eb56.js"><link rel="prefetch" href="/assets/js/30.91b0ba37.js"><link rel="prefetch" href="/assets/js/31.2b44dede.js"><link rel="prefetch" href="/assets/js/32.45e8e983.js"><link rel="prefetch" href="/assets/js/33.b9179deb.js"><link rel="prefetch" href="/assets/js/34.64bbbe88.js"><link rel="prefetch" href="/assets/js/35.46e9ec3d.js"><link rel="prefetch" href="/assets/js/36.ea0ca6d7.js"><link rel="prefetch" href="/assets/js/37.c8565b91.js"><link rel="prefetch" href="/assets/js/38.9b3567c5.js"><link rel="prefetch" href="/assets/js/39.69251b47.js"><link rel="prefetch" href="/assets/js/4.409d92c0.js"><link rel="prefetch" href="/assets/js/40.3b0f9976.js"><link rel="prefetch" href="/assets/js/41.268e2ee8.js"><link rel="prefetch" href="/assets/js/42.6cdee852.js"><link rel="prefetch" href="/assets/js/43.ccd86f85.js"><link rel="prefetch" href="/assets/js/44.d5aa9413.js"><link rel="prefetch" href="/assets/js/45.4982e424.js"><link rel="prefetch" href="/assets/js/46.bf810886.js"><link rel="prefetch" href="/assets/js/47.7ec8e205.js"><link rel="prefetch" href="/assets/js/48.58665ce3.js"><link rel="prefetch" href="/assets/js/49.b3dc7130.js"><link rel="prefetch" href="/assets/js/5.b1272c4d.js"><link rel="prefetch" href="/assets/js/50.04ca0c16.js"><link rel="prefetch" href="/assets/js/51.f4b2da0b.js"><link rel="prefetch" href="/assets/js/52.17519a17.js"><link rel="prefetch" href="/assets/js/53.b78b6830.js"><link rel="prefetch" href="/assets/js/54.ca2c50ff.js"><link rel="prefetch" href="/assets/js/55.c31ab05c.js"><link rel="prefetch" href="/assets/js/56.5c22b272.js"><link rel="prefetch" href="/assets/js/57.f352430d.js"><link rel="prefetch" href="/assets/js/58.3ad299f1.js"><link rel="prefetch" href="/assets/js/59.8780a57d.js"><link rel="prefetch" href="/assets/js/6.f48c38d5.js"><link rel="prefetch" href="/assets/js/60.1fe6825d.js"><link rel="prefetch" href="/assets/js/61.2a9797e9.js"><link rel="prefetch" href="/assets/js/63.5dd3c7ec.js"><link rel="prefetch" href="/assets/js/64.f4ef7806.js"><link rel="prefetch" href="/assets/js/65.31325a9c.js"><link rel="prefetch" href="/assets/js/66.18715d65.js"><link rel="prefetch" href="/assets/js/67.45ed5066.js"><link rel="prefetch" href="/assets/js/68.bf97b711.js"><link rel="prefetch" href="/assets/js/69.3fca1c15.js"><link rel="prefetch" href="/assets/js/7.967862d3.js"><link rel="prefetch" href="/assets/js/70.a85182b0.js"><link rel="prefetch" href="/assets/js/71.dae87348.js"><link rel="prefetch" href="/assets/js/72.eb2f1490.js"><link rel="prefetch" href="/assets/js/73.81784cd9.js"><link rel="prefetch" href="/assets/js/74.df09c1ac.js"><link rel="prefetch" href="/assets/js/75.2b0ad4b6.js"><link rel="prefetch" href="/assets/js/76.66b47957.js"><link rel="prefetch" href="/assets/js/77.b62c7a01.js"><link rel="prefetch" href="/assets/js/78.28c5811a.js"><link rel="prefetch" href="/assets/js/79.95d475d5.js"><link rel="prefetch" href="/assets/js/8.673a7c19.js"><link rel="prefetch" href="/assets/js/80.2d75d773.js"><link rel="prefetch" href="/assets/js/81.cfda913f.js"><link rel="prefetch" href="/assets/js/82.9e763e4c.js"><link rel="prefetch" href="/assets/js/83.01d9915e.js"><link rel="prefetch" href="/assets/js/84.e226c26e.js"><link rel="prefetch" href="/assets/js/85.5d0b08f7.js"><link rel="prefetch" href="/assets/js/86.e830df14.js"><link rel="prefetch" href="/assets/js/87.3de70613.js"><link rel="prefetch" href="/assets/js/88.f8d2125b.js"><link rel="prefetch" href="/assets/js/89.0e7414a0.js"><link rel="prefetch" href="/assets/js/9.063ff9b8.js"><link rel="prefetch" href="/assets/js/90.38486cc7.js"><link rel="prefetch" href="/assets/js/91.f8e110f3.js"><link rel="prefetch" href="/assets/js/92.493e9700.js"><link rel="prefetch" href="/assets/js/93.5e93d215.js"><link rel="prefetch" href="/assets/js/94.3afd7f6b.js"><link rel="prefetch" href="/assets/js/95.2bbb27a0.js"><link rel="prefetch" href="/assets/js/96.aa439df5.js"><link rel="prefetch" href="/assets/js/97.962d08ca.js"><link rel="prefetch" href="/assets/js/98.e6b9d371.js"><link rel="prefetch" href="/assets/js/99.f7ed391d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ccbbb76c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Monster</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Daily/" class="nav-link">
+  😇 日常
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌈 CSS" class="dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌈 CSS" class="mobile-dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/CSS/Introduce/" class="nav-link">
+  介绍
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Structure/" class="nav-link">
+  架构
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Tools/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><h4>
+          预处理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Less/" class="nav-link">
+  Less
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Sass/" class="nav-link">
+  Sass
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Stylus/" class="nav-link">
+  Stylus
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🚀 JS" class="dropdown-title"><span class="title">🚀 JS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🚀 JS" class="mobile-dropdown-title"><span class="title">🚀 JS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/JavaScript/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/ES@NEXT/" class="nav-link">
+  ES@next
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/Code/" class="nav-link">
+  手撕代码
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/FP/" class="nav-link">
+  函数式编程
+</a></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vuex/" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Router/" class="nav-link">
+  Vue Router
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue SSR/" class="nav-link">
+  Vue SSR
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue CLI/" class="nav-link">
+  Vue CLI
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Loader/" class="nav-link">
+  Vue Loader
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/React/React/" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌇 工程化" class="dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌇 工程化" class="mobile-dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Engineering/Summary/" class="nav-link">
+  概述
+</a></li><li class="dropdown-item"><h4>
+          编译构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Babel/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Vite/" class="nav-link">
+  Vite
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Rollup/" class="nav-link">
+  Rollup
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Gulp/" class="nav-link">
+  Gulp
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Grunt/" class="nav-link">
+  Grunt
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Snowpack/" class="nav-link">
+  Snowpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Parcel/" class="nav-link">
+  Parcel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/SWC/" class="nav-link">
+  SWC
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Esbuild/" class="nav-link">
+  Esbuild
+</a></li></ul></li><li class="dropdown-item"><h4>
+          CI/CD
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Github Action/" class="nav-link">
+  Github Action
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Docker/" class="nav-link">
+  Docker
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Lerna/" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-subitem"><a href="/Engineering/PackageManager/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-subitem"><a href="/Engineering/CLI/" class="nav-link">
+  脚手架
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎁 其它" class="dropdown-title"><span class="title">🎁 其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎁 其它" class="mobile-dropdown-title"><span class="title">🎁 其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Other/DataStructure/" class="nav-link">
+  🛠 数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/Other/DesignModel/" class="nav-link">
+  🖊 设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Internet/" class="nav-link">
+  🔗 网络协议
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Performance/" class="nav-link">
+  ⏳ 性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Safe/" class="nav-link">
+  🚨 安全
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Test/" class="nav-link">
+  💯 测试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Interview/" class="nav-link">
+  🀄 面试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Window/" class="nav-link">
+  💻 Window
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Linux/" class="nav-link">
+  🖥 Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Mock/" class="nav-link">
+  ❌ Mock
+</a></li><li class="dropdown-item"><!----> <a href="/Other/VScode/" class="nav-link">
+  🆚 VScode
+</a></li><li class="dropdown-item"><h4>
+          📖 文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-subitem"><a href="/Other/Markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/Other/Plan/" class="nav-link">
+  计划
+</a></li><li class="dropdown-subitem"><a href="/Other/More/" class="nav-link">
+  后续
+</a></li></ul></li><li class="dropdown-item"><h4>
+          🛢 数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/DataBase/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/MongoDB/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/Redis/" class="nav-link">
+  Redis
+</a></li></ul></li><li class="dropdown-item"><h4>
+          📲 应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Application/MiniProgram/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/PC/" class="nav-link">
+  PC
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/H5/" class="nav-link">
+  H5
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Code/" class="nav-link">
+  👊源码
+</a></div><div class="nav-item"><a href="https://monsterxiong.github.io/Node/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  😍 Node
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/MonsterXiong/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  👷GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Daily/" class="nav-link">
+  😇 日常
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌈 CSS" class="dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌈 CSS" class="mobile-dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/CSS/Introduce/" class="nav-link">
+  介绍
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Structure/" class="nav-link">
+  架构
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Tools/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><h4>
+          预处理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Less/" class="nav-link">
+  Less
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Sass/" class="nav-link">
+  Sass
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Stylus/" class="nav-link">
+  Stylus
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🚀 JS" class="dropdown-title"><span class="title">🚀 JS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🚀 JS" class="mobile-dropdown-title"><span class="title">🚀 JS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/JavaScript/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/ES@NEXT/" class="nav-link">
+  ES@next
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/Code/" class="nav-link">
+  手撕代码
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/FP/" class="nav-link">
+  函数式编程
+</a></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vuex/" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Router/" class="nav-link">
+  Vue Router
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue SSR/" class="nav-link">
+  Vue SSR
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue CLI/" class="nav-link">
+  Vue CLI
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Loader/" class="nav-link">
+  Vue Loader
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/React/React/" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌇 工程化" class="dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌇 工程化" class="mobile-dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Engineering/Summary/" class="nav-link">
+  概述
+</a></li><li class="dropdown-item"><h4>
+          编译构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Babel/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Vite/" class="nav-link">
+  Vite
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Rollup/" class="nav-link">
+  Rollup
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Gulp/" class="nav-link">
+  Gulp
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Grunt/" class="nav-link">
+  Grunt
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Snowpack/" class="nav-link">
+  Snowpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Parcel/" class="nav-link">
+  Parcel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/SWC/" class="nav-link">
+  SWC
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Esbuild/" class="nav-link">
+  Esbuild
+</a></li></ul></li><li class="dropdown-item"><h4>
+          CI/CD
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Github Action/" class="nav-link">
+  Github Action
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Docker/" class="nav-link">
+  Docker
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Lerna/" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-subitem"><a href="/Engineering/PackageManager/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-subitem"><a href="/Engineering/CLI/" class="nav-link">
+  脚手架
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎁 其它" class="dropdown-title"><span class="title">🎁 其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎁 其它" class="mobile-dropdown-title"><span class="title">🎁 其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Other/DataStructure/" class="nav-link">
+  🛠 数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/Other/DesignModel/" class="nav-link">
+  🖊 设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Internet/" class="nav-link">
+  🔗 网络协议
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Performance/" class="nav-link">
+  ⏳ 性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Safe/" class="nav-link">
+  🚨 安全
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Test/" class="nav-link">
+  💯 测试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Interview/" class="nav-link">
+  🀄 面试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Window/" class="nav-link">
+  💻 Window
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Linux/" class="nav-link">
+  🖥 Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Mock/" class="nav-link">
+  ❌ Mock
+</a></li><li class="dropdown-item"><!----> <a href="/Other/VScode/" class="nav-link">
+  🆚 VScode
+</a></li><li class="dropdown-item"><h4>
+          📖 文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-subitem"><a href="/Other/Markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/Other/Plan/" class="nav-link">
+  计划
+</a></li><li class="dropdown-subitem"><a href="/Other/More/" class="nav-link">
+  后续
+</a></li></ul></li><li class="dropdown-item"><h4>
+          🛢 数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/DataBase/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/MongoDB/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/Redis/" class="nav-link">
+  Redis
+</a></li></ul></li><li class="dropdown-item"><h4>
+          📲 应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Application/MiniProgram/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/PC/" class="nav-link">
+  PC
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/H5/" class="nav-link">
+  H5
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Code/" class="nav-link">
+  👊源码
+</a></div><div class="nav-item"><a href="https://monsterxiong.github.io/Node/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  😍 Node
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/MonsterXiong/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  👷GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Github Action</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Engineering/Github%20Action/#概述" class="sidebar-link">概述</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Engineering/Github%20Action/#为什么使用-github-actions" class="sidebar-link">为什么使用 Github Actions</a></li><li class="sidebar-sub-header"><a href="/Engineering/Github%20Action/#github-actions-是什么" class="sidebar-link">Github Actions 是什么</a></li><li class="sidebar-sub-header"><a href="/Engineering/Github%20Action/#基本概念" class="sidebar-link">基本概念</a></li><li class="sidebar-sub-header"><a href="/Engineering/Github%20Action/#常见的-actions-配置" class="sidebar-link">常见的 Actions 配置</a></li></ul></li><li><a href="/Engineering/Github%20Action/#搭配-docker" class="sidebar-link">搭配 Docker</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Engineering/Github%20Action/#为什么要使用-docker" class="sidebar-link">为什么要使用 Docker</a></li><li class="sidebar-sub-header"><a href="/Engineering/Github%20Action/#实践" class="sidebar-link">实践</a></li></ul></li><li><a href="/Engineering/Github%20Action/#github-actions-部署-vuepress-文档" class="sidebar-link">GitHub Actions 部署 VuePress 文档</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Engineering/Github%20Action/#vuepress-文档" class="sidebar-link">Vuepress 文档</a></li><li class="sidebar-sub-header"><a href="/Engineering/Github%20Action/#创建-github-actions" class="sidebar-link">创建 GitHub Actions</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="github-action"><a href="#github-action" class="header-anchor">#</a> Github Action</h1> <ul><li><p>husky</p></li> <li><p>代码规范</p> <ul><li>ESLint</li> <li>esditorconfig</li></ul></li> <li><p>commit 提交规范</p></li></ul> <h2 id="概述"><a href="#概述" class="header-anchor">#</a> 概述</h2> <h3 id="为什么使用-github-actions"><a href="#为什么使用-github-actions" class="header-anchor">#</a> 为什么使用 Github Actions</h3> <p>前端部署一般是将打包后的代码放到 nginx html 目录就可以了，每次修改文件，我们都需要重新打包，登陆服务器，上传代码，重启服务器。Github Actions 就可以帮我们做这一系列的操作。</p> <h3 id="github-actions-是什么"><a href="#github-actions-是什么" class="header-anchor">#</a> Github Actions 是什么</h3> <p>持续集成由很多操作组成，比如拉去最新代码，运行测试，登陆服务器、部署服务器等，</p> <p>一般开发流程是：需求=&gt;开发=&gt;构建=&gt;测试=&gt;预发=&gt;部署，这些操作是可重复利用的，Github 集成了 actions 市场，允许开发者把操作写成独立的脚本，发布到 Actions 市场允许所有开发者使用。</p> <p>Github 给我们提供了一个以下配置的服务器来允许我们配置对应的 actions:</p> <ul><li>2-core CPU</li> <li>7GB of RAM memory</li> <li>14GB of SSD disk space</li></ul> <p>如果你有网络时延 的需求（比如推送及拉取镜像时产生的网络时延），可以自建服务器</p> <h3 id="基本概念"><a href="#基本概念" class="header-anchor">#</a> 基本概念</h3> <p>workflow(流程)：持续集成一次运行的过程，就是一个 workflow。</p> <p>job(任务)：一个 workflow 由一个或多个 jobs 构成，含义是一次持续集成的运行，可以完成多个任务。</p> <p>step(步骤)：每个 job 由多个 step 构成，一步步完成。</p> <p>action(动作)：每个 step 可以依次执行一个或多个命令（action）。</p> <p>创建 workflow 文件，在项目的./github/workflows 目录，创建一个 workflow 文件，例如 ci.yml。</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code><span class="token comment"># workflow名称。省略的话，默认为当前workflow文件名</span>
+<span class="token key atrule">name</span><span class="token punctuation">:</span> Node.js CI
+<span class="token comment"># 触发workflow的条件，</span>
+<span class="token key atrule">on</span><span class="token punctuation">:</span>
+  <span class="token key atrule">push</span><span class="token punctuation">:</span>
+<span class="token comment"># 只有master分支发生push事件时，才会触发workflow</span>
+  <span class="token key atrule">branches</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> master <span class="token punctuation">]</span>
+  <span class="token key atrule">pull_request</span><span class="token punctuation">:</span>
+  <span class="token key atrule">branches</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> master <span class="token punctuation">]</span>
+
+<span class="token comment"># jobs表示执行的一项或多项任务</span>
+<span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+<span class="token comment"># 任务的job_id，具体名称自定义，这里build代表打包</span>
+  <span class="token key atrule">build</span><span class="token punctuation">:</span>
+
+    <span class="token comment"># # runs-on字段指定运行所需要的虚拟机环境。注意：这个是必填字段，有[ubuntu | windows | macos]-latest三种</span>
+    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
+<span class="token comment"># 用于配置当前workflow的参数</span>
+    <span class="token key atrule">strategy</span><span class="token punctuation">:</span>
+      <span class="token key atrule">matrix</span><span class="token punctuation">:</span>
+        <span class="token comment"># node-version指定node版本，有三种配置方式，可以指定多个版本都运行，也可以指定单个版本下运行</span>
+        <span class="token comment"># 1. 使用三个node版本，'x'是一个通配符</span>
+        <span class="token comment"># node-version: [8.x, 10.x, 12.x]</span>
+        <span class="token comment"># 2. 可以写具体的版本好</span>
+        <span class="token comment"># node-version: [8.11.2, 14.16.0]</span>
+        <span class="token comment"># 3. 单个版本号</span>
+        <span class="token comment"># node-version: '12.x'</span>
+        <span class="token comment"># 如果不指定node版本，则GitHub使用环境的默认值node版本</span>
+        <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>8.x<span class="token punctuation">,</span> 10.x<span class="token punctuation">,</span> 12.x<span class="token punctuation">]</span>
+
+    <span class="token comment"># steps字段指定每个job的运行步骤，可以包含一个或多个步骤，每个步骤都可以配置指定字段</span>
+    <span class="token key atrule">steps</span><span class="token punctuation">:</span>
+    <span class="token comment"># 切代码到 runner拉取代码。这里用的是 GitHub 官方的 action: actions/checkout@v2</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2
+    <span class="token comment"># 在当前操作系统安装node</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Use Node.js $<span class="token punctuation">{</span><span class="token punctuation">{</span> matrix.node<span class="token punctuation">-</span>version <span class="token punctuation">}</span><span class="token punctuation">}</span>
+      <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v1
+      <span class="token key atrule">with</span><span class="token punctuation">:</span>
+        <span class="token key atrule">node-version</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> matrix.node<span class="token punctuation">-</span>version <span class="token punctuation">}</span><span class="token punctuation">}</span>
+    <span class="token comment"># npm ci和yarn --frozen-lockfile安装package-lock.json或者npm-shrinkwrap.json文件中的依赖，这样可以防止npm install安装时lock文件发生变化。</span>
+    <span class="token comment"># 该运行的命令或者action</span>
+    <span class="token comment"># 安装依赖、运行测试、打包</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm install
+    <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm test
+    <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm run build
+      <span class="token key atrule">env</span><span class="token punctuation">:</span>
+        <span class="token key atrule">CI</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+</code></pre></div><h3 id="常见的-actions-配置"><a href="#常见的-actions-配置" class="header-anchor">#</a> 常见的 Actions 配置</h3> <ul><li>打版本标签 Create Tag Release</li> <li>创建 Github Pages 站点</li> <li>多人协作开发，云端代码检测</li></ul> <p><a href="https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions?fileGuid=1PWJAvQBtLA5IGh3" target="_blank" rel="noopener noreferrer">更多 Actions 配置<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="搭配-docker"><a href="#搭配-docker" class="header-anchor">#</a> 搭配 Docker</h2> <h3 id="为什么要使用-docker"><a href="#为什么要使用-docker" class="header-anchor">#</a> 为什么要使用 Docker</h3> <p>没有 Docker 之前，使用 webhook 实现自动部署，但后面遇到了服务器到期更换服务器的时候，就只能重复操作进行迁移，而且文件目录管理混乱，项目变多时，维护成本也会越来越高，Docker 五大优势：持续集成、版本控制、可移植性、隔离性和安全性</p> <h3 id="实践"><a href="#实践" class="header-anchor">#</a> 实践</h3> <h4 id="在项目根目录下新建-nginx-配置"><a href="#在项目根目录下新建-nginx-配置" class="header-anchor">#</a> 在项目根目录下新建 Nginx 配置</h4> <p>在项目根目录新建 Nginx 配置文件 vhost.nginx.conf。</p> <div class="language-conf extra-class"><pre class="language-text"><code>server {
+listen 80;
+server_name localhost;
+location / {
+  root /usr/share/nginx/html;
+  index index.html index.htm;
+  proxy_set_header Host $host;
+  if (!-f $request_filename) {
+    rewrite ^.*$ /index.html break;
+  }
+}
+error_page 500 502 503 504 /50x.html;
+location = /50x.html {
+    root /usr/share/nginx/html;
+  }
+}
+</code></pre></div><h4 id="项目根目录新建-dockerfile-文件"><a href="#项目根目录新建-dockerfile-文件" class="header-anchor">#</a> 项目根目录新建 Dockerfile 文件</h4> <p>在项目根目录新建 Dockerfile 文件，构建镜像包使用。</p> <div class="language-sh extra-class"><pre class="language-sh"><code>FROM nginx
+COPY ./dist/ /usr/share/nginx/html/
+<span class="token comment"># 第一步nginx配置文件名称</span>
+  COPY ./vhost.nginx.conf /etc/nginx/conf.d/bilibili-vue.conf
+EXPOSE <span class="token number">80</span>
+</code></pre></div><h4 id="配置容器镜像服务"><a href="#配置容器镜像服务" class="header-anchor">#</a> 配置容器镜像服务</h4> <p>这里我选择了阿里云的容器镜像服务 (https://www.aliyun.com/product/acr?fileGuid=1PWJAvQBtLA5IGh3)，为什么不使用国外的 dockhub (https://hub.docker.com/?fileGuid=1PWJAvQBtLA5IGh3) 呢，因为这样使用起来速度快一点，而且有免费的个人版足够我们使用。</p> <ol><li>初次打开需要开通服务，配置登陆密码（记录下来，后面要用）</li> <li>然后创建命名空间，再创建我们的镜像仓库，这里如果不想别人下载你的镜像的话就可以选择私有。然后点击下一步配置代码源，这里我选择了本地仓库，一方面是为了日志统一，可以在 Github Actions 看到所有日志，一方面是可以通过命令行直接推送镜像到镜像仓库，自由度比较高。</li> <li>之后就可以在页面看到我们创建的仓库，点击仓库名称进入，可以看到仓库的基本信息和操作指南，这个时候一个镜像仓库就完全创建成功了。</li></ol> <h4 id="如何跟-actions-联动"><a href="#如何跟-actions-联动" class="header-anchor">#</a> 如何跟 Actions 联动</h4> <p>我们只要在 Actions 中 build 镜像后登陆阿里云 Registry 实例就好了，但是这个时候如果铭文写在 yml 中肯定不行，可以在 Settings =&gt; Secrets =&gt; New repository secret ，设置 secret，配置上述容器镜像账号的用户名（阿里云用户名）和密码（上述配置容器镜像服务时设置的登录密码）。</p> <h4 id="完整的-actions"><a href="#完整的-actions" class="header-anchor">#</a> 完整的 Actions</h4> <div class="language-sh extra-class"><pre class="language-sh"><code>name: Docker Image CI <span class="token comment"># Actions名称</span>
+on: <span class="token punctuation">[</span>push<span class="token punctuation">]</span> <span class="token comment"># 执行时机</span>
+jobs:
+
+<span class="token comment"># 这里我使用的是yarn，想用npm的同学将yarn命令修改为npm命令即可</span>
+build:
+runs-on: ubuntu-latest
+steps:
+- name: checkout
+uses: actions/checkout@master
+<span class="token comment"># 安装依赖</span>
+- name: <span class="token function">install</span>
+run: <span class="token function">yarn</span>
+<span class="token comment"># 打包</span>
+- name: build project
+run: <span class="token function">yarn</span> run build
+
+<span class="token comment"># 打包镜像推送到阿里云容器镜像服务</span>
+- name: Build the Docker image
+run: <span class="token operator">|</span>
+docker login --username<span class="token operator">=</span><span class="token variable">${{ secrets.DOCKER_USERNAME }</span><span class="token punctuation">}</span> registry.cn-hangzhou.aliyuncs.com --password<span class="token operator">=</span><span class="token variable">${{ secrets.DOCKER_PASSWORD }</span><span class="token punctuation">}</span>
+docker build -t bilibili-vue:latest <span class="token builtin class-name">.</span>
+docker tag bilibili-vue registry.cn-hangzhou.aliyuncs.com/zlyyyy/bilibili-vue:latest
+docker push registry.cn-hangzhou.aliyuncs.com/zlyyyy/bilibili-vue:latest <span class="token comment"># 推送</span>
+- name: <span class="token function">ssh</span> docker login <span class="token comment"># 使用appleboy/ssh-action@master登录服务器执行拉取镜像脚本，服务器ip、用户名、密码配置方式同容器镜像服务配置方式一样</span>
+uses: appleboy/ssh-action@master
+with:
+        host: <span class="token variable">${{ secrets.SSH_HOST }</span><span class="token punctuation">}</span>
+username: <span class="token variable">${{ secrets.SSH_USERNAME }</span><span class="token punctuation">}</span>
+password: <span class="token variable">${{ secrets.SSH_PASSWORD }</span><span class="token punctuation">}</span>
+script: <span class="token builtin class-name">cd</span> ~ <span class="token operator">&amp;&amp;</span> <span class="token function">sh</span> bilibili-vue-deploy.sh <span class="token variable">${{ secrets.DOCKER_USERNAME }</span><span class="token punctuation">}</span> <span class="token variable">${{ secrets.DOCKER_PASSWORD }</span><span class="token punctuation">}</span>
+</code></pre></div><p>最后一步登录服务器后，我执行了一个脚本来拉取云端最新镜像，并删除旧镜像，启动新镜像。脚本内容如下。</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">echo</span> -e <span class="token string">&quot;---------docker Login--------&quot;</span>
+docker login --username<span class="token operator">=</span><span class="token variable">$1</span> registry.cn-hangzhou.aliyuncs.com --password<span class="token operator">=</span><span class="token variable">$2</span>
+<span class="token builtin class-name">echo</span> -e <span class="token string">&quot;---------docker Stop--------&quot;</span>
+docker stop bilibili-vue
+<span class="token builtin class-name">echo</span> -e <span class="token string">&quot;---------docker Rm--------&quot;</span>
+docker <span class="token function">rm</span> bilibili-vue
+docker rmi registry.cn-hangzhou.aliyuncs.com/zlyyyy/bilibili-vue:latest
+<span class="token builtin class-name">echo</span> -e <span class="token string">&quot;---------docker Pull--------&quot;</span>
+docker pull registry.cn-hangzhou.aliyuncs.com/zlyyyy/bilibili-vue:latest
+<span class="token builtin class-name">echo</span> -e <span class="token string">&quot;---------docker Create and Start--------&quot;</span>
+docker run --rm -d -p <span class="token number">8081</span>:80 --name bilibili-vue registry.cn-hangzhou.aliyuncs.com/zlyyyy/bilibili-vue:latest
+<span class="token builtin class-name">echo</span> -e <span class="token string">&quot;---------deploy Success--------&quot;</span>
+</code></pre></div><h4 id="测试流程-查看日志"><a href="#测试流程-查看日志" class="header-anchor">#</a> 测试流程，查看日志</h4> <p>推送一次代码测试，打开 Actions 后可以看到自动运行的实时 workflow 结果，以及每步的日志信息。</p> <h4 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h4> <p>自动化部署成功之后，我们不需要每次修改代码，手动更新线上了，后面迁移也会更方便，还有更多的自动化部署方式，比如直接使用 Github+阿里云镜像仓库的触发器一样可以做到，容器服务有很多云服务厂商都是一样的使用方式</p> <h2 id="github-actions-部署-vuepress-文档"><a href="#github-actions-部署-vuepress-文档" class="header-anchor">#</a> GitHub Actions 部署 VuePress 文档</h2> <p>GitHub Actions 是 GitHub 的持续集成服务。在 2018 年 10 月推出。</p> <h3 id="vuepress-文档"><a href="#vuepress-文档" class="header-anchor">#</a> Vuepress 文档</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># 创建并进入新目录，使用包管理器进行初始化并安装vuepress依赖</span>
+<span class="token function">mkdir</span> vuepress-demo <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> vuepress-demo <span class="token operator">&amp;&amp;</span> <span class="token function">yarn</span> init -y <span class="token operator">&amp;&amp;</span> <span class="token function">yarn</span> <span class="token function">add</span> -D vuepress
+
+<span class="token comment"># 创建文档</span>
+<span class="token function">mkdir</span> docs <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">echo</span> <span class="token string">'# Hello VuePress'</span> <span class="token operator">&gt;</span> docs/README.md
+
+<span class="token comment"># 添加script脚本</span>
+  <span class="token string">&quot;scripts&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;docs:dev&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span>,
+    <span class="token string">&quot;docs:build&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token comment"># 启动服务</span>
+<span class="token function">yarn</span> docs:dev
+
+<span class="token comment"># 在docs/.vuepress/config.js设置正确的base</span>
+</code></pre></div><h3 id="创建-github-actions"><a href="#创建-github-actions" class="header-anchor">#</a> 创建 GitHub Actions</h3> <p>首先在仓库菜单栏中选择 Actions 进入到创建页面。</p> <p>简单的修改一下命令</p> <div class="language-sh extra-class"><pre class="language-sh"><code>
+<span class="token comment"># This is a basic workflow to help you get started with Actions</span>
+
+name: CI
+
+<span class="token comment"># Controls when the action will run.</span>
+on:
+  <span class="token comment"># Triggers the workflow on push or pull request events but only for the master branch</span>
+  push:
+    branches: <span class="token punctuation">[</span> master <span class="token punctuation">]</span>
+  pull_request:
+    branches: <span class="token punctuation">[</span> master <span class="token punctuation">]</span>
+
+  <span class="token comment"># Allows you to run this workflow manually from the Actions tab</span>
+  workflow_dispatch:
+
+<span class="token comment"># A workflow run is made up of one or more jobs that can run sequentially or in parallel</span>
+jobs:
+  <span class="token comment"># This workflow contains a single job called &quot;build&quot;</span>
+  build:
+    <span class="token comment"># The type of runner that the job will run on</span>
+    runs-on: ubuntu-latest
+
+    <span class="token comment"># Steps represent a sequence of tasks that will be executed as part of the job</span>
+    steps:
+      <span class="token comment"># Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it</span>
+      - uses: actions/checkout@v2
+
+      <span class="token comment"># Runs a single command using the runners shell</span>
+      - name: Run a ci script
+        run: <span class="token function">npm</span> i
+      - name: Run a docs script
+        env:
+          TOKEN: <span class="token variable">${{secrets.DEPLOY_KEY}</span><span class="token punctuation">}</span>
+        run: <span class="token function">npm</span> run docs
+      <span class="token comment"># Runs a set of commands using the runners shell</span>
+      - name: Run a multi-line script
+        run: <span class="token operator">|</span>
+          <span class="token builtin class-name">echo</span> Add other actions to build,
+          <span class="token builtin class-name">echo</span> test, and deploy your project.
+</code></pre></div><p>GitHub Actions 的配置文件叫做 workflow 文件，存放在代码仓库的.github/workflows 目录。</p> <p>workflow 文件采用 YAML 格式，文件名可以任意取，但是后缀名统一为.yml，一个库可以有多个 workflow 文件。GitHub 只要发现.github/workflows 目录里面有.yml 文件，就会自动运行该文件。</p> <p>因为代码中定义了一个环境变量 Token 用来 git ssh 免密操作登录的，如果不配置就无法 git push 这些操作。我们需要将构建后的代码发到 GitHub 仓库，因此需要 GitHub 密钥。</p> <p>这个密钥存储到当前仓库的 Settings/Secrets 里面。</p> <p>再创建文件 build/deploy.sh 用来执行 bash 脚本。</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># Prepare</span>
+<span class="token builtin class-name">cd</span> docs
+<span class="token function">rm</span> -rf .vuepress/dist
+
+<span class="token comment"># Build</span>
+vuepress build
+
+<span class="token comment"># Publish to GitHub Pages</span>
+<span class="token builtin class-name">cd</span> .vuepress/dist
+<span class="token function">git</span> init
+<span class="token function">git</span> config user.name <span class="token string">&quot;MonsterXiong&quot;</span>
+<span class="token function">git</span> config user.email <span class="token string">&quot;942849672@qq.com&quot;</span>
+<span class="token function">git</span> <span class="token function">add</span> -A
+<span class="token function">git</span> commit -m <span class="token string">&quot;[vuepress] update docs&quot;</span>
+<span class="token function">git</span> push --force <span class="token string">&quot;https://<span class="token variable">${TOKEN}</span>@github.com/MonsterXiong/vuepress-demo.git&quot;</span> <span class="token string">&quot;master:gh-pages&quot;</span>
+
+<span class="token comment"># Cleanup</span>
+<span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>/<span class="token punctuation">..</span>
+<span class="token function">rm</span> -rf .vuepress/dist
+</code></pre></div><p>在 package.json 中增加一行 Scripts 命令。</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;docs:dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;docs:build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;docs&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bash ./build/deploy.sh&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>最后提交代码，就会自动执行 Actions 将部署 Vuepress 文档到 GitHub Pages。我们就可以访问页面了，而且之后的每一次提交都会自动执行然后去更新文档的内容。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.51963213.js" defer></script><script src="/assets/js/2.d3d2c42b.js" defer></script><script src="/assets/js/62.3508bbc0.js" defer></script>
+  </body>
+</html>

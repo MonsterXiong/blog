@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>题目 | Monster</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/assets/favicon.ico">
+    <meta name="description" content="个人收藏夹">
+    
+    <link rel="preload" href="/assets/css/0.styles.ccbbb76c.css" as="style"><link rel="preload" href="/assets/js/app.51963213.js" as="script"><link rel="preload" href="/assets/js/2.d3d2c42b.js" as="script"><link rel="preload" href="/assets/js/235.64174a74.js" as="script"><link rel="prefetch" href="/assets/js/10.26c993fa.js"><link rel="prefetch" href="/assets/js/100.4c3533ca.js"><link rel="prefetch" href="/assets/js/101.83f4c2fa.js"><link rel="prefetch" href="/assets/js/102.a68e5f2f.js"><link rel="prefetch" href="/assets/js/103.30e3f8ad.js"><link rel="prefetch" href="/assets/js/104.e1880ec5.js"><link rel="prefetch" href="/assets/js/105.edd46bf2.js"><link rel="prefetch" href="/assets/js/106.9afe0065.js"><link rel="prefetch" href="/assets/js/107.b27ec771.js"><link rel="prefetch" href="/assets/js/108.b61037b1.js"><link rel="prefetch" href="/assets/js/109.c172e4ec.js"><link rel="prefetch" href="/assets/js/11.0e8e41c3.js"><link rel="prefetch" href="/assets/js/110.b5f429dc.js"><link rel="prefetch" href="/assets/js/111.49dd6d9e.js"><link rel="prefetch" href="/assets/js/112.4c2fd181.js"><link rel="prefetch" href="/assets/js/113.efdd6a66.js"><link rel="prefetch" href="/assets/js/114.da2cae8a.js"><link rel="prefetch" href="/assets/js/115.67aa37ac.js"><link rel="prefetch" href="/assets/js/116.218d2a87.js"><link rel="prefetch" href="/assets/js/117.f1089a5c.js"><link rel="prefetch" href="/assets/js/118.75a378fc.js"><link rel="prefetch" href="/assets/js/119.46a07f3c.js"><link rel="prefetch" href="/assets/js/12.9bea25ca.js"><link rel="prefetch" href="/assets/js/120.42d8c42f.js"><link rel="prefetch" href="/assets/js/121.c2130312.js"><link rel="prefetch" href="/assets/js/122.393993ea.js"><link rel="prefetch" href="/assets/js/123.19f6914b.js"><link rel="prefetch" href="/assets/js/124.e19da728.js"><link rel="prefetch" href="/assets/js/125.1eea5b9b.js"><link rel="prefetch" href="/assets/js/126.bfb7f9e3.js"><link rel="prefetch" href="/assets/js/127.e3e8dd7f.js"><link rel="prefetch" href="/assets/js/128.769ec229.js"><link rel="prefetch" href="/assets/js/129.87cb8905.js"><link rel="prefetch" href="/assets/js/13.905fde5a.js"><link rel="prefetch" href="/assets/js/130.1e4a079b.js"><link rel="prefetch" href="/assets/js/131.962cd205.js"><link rel="prefetch" href="/assets/js/132.d0562ec3.js"><link rel="prefetch" href="/assets/js/133.d148ba67.js"><link rel="prefetch" href="/assets/js/134.00060a1d.js"><link rel="prefetch" href="/assets/js/135.762bedc2.js"><link rel="prefetch" href="/assets/js/136.40ae3720.js"><link rel="prefetch" href="/assets/js/137.fb298d3d.js"><link rel="prefetch" href="/assets/js/138.c1c84826.js"><link rel="prefetch" href="/assets/js/139.c80231ee.js"><link rel="prefetch" href="/assets/js/14.d242a799.js"><link rel="prefetch" href="/assets/js/140.4e8d6c1e.js"><link rel="prefetch" href="/assets/js/141.79feb0cf.js"><link rel="prefetch" href="/assets/js/142.3258ec18.js"><link rel="prefetch" href="/assets/js/143.398996fc.js"><link rel="prefetch" href="/assets/js/144.762572a3.js"><link rel="prefetch" href="/assets/js/145.7ad1e028.js"><link rel="prefetch" href="/assets/js/146.d978186d.js"><link rel="prefetch" href="/assets/js/147.37c6fbc7.js"><link rel="prefetch" href="/assets/js/148.599a5f59.js"><link rel="prefetch" href="/assets/js/149.450675fe.js"><link rel="prefetch" href="/assets/js/15.ce68cc14.js"><link rel="prefetch" href="/assets/js/150.5c90e277.js"><link rel="prefetch" href="/assets/js/151.b99bfd4f.js"><link rel="prefetch" href="/assets/js/152.de3c1075.js"><link rel="prefetch" href="/assets/js/153.3194fef9.js"><link rel="prefetch" href="/assets/js/154.bdf274cf.js"><link rel="prefetch" href="/assets/js/155.ac37a552.js"><link rel="prefetch" href="/assets/js/156.61e9d530.js"><link rel="prefetch" href="/assets/js/157.71861fb1.js"><link rel="prefetch" href="/assets/js/158.ff809b2b.js"><link rel="prefetch" href="/assets/js/159.f66a988b.js"><link rel="prefetch" href="/assets/js/16.b47ab1cb.js"><link rel="prefetch" href="/assets/js/160.1c9cf486.js"><link rel="prefetch" href="/assets/js/161.7e707b5a.js"><link rel="prefetch" href="/assets/js/162.98b088bd.js"><link rel="prefetch" href="/assets/js/163.cd3250f1.js"><link rel="prefetch" href="/assets/js/164.a567c478.js"><link rel="prefetch" href="/assets/js/165.4e9c624e.js"><link rel="prefetch" href="/assets/js/166.d182ed23.js"><link rel="prefetch" href="/assets/js/167.c01dce2e.js"><link rel="prefetch" href="/assets/js/168.abb64f0a.js"><link rel="prefetch" href="/assets/js/169.4455b779.js"><link rel="prefetch" href="/assets/js/17.59927b82.js"><link rel="prefetch" href="/assets/js/170.6106c644.js"><link rel="prefetch" href="/assets/js/171.dddf8d4a.js"><link rel="prefetch" href="/assets/js/172.d22915bd.js"><link rel="prefetch" href="/assets/js/173.9d3388a3.js"><link rel="prefetch" href="/assets/js/174.86a9ecc4.js"><link rel="prefetch" href="/assets/js/175.cca1f469.js"><link rel="prefetch" href="/assets/js/176.0c249788.js"><link rel="prefetch" href="/assets/js/177.b5de8cbd.js"><link rel="prefetch" href="/assets/js/178.27cfa270.js"><link rel="prefetch" href="/assets/js/179.413e87cc.js"><link rel="prefetch" href="/assets/js/18.7e7cf28d.js"><link rel="prefetch" href="/assets/js/180.759b9411.js"><link rel="prefetch" href="/assets/js/181.3a71051e.js"><link rel="prefetch" href="/assets/js/182.cbf716ab.js"><link rel="prefetch" href="/assets/js/183.aeb50482.js"><link rel="prefetch" href="/assets/js/184.29c69bd9.js"><link rel="prefetch" href="/assets/js/185.e51a3da4.js"><link rel="prefetch" href="/assets/js/186.18c287d3.js"><link rel="prefetch" href="/assets/js/187.4b6ff81c.js"><link rel="prefetch" href="/assets/js/188.ff9ceb16.js"><link rel="prefetch" href="/assets/js/189.2403c877.js"><link rel="prefetch" href="/assets/js/19.9b274655.js"><link rel="prefetch" href="/assets/js/190.99b0d1fb.js"><link rel="prefetch" href="/assets/js/191.20398c96.js"><link rel="prefetch" href="/assets/js/192.8a7996c0.js"><link rel="prefetch" href="/assets/js/193.859b0aa5.js"><link rel="prefetch" href="/assets/js/194.cfa3114d.js"><link rel="prefetch" href="/assets/js/195.7a0d211c.js"><link rel="prefetch" href="/assets/js/196.0ecc8a70.js"><link rel="prefetch" href="/assets/js/197.39d4896a.js"><link rel="prefetch" href="/assets/js/198.4c798790.js"><link rel="prefetch" href="/assets/js/199.d55261fa.js"><link rel="prefetch" href="/assets/js/20.cce3fd05.js"><link rel="prefetch" href="/assets/js/200.a049406f.js"><link rel="prefetch" href="/assets/js/201.f10653fb.js"><link rel="prefetch" href="/assets/js/202.f420cb56.js"><link rel="prefetch" href="/assets/js/203.e98347b7.js"><link rel="prefetch" href="/assets/js/204.f72d5b4f.js"><link rel="prefetch" href="/assets/js/205.58aef437.js"><link rel="prefetch" href="/assets/js/206.c923f761.js"><link rel="prefetch" href="/assets/js/207.d0ec7a5c.js"><link rel="prefetch" href="/assets/js/208.018e9653.js"><link rel="prefetch" href="/assets/js/209.dbce6a36.js"><link rel="prefetch" href="/assets/js/21.11cfa259.js"><link rel="prefetch" href="/assets/js/210.b37c9493.js"><link rel="prefetch" href="/assets/js/211.96988e7a.js"><link rel="prefetch" href="/assets/js/212.370f5382.js"><link rel="prefetch" href="/assets/js/213.a1b48312.js"><link rel="prefetch" href="/assets/js/214.7817a6b6.js"><link rel="prefetch" href="/assets/js/215.f4af78fb.js"><link rel="prefetch" href="/assets/js/216.a6d73e28.js"><link rel="prefetch" href="/assets/js/217.1b5f990e.js"><link rel="prefetch" href="/assets/js/218.05bb2023.js"><link rel="prefetch" href="/assets/js/219.f13be346.js"><link rel="prefetch" href="/assets/js/22.366f8c53.js"><link rel="prefetch" href="/assets/js/220.efecc1b4.js"><link rel="prefetch" href="/assets/js/221.0686f8ee.js"><link rel="prefetch" href="/assets/js/222.f4724858.js"><link rel="prefetch" href="/assets/js/223.1363290b.js"><link rel="prefetch" href="/assets/js/224.193196ad.js"><link rel="prefetch" href="/assets/js/225.326eef39.js"><link rel="prefetch" href="/assets/js/226.6cb29260.js"><link rel="prefetch" href="/assets/js/227.d227af20.js"><link rel="prefetch" href="/assets/js/228.70183150.js"><link rel="prefetch" href="/assets/js/229.e09f02e1.js"><link rel="prefetch" href="/assets/js/23.13e428f6.js"><link rel="prefetch" href="/assets/js/230.adb3547f.js"><link rel="prefetch" href="/assets/js/231.9d71788b.js"><link rel="prefetch" href="/assets/js/232.68a4a79a.js"><link rel="prefetch" href="/assets/js/233.adacbde2.js"><link rel="prefetch" href="/assets/js/234.72e40d86.js"><link rel="prefetch" href="/assets/js/236.edf191aa.js"><link rel="prefetch" href="/assets/js/237.f52cf4fa.js"><link rel="prefetch" href="/assets/js/238.800dc15e.js"><link rel="prefetch" href="/assets/js/239.10d056f6.js"><link rel="prefetch" href="/assets/js/24.a75434a8.js"><link rel="prefetch" href="/assets/js/240.deed77e1.js"><link rel="prefetch" href="/assets/js/241.464e9bf0.js"><link rel="prefetch" href="/assets/js/242.7273d677.js"><link rel="prefetch" href="/assets/js/243.99fdcdc5.js"><link rel="prefetch" href="/assets/js/244.047fa678.js"><link rel="prefetch" href="/assets/js/245.bc611e24.js"><link rel="prefetch" href="/assets/js/246.bd893381.js"><link rel="prefetch" href="/assets/js/247.4b316a04.js"><link rel="prefetch" href="/assets/js/248.16c95d6a.js"><link rel="prefetch" href="/assets/js/249.489a221b.js"><link rel="prefetch" href="/assets/js/25.7c629b84.js"><link rel="prefetch" href="/assets/js/250.b8d57897.js"><link rel="prefetch" href="/assets/js/251.87cd587c.js"><link rel="prefetch" href="/assets/js/252.64208931.js"><link rel="prefetch" href="/assets/js/253.6d3b5f5e.js"><link rel="prefetch" href="/assets/js/254.c2d32b8e.js"><link rel="prefetch" href="/assets/js/255.515dad88.js"><link rel="prefetch" href="/assets/js/256.1df94050.js"><link rel="prefetch" href="/assets/js/257.0bb8f180.js"><link rel="prefetch" href="/assets/js/258.fc156d1e.js"><link rel="prefetch" href="/assets/js/259.f220aad5.js"><link rel="prefetch" href="/assets/js/26.13d5164c.js"><link rel="prefetch" href="/assets/js/260.f9aa733b.js"><link rel="prefetch" href="/assets/js/261.728e6974.js"><link rel="prefetch" href="/assets/js/262.9f5a41d6.js"><link rel="prefetch" href="/assets/js/263.5f9f4654.js"><link rel="prefetch" href="/assets/js/264.7155ed8c.js"><link rel="prefetch" href="/assets/js/265.cebcc996.js"><link rel="prefetch" href="/assets/js/266.78971ec0.js"><link rel="prefetch" href="/assets/js/267.35e0faf0.js"><link rel="prefetch" href="/assets/js/268.b4ccf3dd.js"><link rel="prefetch" href="/assets/js/27.194c4027.js"><link rel="prefetch" href="/assets/js/28.bfeb316f.js"><link rel="prefetch" href="/assets/js/29.65adeb4c.js"><link rel="prefetch" href="/assets/js/3.12c4eb56.js"><link rel="prefetch" href="/assets/js/30.91b0ba37.js"><link rel="prefetch" href="/assets/js/31.2b44dede.js"><link rel="prefetch" href="/assets/js/32.45e8e983.js"><link rel="prefetch" href="/assets/js/33.b9179deb.js"><link rel="prefetch" href="/assets/js/34.64bbbe88.js"><link rel="prefetch" href="/assets/js/35.46e9ec3d.js"><link rel="prefetch" href="/assets/js/36.ea0ca6d7.js"><link rel="prefetch" href="/assets/js/37.c8565b91.js"><link rel="prefetch" href="/assets/js/38.9b3567c5.js"><link rel="prefetch" href="/assets/js/39.69251b47.js"><link rel="prefetch" href="/assets/js/4.409d92c0.js"><link rel="prefetch" href="/assets/js/40.3b0f9976.js"><link rel="prefetch" href="/assets/js/41.268e2ee8.js"><link rel="prefetch" href="/assets/js/42.6cdee852.js"><link rel="prefetch" href="/assets/js/43.ccd86f85.js"><link rel="prefetch" href="/assets/js/44.d5aa9413.js"><link rel="prefetch" href="/assets/js/45.4982e424.js"><link rel="prefetch" href="/assets/js/46.bf810886.js"><link rel="prefetch" href="/assets/js/47.7ec8e205.js"><link rel="prefetch" href="/assets/js/48.58665ce3.js"><link rel="prefetch" href="/assets/js/49.b3dc7130.js"><link rel="prefetch" href="/assets/js/5.b1272c4d.js"><link rel="prefetch" href="/assets/js/50.04ca0c16.js"><link rel="prefetch" href="/assets/js/51.f4b2da0b.js"><link rel="prefetch" href="/assets/js/52.17519a17.js"><link rel="prefetch" href="/assets/js/53.b78b6830.js"><link rel="prefetch" href="/assets/js/54.ca2c50ff.js"><link rel="prefetch" href="/assets/js/55.c31ab05c.js"><link rel="prefetch" href="/assets/js/56.5c22b272.js"><link rel="prefetch" href="/assets/js/57.f352430d.js"><link rel="prefetch" href="/assets/js/58.3ad299f1.js"><link rel="prefetch" href="/assets/js/59.8780a57d.js"><link rel="prefetch" href="/assets/js/6.f48c38d5.js"><link rel="prefetch" href="/assets/js/60.1fe6825d.js"><link rel="prefetch" href="/assets/js/61.2a9797e9.js"><link rel="prefetch" href="/assets/js/62.3508bbc0.js"><link rel="prefetch" href="/assets/js/63.5dd3c7ec.js"><link rel="prefetch" href="/assets/js/64.f4ef7806.js"><link rel="prefetch" href="/assets/js/65.31325a9c.js"><link rel="prefetch" href="/assets/js/66.18715d65.js"><link rel="prefetch" href="/assets/js/67.45ed5066.js"><link rel="prefetch" href="/assets/js/68.bf97b711.js"><link rel="prefetch" href="/assets/js/69.3fca1c15.js"><link rel="prefetch" href="/assets/js/7.967862d3.js"><link rel="prefetch" href="/assets/js/70.a85182b0.js"><link rel="prefetch" href="/assets/js/71.dae87348.js"><link rel="prefetch" href="/assets/js/72.eb2f1490.js"><link rel="prefetch" href="/assets/js/73.81784cd9.js"><link rel="prefetch" href="/assets/js/74.df09c1ac.js"><link rel="prefetch" href="/assets/js/75.2b0ad4b6.js"><link rel="prefetch" href="/assets/js/76.66b47957.js"><link rel="prefetch" href="/assets/js/77.b62c7a01.js"><link rel="prefetch" href="/assets/js/78.28c5811a.js"><link rel="prefetch" href="/assets/js/79.95d475d5.js"><link rel="prefetch" href="/assets/js/8.673a7c19.js"><link rel="prefetch" href="/assets/js/80.2d75d773.js"><link rel="prefetch" href="/assets/js/81.cfda913f.js"><link rel="prefetch" href="/assets/js/82.9e763e4c.js"><link rel="prefetch" href="/assets/js/83.01d9915e.js"><link rel="prefetch" href="/assets/js/84.e226c26e.js"><link rel="prefetch" href="/assets/js/85.5d0b08f7.js"><link rel="prefetch" href="/assets/js/86.e830df14.js"><link rel="prefetch" href="/assets/js/87.3de70613.js"><link rel="prefetch" href="/assets/js/88.f8d2125b.js"><link rel="prefetch" href="/assets/js/89.0e7414a0.js"><link rel="prefetch" href="/assets/js/9.063ff9b8.js"><link rel="prefetch" href="/assets/js/90.38486cc7.js"><link rel="prefetch" href="/assets/js/91.f8e110f3.js"><link rel="prefetch" href="/assets/js/92.493e9700.js"><link rel="prefetch" href="/assets/js/93.5e93d215.js"><link rel="prefetch" href="/assets/js/94.3afd7f6b.js"><link rel="prefetch" href="/assets/js/95.2bbb27a0.js"><link rel="prefetch" href="/assets/js/96.aa439df5.js"><link rel="prefetch" href="/assets/js/97.962d08ca.js"><link rel="prefetch" href="/assets/js/98.e6b9d371.js"><link rel="prefetch" href="/assets/js/99.f7ed391d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ccbbb76c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Monster</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Daily/" class="nav-link">
+  😇 日常
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌈 CSS" class="dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌈 CSS" class="mobile-dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/CSS/Introduce/" class="nav-link">
+  介绍
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Structure/" class="nav-link">
+  架构
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Tools/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><h4>
+          预处理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Less/" class="nav-link">
+  Less
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Sass/" class="nav-link">
+  Sass
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Stylus/" class="nav-link">
+  Stylus
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🚀 JS" class="dropdown-title"><span class="title">🚀 JS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🚀 JS" class="mobile-dropdown-title"><span class="title">🚀 JS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/JavaScript/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/ES@NEXT/" class="nav-link">
+  ES@next
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/Code/" class="nav-link">
+  手撕代码
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/FP/" class="nav-link">
+  函数式编程
+</a></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vuex/" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Router/" class="nav-link">
+  Vue Router
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue SSR/" class="nav-link">
+  Vue SSR
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue CLI/" class="nav-link">
+  Vue CLI
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Loader/" class="nav-link">
+  Vue Loader
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/React/React/" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌇 工程化" class="dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌇 工程化" class="mobile-dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Engineering/Summary/" class="nav-link">
+  概述
+</a></li><li class="dropdown-item"><h4>
+          编译构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Babel/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Vite/" class="nav-link">
+  Vite
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Rollup/" class="nav-link">
+  Rollup
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Gulp/" class="nav-link">
+  Gulp
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Grunt/" class="nav-link">
+  Grunt
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Snowpack/" class="nav-link">
+  Snowpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Parcel/" class="nav-link">
+  Parcel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/SWC/" class="nav-link">
+  SWC
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Esbuild/" class="nav-link">
+  Esbuild
+</a></li></ul></li><li class="dropdown-item"><h4>
+          CI/CD
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Github Action/" class="nav-link">
+  Github Action
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Docker/" class="nav-link">
+  Docker
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Lerna/" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-subitem"><a href="/Engineering/PackageManager/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-subitem"><a href="/Engineering/CLI/" class="nav-link">
+  脚手架
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎁 其它" class="dropdown-title"><span class="title">🎁 其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎁 其它" class="mobile-dropdown-title"><span class="title">🎁 其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Other/DataStructure/" class="nav-link">
+  🛠 数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/Other/DesignModel/" class="nav-link">
+  🖊 设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Internet/" class="nav-link">
+  🔗 网络协议
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Performance/" class="nav-link">
+  ⏳ 性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Safe/" class="nav-link">
+  🚨 安全
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Test/" class="nav-link">
+  💯 测试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Interview/" class="nav-link router-link-active">
+  🀄 面试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Window/" class="nav-link">
+  💻 Window
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Linux/" class="nav-link">
+  🖥 Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Mock/" class="nav-link">
+  ❌ Mock
+</a></li><li class="dropdown-item"><!----> <a href="/Other/VScode/" class="nav-link">
+  🆚 VScode
+</a></li><li class="dropdown-item"><h4>
+          📖 文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-subitem"><a href="/Other/Markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/Other/Plan/" class="nav-link">
+  计划
+</a></li><li class="dropdown-subitem"><a href="/Other/More/" class="nav-link">
+  后续
+</a></li></ul></li><li class="dropdown-item"><h4>
+          🛢 数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/DataBase/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/MongoDB/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/Redis/" class="nav-link">
+  Redis
+</a></li></ul></li><li class="dropdown-item"><h4>
+          📲 应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Application/MiniProgram/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/PC/" class="nav-link">
+  PC
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/H5/" class="nav-link">
+  H5
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Code/" class="nav-link">
+  👊源码
+</a></div><div class="nav-item"><a href="https://monsterxiong.github.io/Node/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  😍 Node
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/MonsterXiong/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  👷GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Daily/" class="nav-link">
+  😇 日常
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌈 CSS" class="dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌈 CSS" class="mobile-dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/CSS/Introduce/" class="nav-link">
+  介绍
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Structure/" class="nav-link">
+  架构
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Tools/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><h4>
+          预处理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Less/" class="nav-link">
+  Less
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Sass/" class="nav-link">
+  Sass
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Stylus/" class="nav-link">
+  Stylus
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🚀 JS" class="dropdown-title"><span class="title">🚀 JS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🚀 JS" class="mobile-dropdown-title"><span class="title">🚀 JS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/JavaScript/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/ES@NEXT/" class="nav-link">
+  ES@next
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/Code/" class="nav-link">
+  手撕代码
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/FP/" class="nav-link">
+  函数式编程
+</a></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vuex/" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Router/" class="nav-link">
+  Vue Router
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue SSR/" class="nav-link">
+  Vue SSR
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue CLI/" class="nav-link">
+  Vue CLI
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Loader/" class="nav-link">
+  Vue Loader
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/React/React/" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌇 工程化" class="dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌇 工程化" class="mobile-dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Engineering/Summary/" class="nav-link">
+  概述
+</a></li><li class="dropdown-item"><h4>
+          编译构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Babel/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Vite/" class="nav-link">
+  Vite
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Rollup/" class="nav-link">
+  Rollup
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Gulp/" class="nav-link">
+  Gulp
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Grunt/" class="nav-link">
+  Grunt
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Snowpack/" class="nav-link">
+  Snowpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Parcel/" class="nav-link">
+  Parcel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/SWC/" class="nav-link">
+  SWC
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Esbuild/" class="nav-link">
+  Esbuild
+</a></li></ul></li><li class="dropdown-item"><h4>
+          CI/CD
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Github Action/" class="nav-link">
+  Github Action
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Docker/" class="nav-link">
+  Docker
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Lerna/" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-subitem"><a href="/Engineering/PackageManager/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-subitem"><a href="/Engineering/CLI/" class="nav-link">
+  脚手架
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎁 其它" class="dropdown-title"><span class="title">🎁 其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎁 其它" class="mobile-dropdown-title"><span class="title">🎁 其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Other/DataStructure/" class="nav-link">
+  🛠 数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/Other/DesignModel/" class="nav-link">
+  🖊 设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Internet/" class="nav-link">
+  🔗 网络协议
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Performance/" class="nav-link">
+  ⏳ 性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Safe/" class="nav-link">
+  🚨 安全
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Test/" class="nav-link">
+  💯 测试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Interview/" class="nav-link router-link-active">
+  🀄 面试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Window/" class="nav-link">
+  💻 Window
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Linux/" class="nav-link">
+  🖥 Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Mock/" class="nav-link">
+  ❌ Mock
+</a></li><li class="dropdown-item"><!----> <a href="/Other/VScode/" class="nav-link">
+  🆚 VScode
+</a></li><li class="dropdown-item"><h4>
+          📖 文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-subitem"><a href="/Other/Markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/Other/Plan/" class="nav-link">
+  计划
+</a></li><li class="dropdown-subitem"><a href="/Other/More/" class="nav-link">
+  后续
+</a></li></ul></li><li class="dropdown-item"><h4>
+          🛢 数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/DataBase/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/MongoDB/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/Redis/" class="nav-link">
+  Redis
+</a></li></ul></li><li class="dropdown-item"><h4>
+          📲 应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Application/MiniProgram/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/PC/" class="nav-link">
+  PC
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/H5/" class="nav-link">
+  H5
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Code/" class="nav-link">
+  👊源码
+</a></div><div class="nav-item"><a href="https://monsterxiong.github.io/Node/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  😍 Node
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/MonsterXiong/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  👷GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/Other/Interview/" aria-current="page" class="sidebar-link">面试</a></li><li><a href="/Other/Interview/Url.html" class="sidebar-link">从输入 URL 到页面加载的过程</a></li><li><a href="/Other/Interview/Question.html" aria-current="page" class="active sidebar-link">题目</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#常规知识点" class="sidebar-link">常规知识点</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#js-基础知识" class="sidebar-link">js 基础知识</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#从输入-url-到获得页面经历的所有事情-越细越好" class="sidebar-link">从输入 url 到获得页面经历的所有事情(越细越好)</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#dom-事件和事件流" class="sidebar-link">DOM 事件和事件流</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#盒子模型" class="sidebar-link">盒子模型</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#bfc" class="sidebar-link">BFC</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#flex" class="sidebar-link">Flex</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#前端性能优化" class="sidebar-link">前端性能优化</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#常见算法-排序洗牌等" class="sidebar-link">常见算法(排序洗牌等)</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#跨域形成原因以及解决方案" class="sidebar-link">跨域形成原因以及解决方案</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#最近在看什么新技术" class="sidebar-link">最近在看什么新技术</a></li></ul></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#低频但是需要注意的面试题" class="sidebar-link">低频但是需要注意的面试题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#csrf-xss" class="sidebar-link">CSRF &amp; XSS</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#chrome-设置小于-12px-字体" class="sidebar-link">chrome 设置小于 12px 字体</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#node-和浏览器事件循环有何不同" class="sidebar-link">node 和浏览器事件循环有何不同</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#webpack-tree-shaking" class="sidebar-link">webpack tree shaking</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#map-set" class="sidebar-link">map &amp; set</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#前端有哪些技术-腾讯面试题-面试官会顺着你说的技术一个一个展开问" class="sidebar-link">前端有哪些技术(腾讯面试题,面试官会顺着你说的技术一个一个展开问)</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#get-和-post-的区别" class="sidebar-link">get 和 post 的区别</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#bfc-2" class="sidebar-link">BFC</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#yield" class="sidebar-link">yield</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#requestanimation" class="sidebar-link">requestAnimation</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#让你重新做你做过的项目有什么可以改进的地方" class="sidebar-link">让你重新做你做过的项目有什么可以改进的地方</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#让一个元素消失的几种做法-有何不同-对子元素的影响" class="sidebar-link">让一个元素消失的几种做法，有何不同，对子元素的影响</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#如何遍历对象-接下来会问有何不同" class="sidebar-link">如何遍历对象(接下来会问有何不同)</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#搜索框输入需要注意的点-其实还是在问防抖" class="sidebar-link">搜索框输入需要注意的点(其实还是在问防抖)</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#原生实现-inserafter" class="sidebar-link">原生实现 inserAfter</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#事件委托应用场景-e-target-和-e-currenttarget-区别" class="sidebar-link">事件委托应用场景，e.target 和 e.currentTarget 区别</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#" class="sidebar-link"></a></li></ul></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#面试遇到的算法题" class="sidebar-link">面试遇到的算法题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#排序算法-冒泡-快排" class="sidebar-link">排序算法(冒泡,快排)</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#洗牌算法" class="sidebar-link">洗牌算法</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#v1-2-3-v0-3-0-这样的版本号比大小-找简单方法-不要随便写一个循环的版本" class="sidebar-link">v1.2.3 v0.3.0 这样的版本号比大小(找简单方法,不要随便写一个循环的版本)</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#广度优先遍历" class="sidebar-link">广度优先遍历</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#用-o-n-的复杂度合并两个有序数组" class="sidebar-link">用 O(n)的复杂度合并两个有序数组</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#数组生成树形结构" class="sidebar-link">数组生成树形结构</a></li></ul></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#二、js-问题" class="sidebar-link">二、JS 问题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_1-typeof-和-instance-of-检测数据类型有什么区别" class="sidebar-link">1.typeof 和 instance of 检测数据类型有什么区别？</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_2-谈一谈深克隆和浅克隆" class="sidebar-link">2.谈一谈深克隆和浅克隆？</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_3-es6-的新特性都有哪些" class="sidebar-link">3.es6 的新特性都有哪些？</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_4-和-区别是什么" class="sidebar-link">4.==和===区别是什么？</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_5-常见的设计模式有哪些" class="sidebar-link">5.常见的设计模式有哪些？</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_6-call-bind-apply-的区别" class="sidebar-link">6.call bind apply 的区别？</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_8-你怎样看待闭包" class="sidebar-link">8.你怎样看待闭包？</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_9-你是如何理解原型和原型链的" class="sidebar-link">9.你是如何理解原型和原型链的？</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_10-浏览器渲染的主要流程是什么" class="sidebar-link">10.浏览器渲染的主要流程是什么?</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_11-从输入-url-地址到页面相应都发生了什么" class="sidebar-link">11.从输入 url 地址到页面相应都发生了什么？</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_12-session、cookie、localstorage-的区别" class="sidebar-link">12.session、cookie、localStorage 的区别</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_13-js-中跨域方法" class="sidebar-link">13.js 中跨域方法</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_14-前端有哪些页面优化方法" class="sidebar-link">14.前端有哪些页面优化方法?</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_15-ajax-的四个步骤" class="sidebar-link">15.Ajax 的四个步骤</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_16-数组去重的方法" class="sidebar-link">16.数组去重的方法</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_17-ajax-中-get-和-post-请求的区别" class="sidebar-link">17.ajax 中 get 和 post 请求的区别</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_18-ajax-的状态码" class="sidebar-link">18.ajax 的状态码</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_19-移动端的兼容问题" class="sidebar-link">19.移动端的兼容问题</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_20-js-中同步和异步-以及-js-的事件流" class="sidebar-link">20.JS 中同步和异步,以及 js 的事件流</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_24-dom-diff-原理" class="sidebar-link">24.DOM diff 原理</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_25-作用域" class="sidebar-link">25.作用域</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_26-promise-处理异步" class="sidebar-link">26.Promise 处理异步</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_27-map-和-foreach-的区别" class="sidebar-link">27.map 和 forEach 的区别</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_28-async-await-函数" class="sidebar-link">28.async await 函数</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_29-this-指向" class="sidebar-link">29.this 指向</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_30-原型" class="sidebar-link">30.原型</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_31-异步回调-如何解决回调地狱" class="sidebar-link">31.异步回调（如何解决回调地狱）</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_32-前端事件流" class="sidebar-link">32.前端事件流</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_33-事件如何先捕获后冒泡" class="sidebar-link">33.事件如何先捕获后冒泡？</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_34-如何判断一个变量是对象还是数组-prototype-tostring-call-。" class="sidebar-link">34. 如何判断一个变量是对象还是数组（prototype.toString.call()）。</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_35-settimeout-和-setinterval-的机制" class="sidebar-link">35.setTimeout 和 setInterval 的机制</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#_36-splice-和-slice、map-和-foreach、-filter-、reduce-的区别" class="sidebar-link">36.splice 和 slice、map 和 forEach、 filter()、reduce()的区别</a></li></ul></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#性能优化" class="sidebar-link">性能优化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#六、页面的重构" class="sidebar-link">六、页面的重构；</a></li></ul></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#服务器端" class="sidebar-link">服务器端</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#一、状态码" class="sidebar-link">一、状态码：</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#二、304-的缓存原理-添加-etag-标签-last-modified-304-网页上次请求没有更新-节省带宽和开销" class="sidebar-link">二、304 的缓存原理（添加 Etag 标签.last-modified） 304 网页上次请求没有更新，节省带宽和开销</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#三、get-post-的区别" class="sidebar-link">三、get/post 的区别</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#四、http-协议的理解" class="sidebar-link">四、http 协议的理解</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#五、http-和-https" class="sidebar-link">五、http 和 https</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#六、http1-0-1-1-2-0-的区别" class="sidebar-link">六、http1.0 1.1 2.0 的区别</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#七、web-缓存" class="sidebar-link">七、web 缓存</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#八、常见的-web-安全及防护原理" class="sidebar-link">八、常见的 web 安全及防护原理</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#九、cdn-内容分发网络" class="sidebar-link">九、CDN(内容分发网络)</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#十一、从输入-url-到获取页面的完整过程" class="sidebar-link">十一、从输入 url 到获取页面的完整过程</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#十二、浏览器渲染原理及流程-dom-cssom-render-layout-print" class="sidebar-link">十二、浏览器渲染原理及流程 DOM-&gt;CSSOM-&gt;render-&gt;layout-&gt;print</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#十三、为什么-css-放在顶部而-js-写在后面" class="sidebar-link">十三、为什么 css 放在顶部而 js 写在后面</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#十四、存储方法与传输方式" class="sidebar-link">十四、存储方法与传输方式</a></li></ul></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#手写代码" class="sidebar-link">手写代码</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#vue-的相关问题" class="sidebar-link">Vue 的相关问题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#vue-和-react-有什么区别" class="sidebar-link">VUE 和 REACT 有什么区别？</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#谈谈对-vue-的理解" class="sidebar-link">谈谈对 vue 的理解</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#vue-响应式原理" class="sidebar-link">vue 响应式原理</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#vue-虚拟-dom-diff-算法" class="sidebar-link">vue 虚拟 dom &amp; diff 算法</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#vue3-解决什么问题" class="sidebar-link">vue3 解决什么问题</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#vue-为什么不能检测数组和对象的变化-怎么处理-为什么通过索引操作数组不能触发响应式" class="sidebar-link">Vue 为什么不能检测数组和对象的变化,怎么处理(为什么通过索引操作数组不能触发响应式)</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#vue-router-原理" class="sidebar-link">vue router 原理</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#v-model-实现原理" class="sidebar-link">v-model 实现原理</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#vue-nexttick" class="sidebar-link">vue.nexttick</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#谈谈对生命周期的理解" class="sidebar-link">谈谈对生命周期的理解</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#vue-路由的两种模式" class="sidebar-link">vue 路由的两种模式</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#vuex-的流程" class="sidebar-link">vuex 的流程</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#vuex-有哪几种状态和属性" class="sidebar-link">vuex 有哪几种状态和属性</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#vue-中-key-值的作用" class="sidebar-link">vue 中 key 值的作用</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#route和-router的区别" class="sidebar-link">$route和$router的区别</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#vue-router-守卫" class="sidebar-link">vue-router 守卫</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#vue-修饰符" class="sidebar-link">vue 修饰符</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#vue-项目中的性能优化" class="sidebar-link">vue 项目中的性能优化</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#vue-extend-和-vue-component" class="sidebar-link">.vue.extend 和 vue.component</a></li></ul></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#其它" class="sidebar-link">其它</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#js-的数据类型以及是如何存储的" class="sidebar-link">JS 的数据类型以及是如何存储的</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#、-、-运算符" class="sidebar-link">&amp;&amp;、||、！！运算符</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#js-数据类型判断" class="sidebar-link">JS 数据类型判断</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#js-数据类型转换" class="sidebar-link">JS 数据类型转换</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#js-的内置对象" class="sidebar-link">JS 的内置对象</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#undefined-与-undeclared-的区别" class="sidebar-link">undefined 与 undeclared 的区别</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#undefined-与-null-的区别" class="sidebar-link">undefined 与 null 的区别</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#valueof-和-tostring" class="sidebar-link">valueOf 和 toString</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#es6-新特性" class="sidebar-link">ES6 新特性</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#var-let-和-const-的区别" class="sidebar-link">var,let 和 const 的区别</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#箭头函数" class="sidebar-link">箭头函数</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#类" class="sidebar-link">类</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#模板字符串" class="sidebar-link">模板字符串</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#对象解构" class="sidebar-link">对象解构</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#node" class="sidebar-link">node</a></li><li class="sidebar-sub-header"><a href="/Other/Interview/Question.html#浏览器相关问题" class="sidebar-link">浏览器相关问题</a></li></ul></li></ul></li><li><a href="/Other/Interview/Other.html" class="sidebar-link">面试一</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="题目"><a href="#题目" class="header-anchor">#</a> 题目</h1> <h2 id="常规知识点"><a href="#常规知识点" class="header-anchor">#</a> 常规知识点</h2> <h3 id="js-基础知识"><a href="#js-基础知识" class="header-anchor">#</a> js 基础知识</h3> <h3 id="从输入-url-到获得页面经历的所有事情-越细越好"><a href="#从输入-url-到获得页面经历的所有事情-越细越好" class="header-anchor">#</a> 从输入 url 到获得页面经历的所有事情(越细越好)</h3> <h3 id="dom-事件和事件流"><a href="#dom-事件和事件流" class="header-anchor">#</a> DOM 事件和事件流</h3> <h3 id="盒子模型"><a href="#盒子模型" class="header-anchor">#</a> 盒子模型</h3> <h3 id="bfc"><a href="#bfc" class="header-anchor">#</a> BFC</h3> <h3 id="flex"><a href="#flex" class="header-anchor">#</a> Flex</h3> <h3 id="前端性能优化"><a href="#前端性能优化" class="header-anchor">#</a> 前端性能优化</h3> <h3 id="常见算法-排序洗牌等"><a href="#常见算法-排序洗牌等" class="header-anchor">#</a> 常见算法(排序洗牌等)</h3> <h3 id="跨域形成原因以及解决方案"><a href="#跨域形成原因以及解决方案" class="header-anchor">#</a> 跨域形成原因以及解决方案</h3> <h3 id="最近在看什么新技术"><a href="#最近在看什么新技术" class="header-anchor">#</a> 最近在看什么新技术</h3> <h2 id="低频但是需要注意的面试题"><a href="#低频但是需要注意的面试题" class="header-anchor">#</a> 低频但是需要注意的面试题</h2> <h3 id="csrf-xss"><a href="#csrf-xss" class="header-anchor">#</a> CSRF &amp; XSS</h3> <h3 id="chrome-设置小于-12px-字体"><a href="#chrome-设置小于-12px-字体" class="header-anchor">#</a> chrome 设置小于 12px 字体</h3> <h3 id="node-和浏览器事件循环有何不同"><a href="#node-和浏览器事件循环有何不同" class="header-anchor">#</a> node 和浏览器事件循环有何不同</h3> <h3 id="webpack-tree-shaking"><a href="#webpack-tree-shaking" class="header-anchor">#</a> webpack tree shaking</h3> <h3 id="map-set"><a href="#map-set" class="header-anchor">#</a> map &amp; set</h3> <h3 id="前端有哪些技术-腾讯面试题-面试官会顺着你说的技术一个一个展开问"><a href="#前端有哪些技术-腾讯面试题-面试官会顺着你说的技术一个一个展开问" class="header-anchor">#</a> 前端有哪些技术(腾讯面试题,面试官会顺着你说的技术一个一个展开问)</h3> <h3 id="get-和-post-的区别"><a href="#get-和-post-的区别" class="header-anchor">#</a> get 和 post 的区别</h3> <h3 id="bfc-2"><a href="#bfc-2" class="header-anchor">#</a> BFC</h3> <h3 id="yield"><a href="#yield" class="header-anchor">#</a> yield</h3> <h3 id="requestanimation"><a href="#requestanimation" class="header-anchor">#</a> requestAnimation</h3> <h3 id="让你重新做你做过的项目有什么可以改进的地方"><a href="#让你重新做你做过的项目有什么可以改进的地方" class="header-anchor">#</a> 让你重新做你做过的项目有什么可以改进的地方</h3> <h3 id="让一个元素消失的几种做法-有何不同-对子元素的影响"><a href="#让一个元素消失的几种做法-有何不同-对子元素的影响" class="header-anchor">#</a> 让一个元素消失的几种做法，有何不同，对子元素的影响</h3> <h3 id="如何遍历对象-接下来会问有何不同"><a href="#如何遍历对象-接下来会问有何不同" class="header-anchor">#</a> 如何遍历对象(接下来会问有何不同)</h3> <h3 id="搜索框输入需要注意的点-其实还是在问防抖"><a href="#搜索框输入需要注意的点-其实还是在问防抖" class="header-anchor">#</a> 搜索框输入需要注意的点(其实还是在问防抖)</h3> <h3 id="原生实现-inserafter"><a href="#原生实现-inserafter" class="header-anchor">#</a> 原生实现 inserAfter</h3> <h3 id="事件委托应用场景-e-target-和-e-currenttarget-区别"><a href="#事件委托应用场景-e-target-和-e-currenttarget-区别" class="header-anchor">#</a> 事件委托应用场景，e.target 和 e.currentTarget 区别</h3> <h3 id=""><a href="#" class="header-anchor">#</a></h3> <h2 id="面试遇到的算法题"><a href="#面试遇到的算法题" class="header-anchor">#</a> 面试遇到的算法题</h2> <h3 id="排序算法-冒泡-快排"><a href="#排序算法-冒泡-快排" class="header-anchor">#</a> 排序算法(冒泡,快排)</h3> <h3 id="洗牌算法"><a href="#洗牌算法" class="header-anchor">#</a> 洗牌算法</h3> <h3 id="v1-2-3-v0-3-0-这样的版本号比大小-找简单方法-不要随便写一个循环的版本"><a href="#v1-2-3-v0-3-0-这样的版本号比大小-找简单方法-不要随便写一个循环的版本" class="header-anchor">#</a> v1.2.3 v0.3.0 这样的版本号比大小(找简单方法,不要随便写一个循环的版本)</h3> <h3 id="广度优先遍历"><a href="#广度优先遍历" class="header-anchor">#</a> 广度优先遍历</h3> <h3 id="用-o-n-的复杂度合并两个有序数组"><a href="#用-o-n-的复杂度合并两个有序数组" class="header-anchor">#</a> 用 O(n)的复杂度合并两个有序数组</h3> <h3 id="数组生成树形结构"><a href="#数组生成树形结构" class="header-anchor">#</a> 数组生成树形结构</h3> <h2 id="二、js-问题"><a href="#二、js-问题" class="header-anchor">#</a> 二、JS 问题</h2> <h3 id="_1-typeof-和-instance-of-检测数据类型有什么区别"><a href="#_1-typeof-和-instance-of-检测数据类型有什么区别" class="header-anchor">#</a> 1.typeof 和 instance of 检测数据类型有什么区别？</h3> <blockquote><p>相同点： 都常用来判断一个变量是否为空，或者是什么类型的。</p> <p>不同点： typeof 返回值是一个字符串，用来说明变量的数据类型 instanceof 用于判断一个变量是否属于某个对象的实例.</p></blockquote> <h3 id="_2-谈一谈深克隆和浅克隆"><a href="#_2-谈一谈深克隆和浅克隆" class="header-anchor">#</a> 2.谈一谈深克隆和浅克隆？</h3> <blockquote><p>浅克隆: 只是拷贝了基本类型的数据，而引用类型数据，复制后也是会发生引用，我们把这种拷贝叫做“（浅复制）浅拷贝”，换句话说，浅复制仅仅是指向被复制的内存地址，如果原地址中对象被改变了，那么浅复制出来的对象也会相应改变。</p> <p>深克隆： 创建一个新对象，属性中引用的其他对象也会被克隆，不再指向原有对象地址。 JSON.parse、JSON.stringify()</p></blockquote> <h3 id="_3-es6-的新特性都有哪些"><a href="#_3-es6-的新特性都有哪些" class="header-anchor">#</a> 3.es6 的新特性都有哪些？</h3> <blockquote><p>let 定义块级作用域变量 没有变量的提升，必须先声明后使用 let 声明的变量，不能与前面的 let，var，conset 声明的变量重名</p> <p>const 定义只读变量 const 声明变量的同时必须赋值，const 声明的变量必须初始化，一旦初始化完毕就不允许修改 const 声明变量也是一个块级作用域变量 const 声明的变量没有“变量的提升”，必须先声明后使用 const 声明的变量不能与前面的 let， var ， const 声明的变量重 const 定义的对象\数组中的属性值可以修改,基础数据类型不可以</p> <p>ES6 可以给形参函数设置默认值</p> <p>在数组之前加上三个点（...）展开运算符</p> <p>数组的解构赋值、对象的解构赋值</p> <p>箭头函数的特点 箭头函数相当于匿名函数，是不能作为构造函数的，不能被 new 箭头函数没有 arguments 实参集合,取而代之用...剩余运算符解决 箭头函数没有自己的 this。他的 this 是继承当前上下文中的 this 箭头函数没有函数原型 箭头函数不能当做 Generator 函数，不能使用 yield 关键字 不能使用 call、apply、bind 改变箭头函数中 this 指向 Set 数据结构，数组去重</p></blockquote> <h3 id="_4-和-区别是什么"><a href="#_4-和-区别是什么" class="header-anchor">#</a> 4.==和===区别是什么？</h3> <p>=赋值</p> <blockquote><p>==返回一个布尔值；相等返回 true，不相等返回 false； 允许不同数据类型之间的比较； 如果是不同类型的数据进行，会默认进行数据类型之间的转换； 如果是对象数据类型的比较，比较的是空间地址</p> <p>=== 只要数据类型不一样，就返回 false；</p></blockquote> <h3 id="_5-常见的设计模式有哪些"><a href="#_5-常见的设计模式有哪些" class="header-anchor">#</a> 5.常见的设计模式有哪些？</h3> <div class="language-text extra-class"><pre class="language-text"><code>1、js工厂模式
+2、js构造函数模式
+3、js原型模式
+4、构造函数+原型的js混合模式
+5、构造函数+原型的动态原型模式
+6、观察者模式
+7、发布订阅模式
+</code></pre></div><h3 id="_6-call-bind-apply-的区别"><a href="#_6-call-bind-apply-的区别" class="header-anchor">#</a> 6.call bind apply 的区别？</h3> <blockquote><p>call() 和 apply()的第一个参数相同，就是指定的对象。这个对象就是该函数的执行上下文。</p> <p>call()和 apply()的区别就在于，两者之间的参数。</p> <p>call()在第一个参数之后的 后续所有参数就是传入该函数的值。</p> <p>apply() 只有两个参数，第一个是对象，第二个是数组，这个数组就是该函数的参数。 bind() 方法和前两者不同在于： bind() 方法会返回执行上下文被改变的函数而不会立即执行，而前两者是 直接执行该函数。他的参数和 call()相同。</p></blockquote> <h3 id="_8-你怎样看待闭包"><a href="#_8-你怎样看待闭包" class="header-anchor">#</a> 8.你怎样看待闭包？</h3> <blockquote><p>个人感觉，简单来说闭包就是在函数里面声明函数，本质上说就是在函数内部和函数外部搭建起一座桥梁，使得子函数可以访问父函数中所有的局部变量，但是反之不可以，这只是闭包的作用之一，另一个作用，则是保护变量不受外界污染，使其一直存在内存中，在工作中我们还是少使用闭包的好，因为闭包太消耗内存，不到万不得已的时候尽量不使用。</p></blockquote> <h3 id="_9-你是如何理解原型和原型链的"><a href="#_9-你是如何理解原型和原型链的" class="header-anchor">#</a> 9.你是如何理解原型和原型链的？</h3> <blockquote><p>把所有的对象共用的属性全部放在堆内存的一个对象（共用属性组成的对象），然后让每一个对象的 <strong>proto</strong>存储这个「共用属性组成的对象」的地址。而这个共用属性就是原型，原型出现的目的就是为了减少不必要的内存消耗。而原型链就是对象通过<strong>proto</strong>向当前实例所属类的原型上查找属性或方法的机制，如果找到 Object 的原型上还是没有找到想要的属性或者是方法则查找结束，最终会返回 undefined</p></blockquote> <h3 id="_10-浏览器渲染的主要流程是什么"><a href="#_10-浏览器渲染的主要流程是什么" class="header-anchor">#</a> 10.浏览器渲染的主要流程是什么?</h3> <blockquote><p>将 html 代码按照深度优先遍历来生成 DOM 树。 css 文件下载完后也会进行渲染，生成相应的 CSSOM。 当所有的 css 文件下载完且所有的 CSSOM 构建结束后，就会和 DOM 一起生成 Render Tree。 接下来，浏览器就会进入 Layout 环节，将所有的节点位置计算出来。 最后，通过 Painting 环节将所有的节点内容呈现到屏幕上。</p></blockquote> <h3 id="_11-从输入-url-地址到页面相应都发生了什么"><a href="#_11-从输入-url-地址到页面相应都发生了什么" class="header-anchor">#</a> 11.从输入 url 地址到页面相应都发生了什么？</h3> <div class="language-text extra-class"><pre class="language-text"><code>1、浏览器的地址栏输入URL并按下回车。
+2、浏览器查找当前URL是否存在缓存，并比较缓存是否过期。3、DNS解析URL对应的IP。
+4、根据IP建立TCP连接（三次握手）。
+5、HTTP发起请求。
+6、服务器处理请求，浏览器接收HTTP响应。
+7、渲染页面，构建DOM树。
+8、关闭TCP连接（四次挥手）
+</code></pre></div><h3 id="_12-session、cookie、localstorage-的区别"><a href="#_12-session、cookie、localstorage-的区别" class="header-anchor">#</a> 12.session、cookie、localStorage 的区别</h3> <p><strong>相同点 都是保存在浏览器端，且同源的。</strong></p> <p><strong>不同点</strong></p> <blockquote><p>cookie 数据始终在同源的 http 请求中携带，即 cookie 在浏览器和服务器间来回传递。
+而 sessionStorage 和 localStorage 不会自动把数据发给服务器，仅在本地保存。
+cookie 数据还有路径（path）的概念，可以限制 cookie 只属于某个路径下。 存储大小限制也不同，cookie 数据不能超过 4k，同时因为每次 http 请求都会携带 cookie，所以 cookie 只适合保存很小的数据。
+sessionStorage 和 localStorage 虽然也有存储大小的限制，但比 cookie 大得多，可以达到 5M 或更大。 数据有效期不同，sessionStorage：仅在当前浏览器窗口关闭前有效，自然也就不可能持久保持；
+localStorage：始终有效，窗口或浏览器关闭也一直保存，因此用作持久数据；
+cookie 只在设置的 cookie 过期时间之前一直有效，即使窗口或浏览器关闭。 作用域不同，sessionStorage 不在不同的浏览器窗口中共享，即使是同一个页面；
+localStorage 在所有同源窗口中都是共享的；cookie 也是在所有同源窗口中都是共享的。</p></blockquote> <h3 id="_13-js-中跨域方法"><a href="#_13-js-中跨域方法" class="header-anchor">#</a> 13.js 中跨域方法</h3> <blockquote><p>同源策略（协议+端口号+域名要相同）</p> <p>1、jsonp 跨域(只能解决 get） 原理：动态创建一个 script 标签。利用 script 标签的 src 属性不受同源策略限制，因为所有的 src 属性和 href 属性都不受同源策略的限制，可以请求第三方服务器资源内容
+步骤： 1).去创建一个 script 标签 2).script 的 src 属性设置接口地址 3).接口参数，必须要带一个自定义函数名，要不然后台无法返回数据 4).通过定义函数名去接受返回的数据</p> <p>2、document.domain 基础域名相同 子域名不同</p> <p>3、window.name 利用在一个浏览器窗口内，载入所有的域名都是共享一个 window.name</p> <p>4、服务器设置对 CORS 的支持 原理：服务器设置 Access-Control-Allow-Origin HTTP 响应头之后，浏览器将会允许跨域请求</p> <p>5、利用 h5 新特性 window.postMessage()</p></blockquote> <h3 id="_14-前端有哪些页面优化方法"><a href="#_14-前端有哪些页面优化方法" class="header-anchor">#</a> 14.前端有哪些页面优化方法?</h3> <blockquote><p>减少 HTTP 请求数
+从设计实现层面简化页面
+合理设置 HTTP 缓存
+资源合并与压缩
+合并 CSS 图片，减少请求数的又一个好办法。
+将外部脚本置底（将脚本内容在页面信息内容加载后再加载）
+多图片网页使用图片懒加载。
+在 js 中尽量减少闭包的使用
+尽量合并 css 和 js 文件
+尽量使用字体图标或者 SVG 图标，来代替传统的 PNG 等格式的图片
+减少对 DOM 的操作
+在 JS 中避免“嵌套循环”和 “死循环”
+尽可能使用事件委托（事件代理）来处理事件绑定的操作</p></blockquote> <h3 id="_15-ajax-的四个步骤"><a href="#_15-ajax-的四个步骤" class="header-anchor">#</a> 15.Ajax 的四个步骤</h3> <blockquote><p>1.创建 ajax 实例</p> <p>2.执行 open 确定要访问的链接 以及同步异步</p> <p>3.监听请求状态</p> <p>4.发送请求</p></blockquote> <h3 id="_16-数组去重的方法"><a href="#_16-数组去重的方法" class="header-anchor">#</a> 16.数组去重的方法</h3> <p>ES6 的 set 对象 先将原数组排序，在与相邻的进行比较，如果不同则存入新数组</p> <div class="language-text extra-class"><pre class="language-text"><code>function unique(arr){
+    var arr2 = arr.sort();
+    var res = [arr2[0]];
+    for(var i=1;i&amp;lt;arr2.length;i++){
+        if(arr2[i] !== res[res.length-1]){
+        res.push(arr2[i]);
+    }
+}
+return res;
+}
+利用下标查询
+ function unique(arr){
+    var newArr = [arr[0]];
+    for(var i=1;i&amp;lt;arr.length;i++){
+        if(newArr.indexOf(arr[i]) == -1){
+        newArr.push(arr[i]);
+    }
+}
+return newArr;
+}
+</code></pre></div><h3 id="_17-ajax-中-get-和-post-请求的区别"><a href="#_17-ajax-中-get-和-post-请求的区别" class="header-anchor">#</a> 17.ajax 中 get 和 post 请求的区别</h3> <blockquote><p>get 一般用于获取数据
+get 请求如果需要传递参数，那么会默认将参数拼接到 url 的后面；然后发送给服务器；
+get 请求传递参数大小是有限制的；是浏览器的地址栏有大小限制；
+get 安全性较低
+get 一般会走缓存，为了防止走缓存，给 url 后面每次拼的参数不同；放在?后面，一般用个时间戳
+post 一般用于发送数据
+post 传递参数，需要把参数放进请求体中，发送给服务器；
+post 请求参数放进了请求体中，对大小没有要求；
+post 安全性比较高；
+post 请求不会走缓存；</p></blockquote> <h3 id="_18-ajax-的状态码"><a href="#_18-ajax-的状态码" class="header-anchor">#</a> 18.ajax 的状态码</h3> <blockquote><p>2 开头</p> <p>200 : 代表请求成功；
+3 开头</p> <p>301 : 永久重定向；
+302: 临时转移
+304 : 读取缓存 [表示浏览器端有缓存，并且服务端未更新，不再向服务端请求资源]
+307:临时重定向
+以 4 开头的都是客户端的问题；</p> <p>400 :数据/格式错误
+401: 权限不够；（身份不合格，访问网站的时候，登录和不登录是不一样的）
+404 : 路径错误，找不到文件
+以 5 开头都是服务端的问题</p> <p>500 : 服务器的问题
+503: 超负荷；</p></blockquote> <h3 id="_19-移动端的兼容问题"><a href="#_19-移动端的兼容问题" class="header-anchor">#</a> 19.移动端的兼容问题</h3> <blockquote><p>给移动端添加点击事件会有 300S 的延迟 如果用点击事件，需要引一个 fastclick.js 文件，解决 300s 的延迟 一般在移动端用 ontouchstart、ontouchmove、ontouchend
+移动端点透问题,touchstart 早于 touchend 早于 click,click 的触发是有延迟的，这个时间大概在 300ms 左右，也就是说我们 tap 触发之后蒙层隐藏， 此时 click 还没有触发，300ms 之后由于蒙层隐藏，我们的 click 触发到了下面的 a 链接上 尽量都使用 touch 事件来替换 click 事件。例如用 touchend 事件(推荐)。 用 fastclick，<a href="https://link.zhihu.com/?target=https%3A//github.com/ftlabs/fastclick" target="_blank" rel="noopener noreferrer">github.com/ftlabs/fast…<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 用 preventDefault 阻止 a 标签的 click 消除 IE10 里面的那个叉号 input:-ms-clear{display:none;}
+设置缓存 手机页面通常在第一次加载后会进行缓存，然后每次刷新会使用缓存而不是去重新向服务器发送请求。如果不希望使用缓存可以设置 no-cache。</p> <p>圆角 BUG 某些 Android 手机圆角失效 background-clip: padding-box; 防止手机中网页放大和缩小 这点是最基本的，做为手机网站开发者来说应该都知道的，就是设置 meta 中的 viewport</p> <p>设置用户截止缩放，一般写视口的时候就已经写好了。</p></blockquote> <h3 id="_20-js-中同步和异步-以及-js-的事件流"><a href="#_20-js-中同步和异步-以及-js-的事件流" class="header-anchor">#</a> 20.JS 中同步和异步,以及 js 的事件流</h3> <blockquote><p>同步：在同一时间内做一件事情</p> <p>异步：在同一时间内做多个事情 JS 是单线程的，每次只能做一件事情，JS 运行在浏览器中，浏览器是多线程的，可以在同一时间执行多个任务。</p> <p>21.JS 中常见的异步任务
+定时器、ajax、事件绑定、回调函数、async await、promise</p> <p>22.TCP 的三次握手和四次挥手
+三次握手</p> <p>第一次握手：客户端发送一个 SYN 码给服务器，要求建立数据连接；
+第二次握手： 服务器 SYN 和自己处理一个 SYN（标志）；叫 SYN+ACK（确认包）；发送给客户端，可以建立连接
+第三次握手： 客户端再次发送 ACK 向服务器，服务器验证 ACK 没有问题，则建立起连接；
+四次挥手</p> <p>第一次挥手： 客户端发送 FIN(结束)报文，通知服务器数据已经传输完毕；
+第二次挥手: 服务器接收到之后，通知客户端我收到了 SYN,发送 ACK(确认)给客户端，数据还没有传输完成
+第三次挥手： 服务器已经传输完毕，再次发送 FIN 通知客户端，数据已经传输完毕
+第四次挥手： 客户端再次发送 ACK,进入 TIME_WAIT 状态；服务器和客户端关闭连接； 23.为什么建立连接是三次握手，而断开连接是四次挥手呢?
+建立连接的时候， 服务器在 LISTEN 状态下，收到建立连接请求的 SYN 报文后，把 ACK 和 SYN 放在一个报文里发送给客户端。 而关闭连接时，服务器收到对方的 FIN 报文时，仅仅表示对方不再发送数据了但是还能接收数据，而自己也未必全部数据都发送给对方了，所以己方可以立即关闭，也可以发送一些数据给对方后，再发送 FIN 报文给对方来表示同意现在关闭连接，因此，己方 ACK 和 FIN 一般都会分开发送，从而导致多了一次。</p></blockquote> <h3 id="_24-dom-diff-原理"><a href="#_24-dom-diff-原理" class="header-anchor">#</a> 24.DOM diff 原理</h3> <blockquote><p>如果元素类型发生变化，直接替换
+如果是文本，则比较文本里面的内容，是否有差异，如果是元素就需要比较当前元素的属性是否相等,会先比较 key， 在比较类型 为什么 react 中循环 建议不要使用索引 ,如果纯为了展示 那可以使用索引</p></blockquote> <h3 id="_25-作用域"><a href="#_25-作用域" class="header-anchor">#</a> 25.作用域</h3> <p><strong>全局作用域</strong></p> <blockquote><p>浏览器打开一个页面时，浏览器会给 JS 代码提供一个全局的运行环境，那么这个环境就是全局作用域 一个页面只有一个全局作用域，全局作用域下有一个 window 对象 window 是全局作用域下的最大的一个内置对象（全局作用域下定义的变量和函数都会存储在 window 下） 如果是全局变量，都会给 window 新增一个键值对；属性名就是变量名，属性值就是变量所存储的值 如果变量只被 var 过，那么存储值是 undefined 在私有作用域中是可以获取到全局变量的，但是在全局作用域中不能获取私有变量</p></blockquote> <p><strong>私有作用域</strong></p> <blockquote><p>函数执行会形成一个新的私有的作用域（执行多次，形成多个私有作用域） 私有作用域在全局作用域中形成，具有包含的关系； 在一个全局作用域中，可以有很多个私有作用域 在私有作用域下定义的变量都是私有变量 形参也是私有变量 函数体中通过 function 定义的函数也是私有的，在全局作用域不能使用；</p></blockquote> <p><strong>块级作用域</strong></p> <blockquote><p>es6 中新引入的一种作用域 在 js 中常见到的 if{}、for{}、while{}、try{}、catch{}、switch case{}都是块级作用域 var obj = {} //对象的大括号不是块级作用域 块级作用域中的同一变量不能被重复声明（块级下 var 和 function 不能重名，否则会报错） 作用域链</p></blockquote> <p><strong>上级作用域</strong></p> <blockquote><p>函数在哪里定义，他的上一级作用域就是哪，和函数在哪个作用域下执行没有关系 作用域链：当获取变量所对应的值时，首先看变量是否是私有变量，如果不是私有变量，要继续向上一级作用域中查找，如果上一级也没有，那么会继续向上一级查找，直到找到全局作用域为止；如果全局作用域也没有，则会报错；这样一级一级向上查找，就会形成作用域链 当前作用域没有的，则会继续向上一级作用域查找 当前函数的上一级作用域跟函数在哪个作用域下执行没有关系，只跟函数在哪定义有关（重点）</p></blockquote> <h3 id="_26-promise-处理异步"><a href="#_26-promise-处理异步" class="header-anchor">#</a> 26.Promise 处理异步</h3> <blockquote><p>他是 ES6 中新增加的一个类（new Promise）,目的是为了管理 JS 中的异步编程的，所以把他称为“Promise 设计模式” new Promise 经历三个状态：padding(准备状态：初始化成功、开始执行异步的任务)、fullfilled(成功状态)、rejected(失败状态)== Promise 本身是同步编程的，他可以管理异步操作的（重点），new Promise 的时候，会把传递的函数立即执行 Promise 函数天生有两个参数，resolve(当异步操作执行成功，执行 resolve 方法),rejected(当异步操作失败，执行 reject 方法) then()方法中有两个函数，第一个传递的函数是 resolve,第二个传递的函数是 reject ajax 中 false 代表同步，true 代表异步，如果使用异步，不等 ajax 彻底完成</p></blockquote> <h3 id="_27-map-和-foreach-的区别"><a href="#_27-map-和-foreach-的区别" class="header-anchor">#</a> 27.map 和 forEach 的区别</h3> <p><strong>相同点</strong></p> <blockquote><p>都是循环遍历数组中的每一项 forEach 和 map 方法里每次执行匿名函数都支持 3 个参数，参数分别是 item（当前每一项）、index（索引值）、arr（原数组），需要用哪个的时候就写哪个 匿名函数中的 this 都是指向 window 只能遍历数组</p></blockquote> <p><strong>不同点</strong></p> <blockquote><p>map 方法返回一个新的数组，数组中的元素为原始数组调用函数处理后的值。(原数组进行处理之后对应的一个新的数组。) map()方法不会改变原始数组 map()方法不会对空数组进行检测 forEach()方法用于调用数组的每个元素，将元素传给回调函数.(没有 return，返回值是 undefined）
+<strong>注意</strong>：forEach 对于空数组是不会调用回调函数的。</p></blockquote> <h3 id="_28-async-await-函数"><a href="#_28-async-await-函数" class="header-anchor">#</a> 28.async await 函数</h3> <blockquote><p>async/await 函数是异步代码的新方式</p> <p>async/await 是基于 promise 实现的</p> <p>async/await 使异步代码更像同步代码</p> <p>await 只能在 async 函数中使用，不能再普通函数中使用，要成对出现</p> <p>默认返回一个 promise 实例，不能被改变</p> <p>await 下面的代码是异步，后面的代码是同步的</p></blockquote> <h3 id="_29-this-指向"><a href="#_29-this-指向" class="header-anchor">#</a> 29.this 指向</h3> <blockquote><p>全局作用域下的 this 指向 window
+如果给元素的事件行为绑定函数，那么函数中的 this 指向当前被绑定的那个元素
+函数中的 this，要看函数执行前有没有 . , 有 . 的话，点前面是谁，this 就指向谁，如果没有点，指向 window
+自执行函数中的 this 永远指向 window
+定时器中函数的 this 指向 window
+构造函数中的 this 指向当前的实例
+call、apply、bind 可以改变函数的 this 指向
+箭头函数中没有 this，如果输出 this，就会输出箭头函数定义时所在的作用域中的 this</p></blockquote> <h3 id="_30-原型"><a href="#_30-原型" class="header-anchor">#</a> 30.原型</h3> <blockquote><p>所有的函数数据类型都天生自带一个 prototype 属性，该属性的属性值是一个对象 prototype 的属性值中天生自带一个 constructor 属性，其 constructor 属性值指向当前原型所属的类 所有的对象数据类型，都天生自带一个<em>proto</em>属性，该属性的属性值指向当前实例所属类的原型</p></blockquote> <h3 id="_31-异步回调-如何解决回调地狱"><a href="#_31-异步回调-如何解决回调地狱" class="header-anchor">#</a> 31.异步回调（如何解决回调地狱）</h3> <div class="language-text extra-class"><pre class="language-text"><code>promise、generator、async/await
+
+promise： 1.是一个对象，用来传递异步操作的信息。代表着某个未来才会知道结果的时间，并未这个事件提供统一的api，供进异步处理
+	  2.有了这个对象，就可以让异步操作以同步的操作的流程来表达出来，避免层层嵌套的回调地狱
+	  3.promise代表一个异步状态，有三个状态pending（进行中），Resolve(以完成），Reject（失败）
+	  4.一旦状态改变，就不会在变。任何时候都可以得到结果。从进行中变为以完成或者失败
+		promise.all() 里面状态都改变，那就会输出，得到一个数组
+		promise.race() 里面只有一个状态变为rejected或者fulfilled即输出
+		promis.finally()不管指定不管Promise对象最后状态如何，都会执行的操作（本质上还是then方法的特例）
+</code></pre></div><h3 id="_32-前端事件流"><a href="#_32-前端事件流" class="header-anchor">#</a> 32.前端事件流</h3> <div class="language-text extra-class"><pre class="language-text"><code>事件流描述的是从页面中接受事件的顺序，事件 捕获阶段 处于目标阶段 事件冒泡阶段 addeventListener 最后这个布尔值参数如果是true，表示在捕获阶段调用事件处理程序；如果是false，表示在冒泡阶段调用事件处理程序。
+  1、事件捕获阶段：实际目标div在捕获阶段不会接受事件，也就是在捕获阶段，事件从document到&amp;lt;html&gt;再到&amp;lt;body&gt;就停止了。
+      2、处于目标阶段：事件在div发生并处理，但是事件处理会被看成是冒泡阶段的一部分。
+      3、冒泡阶段：事件又传播回文档
+   阻止冒泡事件event.stopPropagation()
+	  function stopBubble(e) {
+    		if (e &amp;amp;&amp;amp; e.stopPropagation) { // 如果提供了事件对象event 这说明不是IE浏览器
+      		e.stopPropagation()
+    		} else {
+      		window.event.cancelBubble = true //IE方式阻止冒泡
+    	      }
+  		   }
+   阻止默认行为event.preventDefault()
+ function stopDefault(e) {
+    if (e &amp;amp;&amp;amp; e.preventDefault) {
+      e.preventDefault()
+    } else {
+      // IE浏览器阻止函数器默认动作的行为
+      window.event.returnValue = false
+    }
+  }
+</code></pre></div><h3 id="_33-事件如何先捕获后冒泡"><a href="#_33-事件如何先捕获后冒泡" class="header-anchor">#</a> 33.事件如何先捕获后冒泡？</h3> <blockquote><p>在 DOM 标准事件模型中，是先捕获后冒泡。但是如果要实现先冒泡后捕获的效果， 对于同一个事件，监听捕获和冒泡，分别对应相应的处理函数，监听到捕获事件，先暂缓执行，直到冒泡事件被捕获后再执行捕获事件。</p> <p>哪些事件不支持冒泡事件：鼠标事件：mouserleave mouseenter 焦点事件：blur focus UI 事件：scroll resize</p></blockquote> <h3 id="_34-如何判断一个变量是对象还是数组-prototype-tostring-call-。"><a href="#_34-如何判断一个变量是对象还是数组-prototype-tostring-call-。" class="header-anchor">#</a> 34. 如何判断一个变量是对象还是数组（prototype.toString.call()）。</h3> <div class="language-text extra-class"><pre class="language-text"><code>千万不要使用typeof来判断对象和数组，因为这种类型都会返回object。
+</code></pre></div><blockquote><p>typeOf()是判断基本类型的 Boolean,Number，symbol, undefined, String。 对于引用类型：除 function，都返回 object null 返回 object。</p> <p>installOf() 用来判断 A 是否是 B 的实例，installof 检查的是原型。</p> <p>toString() 是 Object 的原型方法，对于 Object 对象，直接调用 toString() 就能返回 [Object Object] 。而对于其他对象，则需要通过 call / apply 来调用才能返回正确的类型信息。</p> <p>hasOwnProperty()方法返回一个布尔值，指示对象自身属性中是否具有指定的属性，该方法会忽略掉那些从原型链上继承到的属性。</p> <p>isProperty()方法测试一个对象是否存在另一个对象的原型链上。</p></blockquote> <h3 id="_35-settimeout-和-setinterval-的机制"><a href="#_35-settimeout-和-setinterval-的机制" class="header-anchor">#</a> 35.setTimeout 和 setInterval 的机制</h3> <div class="language-text extra-class"><pre class="language-text"><code>因为js是单线程的。浏览器遇到etTimeout 和 setInterval会先执行完当前的代码块，在此之前会把定时器推入浏览器的
+待执行时间队列里面，等到浏览器执行完当前代码之后会看下事件队列里有没有任务，有的话才执行定时器里的代码
+</code></pre></div><h3 id="_36-splice-和-slice、map-和-foreach、-filter-、reduce-的区别"><a href="#_36-splice-和-slice、map-和-foreach、-filter-、reduce-的区别" class="header-anchor">#</a> 36.splice 和 slice、map 和 forEach、 filter()、reduce()的区别</h3> <div class="language-text extra-class"><pre class="language-text"><code> 1.slice(start,end):方法可以从已有数组中返回选定的元素，返回一个新数组，
+ 包含从start到end（不包含该元素）的数组方法
+	注意：该方法不会更新原数组，而是返回一个子数组
+ 2.splice():该方法想或者从数组中添加或删除项目，返回被删除的项目。（该方法会改变原数组）
+	splice(index, howmany,item1,...itemx)
+		·index参数：必须，整数规定添加或删除的位置，使用负数，从数组尾部规定位置
+		·howmany参数：必须，要删除的数量，
+		·item1..itemx:可选，向数组添加新项目
+3.map()：会返回一个全新的数组。使用于改变数据值的时候。会分配内存存储空间数组并返回，forEach（）不会返回数据
+4.forEach(): 不会返回任何有价值的东西，并且不打算改变数据，单纯的只是想用数据做一些事情，他允许callback更改原始数组的元素
+5.reduce(): 方法接收一个函数作为累加器，数组中的每一个值（从左到右）开始缩减，最终计算一个值，不会改变原数组的值
+6.filter(): 方法创建一个新数组，新数组中的元素是通过检查指定数组中符合条件的所有元素。它里面通过fun
+</code></pre></div><h2 id="性能优化"><a href="#性能优化" class="header-anchor">#</a> 性能优化</h2> <p><strong>一、webpack 打包文件体积过大？（最终打包为一个 js 文件）</strong></p> <div class="language-text extra-class"><pre class="language-text"><code>1.异步加载模块2.提取第三库3.代码压缩4.去除不必要的插件
+</code></pre></div><p><strong>二、如何优化 webpack 构建的性能</strong></p> <div class="language-text extra-class"><pre class="language-text"><code>一、减少代码体积 1.使用CommonsChunksPlugin 提取多个chunk之间的通用模块，减少总体代码体积		 2.把部分依赖转移到CDN上，避免每次编译过程都由Webpack处理		 3.对一些组件库采用按需加载，避免无用的代码二、减少目录检索范围		 ·在使用loader的时候，通过制定exclude和include选项，减少loader遍历的目录范围，从而加快webpack编译速度	三、减少检索路经：resolve.alias可以配置webpack模块解析的别名，对于比较深的解析路经，可以对其配置alias
+</code></pre></div><p><strong>三、移动端的性能优化</strong></p> <div class="language-text extra-class"><pre class="language-text"><code>  1、首屏加载和按需加载，懒加载  2、资源预加载  3、图片压缩处理，使用base64内嵌图片  4、合理缓存dom对象  5、使用touchstart代替click（click 300毫秒的延迟）  6、利用transform:translateZ(0)，开启硬件GUP加速  7、不滥用web字体，不滥用float（布局计算消耗性能），减少font-size声明  8、使用viewport固定屏幕渲染，加速页面渲染内容  9、尽量使用事件代理，避免直接事件绑定
+</code></pre></div><p><strong>四、Vue 的 SPA 如何优化加载速度</strong></p> <div class="language-text extra-class"><pre class="language-text"><code>1.减少入口文件体积2.静态资源本地缓存3.开启Gzip压缩4.使用SSR,nuxt.js
+</code></pre></div><p><strong>五、移动端 300ms 延迟</strong></p> <div class="language-text extra-class"><pre class="language-text"><code>由来：300毫米延迟解决的是双击缩放。双击缩放，手指在屏幕快速点击两次。safari浏览器就会将网页缩放值原始比例。由于用户可以双击缩放或者是滚动的操作，当用户点击屏幕一次之后，浏览器并不会判断用户确实要打开至这个链接，还是想要进行双击操作因此，safair浏览器就会等待300ms，用来判断用户是否在次点击了屏幕       解决方案：1.禁用缩放，设置meta标签 user-scalable=no	  2.fastclick.js		原理：FastClick的实现原理是在检查到touchend事件的时候，会通过dom自定义事件立即		      发出click事件，并把浏览器在300ms之后真正的click事件阻止掉fastclick.js还可以解决穿透问题
+</code></pre></div><h3 id="六、页面的重构"><a href="#六、页面的重构" class="header-anchor">#</a> 六、页面的重构；</h3> <blockquote><p>在不改变外部行为的前提下，简化结构、添加可读性</p></blockquote> <h2 id="服务器端"><a href="#服务器端" class="header-anchor">#</a> 服务器端</h2> <h3 id="一、状态码"><a href="#一、状态码" class="header-anchor">#</a> 一、状态码：</h3> <div class="language-text extra-class"><pre class="language-text"><code>  2XX（成功处理了请求状态）      200 服务器已经成功处理请求，并提供了请求的网页      201 用户新建或修改数据成功      202 一个请求已经进入后台      204 用户删除成功  3XX（每次请求使用的重定向不要超过5次）      304 网页上次请求没有更新，节省带宽和开销  4XX（表示请求可能出错，妨碍了服务器的处理）      400 服务器不理解请求的语法      401 用户没有权限（用户名，密码输入错误）      403 用户得到授权（401相反），但是访问被禁止      404 服务器找不到请求的网页，  5XX（表示服务器在处理请求的时候发生内部错误）      500 服务器遇到错误，无法完成请求      503 服务器目前无法使用（超载或停机维护）
+</code></pre></div><h3 id="二、304-的缓存原理-添加-etag-标签-last-modified-304-网页上次请求没有更新-节省带宽和开销"><a href="#二、304-的缓存原理-添加-etag-标签-last-modified-304-网页上次请求没有更新-节省带宽和开销" class="header-anchor">#</a> 二、304 的缓存原理（添加 Etag 标签.last-modified） 304 网页上次请求没有更新，节省带宽和开销</h3> <div class="language-text extra-class"><pre class="language-text"><code>1.服务器首先产生Etag,服务器可在稍后使用它来判断页面是否被修改。本质上，客户端通过该记号传回服务器要求服务器验证（客户端）缓存）2.304是	HTTP的状态码，服务器用来标识这个文件没有被修改，不返回内容，浏览器接受到这个状态码会去去找浏览器缓存的文件3.流程：客户端请求一个页面A。服务器返回页面A，并在A上加一个Tage客服端渲染该页面，并把Tage也存储在缓存中。客户端再次请求页面A	并将上次请求的资源和ETage一起传递给服务器。服务器检查Tage.并且判断出该页面自上次客户端请求之后未被修改。直接返回304last-modified: 客服端请求资源，同时有一个last-modified的属性标记此文件在服务器最后修改的时间		客服端第二次请求此url时，根据http协议。浏览器会向服务器发送一个If-Modified-Since报头，		询问该事件之后文件是否被修改，没修改返回304 有了Last-Modified，为什么还要用ETag？  1、因为如果在一秒钟之内对一个文件进行两次更改，Last-Modified就会不正确（Last—Modified不能识别秒单位的修改）  2、某些服务器不能精确的得到文件的最后修改时间  3、一些文件也行会周期新的更改，但是他的内容并不改变（仅仅改变修改的事件），这个时候我们并不希望客户端认为文件被修改，而重新GetETag，为什么还要用Last-Modified？  1、两者互补，ETag的判断的缺陷，比如一些图片等静态文件的修改  2、如果每次扫描内容都生成ETag比较，显然要比直接比较修改时间慢的多。ETag是被请求变量的实体值（文件的索引节，大小和最后修改的时间的Hash值）  1、ETag的值服务器端对文件的索引节，大小和最后的修改的事件进行Hash后得到的。
+</code></pre></div><h3 id="三、get-post-的区别"><a href="#三、get-post-的区别" class="header-anchor">#</a> 三、get/post 的区别</h3> <div class="language-text extra-class"><pre class="language-text"><code>1.get数据是存放在url之后，以？分割url和传输数据，参数之间以&amp;amp;相连； post方法是把提交的数据放在http包的Body中2.get提交的数据大小有限制，（因为浏览器对url的长度有限制），post的方法提交的数据没有限制3.get需要request.queryString来获取变量的值，而post方式通过request.from来获取变量的值4.get的方法提交数据，会带来安全问题，比如登录一个页面，通过get的方式提交数据，用户名和密码就会出现在url上
+</code></pre></div><h3 id="四、http-协议的理解"><a href="#四、http-协议的理解" class="header-anchor">#</a> 四、http 协议的理解</h3> <div class="language-text extra-class"><pre class="language-text"><code>1.超文本的传输协议，是用于从万维网服务器超文本传输到本地资源的传输协议2.基于TCP/IP通信协议来传递数据（HTML，图片资源）3.基于运用层的面向对象的协议，由于其简洁、快速的方法、适用于分布式超媒体信息系统4.http请求信息request：	请求行（request line）、请求头部（header）,空行和请求数据四部分构成	请求行，用来说明请求类型,要访问的资源以及所使用的HTTP版本.	请求头部，用来说明服务器要使用的附加信息	空行，请求头部后面的空行是必须的	请求数据也叫主体，可以添加任意的其他数据。5.http相应信息Response	状态行、消息报头、空行和响应正文	状态行，由HTTP协议版本号， 状态码， 状态消息 三部分组成	消息报头，用来说明客户端要使用的一些附加信息	空行，消息报头后面的空行是必须的	响应正文，服务器返回给客户端的文本信息。
+</code></pre></div><h3 id="五、http-和-https"><a href="#五、http-和-https" class="header-anchor">#</a> 五、http 和 https</h3> <div class="language-text extra-class"><pre class="language-text"><code>https：是以安全为目标的HTTP通道，简单讲是HTTP的安全版本，通过SSL加密http：超文本传输协议。是一个客服端和服务器端请求和应答的标准（tcp）,使浏览器更加高效，使网络传输减少
+</code></pre></div><h3 id="六、http1-0-1-1-2-0-的区别"><a href="#六、http1-0-1-1-2-0-的区别" class="header-anchor">#</a> 六、http1.0 1.1 2.0 的区别</h3> <div class="language-text extra-class"><pre class="language-text"><code>长连接：HTTP1.0需要使用keep-alive参数来告知服务器建立一个长连接，而HTP1.1默认支持长连接节约宽带：HTTP1.1支持只发送一个header信息（不带任何body信息）host域（设置虚拟站点，也就是说，web server上的多个虚拟站点可以共享同一个ip端口）：HTTP1.0没有host域1.http2采用的二进制文本传输数据，而非http1文本格式，二进制在协议的解析和扩展更好2.数据压缩：对信息头采用了HPACK进行压缩传输，节省了信息头带来的网络流量3.多路复用：一个连接可以并发处理多个请求4.服务器推送：我们对支持HTTP2.0的web server请求数据的时候，服务器会顺便把一些客户端需要的资源一起推送到客户端，免得客户端再次创建连接发送请求到服务器端获取。这种方式非常合适加载静态资源
+</code></pre></div><h3 id="七、web-缓存"><a href="#七、web-缓存" class="header-anchor">#</a> 七、web 缓存</h3> <div class="language-text extra-class"><pre class="language-text"><code>1.web缓存就是存在于客户端与服务器之间的一个副本、当你第一个发出请求后，缓存根据请求保存输出内容的副本2.缓存的好处        （1）减少不必要的请求    （2）降低服务器的压力，减少服务器的消耗    （3）降低网络延迟，加快页面打开速度（直接读取浏览器的数据）
+</code></pre></div><h3 id="八、常见的-web-安全及防护原理"><a href="#八、常见的-web-安全及防护原理" class="header-anchor">#</a> 八、常见的 web 安全及防护原理</h3> <div class="language-text extra-class"><pre class="language-text"><code>1.sql注入原理：是将sql代码伪装到输入参数中，传递到服务器解析并执行的一种攻击手法。也就是说，            在一些对server端发起的请求参数中植入一些sql代码，server端在执行sql操作时，会拼接对应参数，            同时也将一些sql注入攻击的“sql”拼接起来，导致会执行一些预期之外的操作。		防范：1.对用户输入进行校验		       2.不适用动态拼接sql2.XSS（跨站脚本攻击）：往web页面插入恶意的html标签或者js代码。		        举例子：在论坛放置一个看是安全的链接，窃取cookie中的用户信息			防范：1.尽量采用post而不使用get提交表单			      2.避免cookie中泄漏用户的隐式3.CSRF(跨站请求伪装）：通过伪装来自受信任用户的请求			举例子：黄轶老师的webapp音乐请求数据就是利用CSRF跨站请求伪装来获取QQ音乐的数据			防范：在客服端页面增加伪随机数，通过验证码XSS和CSRF的区别：   1.XSS是获取信息，不需要提前知道其他用户页面的代码和数据包   2.CSRF代替用户完成指定的动作，需要知道其他页面的代码和数据包
+</code></pre></div><h3 id="九、cdn-内容分发网络"><a href="#九、cdn-内容分发网络" class="header-anchor">#</a> 九、CDN(内容分发网络)</h3> <ol><li>尽可能地避开互联网有可能影响数据传输速度和稳定性的瓶颈。使内容传输的更快更稳定。</li> <li>关键技术：内容存储和分发技术</li> <li>基本原理：广泛采用各种缓存服务器，将这些缓存服务器分布到用户访问相对的地区或者网络中，当用户访问网络时利用全局负载技术将用户的访问指向距离最近的缓存服务器，由缓存服务器直接响应用户的请求（全局负载技术）</li></ol> <h3 id="十一、从输入-url-到获取页面的完整过程"><a href="#十一、从输入-url-到获取页面的完整过程" class="header-anchor">#</a> 十一、从输入 url 到获取页面的完整过程</h3> <ol><li>查询 DNS（域名解析），获取域名对应的 IP 地址，查询浏览器缓存</li> <li>浏览器与服务器建立 TCP 链接（三次握手）</li> <li>浏览器向服务器发送 http 请求（请求和传输数据）</li> <li>服务器接收到这个请求后，根据路径参数，经过后端的一些处理生成 html 代码返回给浏览器</li> <li>浏览器拿到完成的 html 页面代码开始解析和渲染，如果遇到外部的 css 或 js，图片一样的的步骤</li> <li>浏览器根据拿到的资源对页面进行渲染，把一个我弄成的页面呈现出来</li></ol> <h3 id="十二、浏览器渲染原理及流程-dom-cssom-render-layout-print"><a href="#十二、浏览器渲染原理及流程-dom-cssom-render-layout-print" class="header-anchor">#</a> 十二、浏览器渲染原理及流程 DOM-&gt;CSSOM-&gt;render-&gt;layout-&gt;print</h3> <p>流程：解析 html 以及构建 dom 树-&gt;构建 render 树-&gt;布局 render 树-&gt;绘制 render 树</p> <p>概念：</p> <ol><li>构建 DOM 树：渲染引擎解析 HTML 文档，首先将标签转换成 DOM 树中的 DOM node(包括 js 生成的标签)生成内容树</li> <li>构建渲染树：解析对应的 css 样式文件信息（包括 js 生成的样式和外部的 css）</li> <li>布局渲染树：从根节点递归调用，计算每一个元素的大小，位置等。给出每个节点所在的屏幕的精准位置</li> <li>绘制渲染树：遍历渲染树，使用 UI 后端层来绘制每一个节点</li></ol> <p>重绘：当盒子的位置、大小以及其它属性，例如颜色、字体大小等确定下来之后，浏览器变把这些颜色都按照各自的特性绘制一遍，将内容呈现在页面上。</p> <p>触发重绘的条件：改变元素的外观属性。如：color，background-color 等</p> <p>重绘是指一个元素外观的改变所触发的浏览器行为，浏览器会根据元素的新特性重新绘制，是元素呈现新的外观</p> <p>注意：table 及其内部元素需要多次计算才能确定好其在渲染树中节点的属性值，比同等元素要多花时间，要尽量避免使用 table 布局</p> <p>重排（重构/回流/reflow）：当渲染树中的一部分（或全部）因为元素的规模尺寸，布局，隐藏等改变而需要重新构建，这就是回流。</p> <p>每个页面都需要一次回流，就是页面第一次渲染的时候。</p> <p>重排一定会影响重绘，但是重绘不一定不影响重排。</p> <h3 id="十三、为什么-css-放在顶部而-js-写在后面"><a href="#十三、为什么-css-放在顶部而-js-写在后面" class="header-anchor">#</a> 十三、为什么 css 放在顶部而 js 写在后面</h3> <ol><li>浏览器预先加载 css 后，可以不必等待 HTML 加载完毕就可以渲染页面了</li> <li>其实 HTML 渲染并不会等到完全加载完再渲染页面，而是一边解析 DOM 一边渲染</li> <li>js 写在尾部，主要是因为 js 主要扮演事件处理的功能，一方面很多操作是在页面渲染后才执行的。另一方面可以节省加载时间，是页面能够更快的加载，提高用户的良好体验</li></ol> <p>但是随着 JS 技术的发展，JS 也就开始承担页面渲染的工作。比如我们的 UI 其实可以分别对待，把渲染页面的 js 放在前面，事件处理的 js 放在后面。</p> <h3 id="十四、存储方法与传输方式"><a href="#十四、存储方法与传输方式" class="header-anchor">#</a> 十四、存储方法与传输方式</h3> <ol><li>indexDB:是后的本低存储库，把一些数据存储到浏览器中，没网络，浏览器可以从这里读取数据，离线运用。5M</li> <li>Cookie：通过浏览器记录信息确认用户省份，最大 4KB，这也就限制了传输的数据，请求的性能会受到影响</li> <li>Session：服务器使用的一种记录客户状态的机制（session_id 在 set_cookie 发送到客户端，保存为 cookie）</li> <li>localStroge:h5 的本地存储，数据永久保存在客户端</li></ol> <p><strong>cookie，sessionStorage,localStorage</strong></p> <ol><li>cookie,sessionStorage,localStorage 是存放在客户端，session 对象数据是存放在服务器上，实际上浏览器和服务器之间仅需传递 session 即可，服务器根据 seesion_id 找到对应的用户 session 对象，session 存储数据更安全一些，一般存放用户信息，浏览器只适合存储一般的数据</li> <li>cookie 数据始终在同源的 http 请求中携带，在浏览器和服务器来回传递，里面存放着 session_id sessionStorage,localStorage 仅在本地保存</li> <li>大小限制区别，cookie 数据不超过 4kb，localStorage 在谷歌浏览中 2.6MB</li> <li>数据有效期不同，cookie 在设置的（服务器设置）有效期内有效，不管窗口和浏览器关闭，sessionStorage 仅在当前浏览器窗口关闭之前有效，关闭即销毁（临时存储），localStorage 始终有效</li></ol> <p><strong>SessionStorageg 和 localStorage 区别：</strong></p> <ol><li>sessionStorage 用于本地存储一个会话（session）中的数据，这些数据只有在用一个会话的页面才能被访问（也就是说在第一次通信过程中）并且在会话结束后数据也随之销毁，不是一个持久的本低存储，会话级别的存储</li> <li>localStorage 用于持久化的本地存储，除非主动删除数据，否则不会过期</li></ol> <p><strong>token、cookie、session 三者的理解？？？</strong></p> <ol><li>token 就是令牌，比如你授权（登录）一个程序时，他就是个依据，判断你是否已经授权该软件（最好的身份认证，安全性好，切实唯一的）用户身份的验证方式</li> <li>cookie 是写在客户端一个 txt 文件，里面包括登录信息值类的，这样你下次在登陆某个网站，就会自动调用 cookie 自动登录用户名，服务器生成，发送到浏览器，浏览器保存，下次请求再次发送给服务器（存放着登录信息）</li> <li>session 是一类用来客户端和服务器之间保持状态的解决方案，会话完成被销毁（代表的就是服务器和客户端的一次会话过程）cookie 中存放着 sessionID，请求会发送这个 id，session 因为 request 对象而产生。</li></ol> <p><strong>基于 Token 的身份验证：（最简单的 token: uid 用户唯一的身份识别 + time 当前事件戳 + sign 签名）</strong></p> <ol><li>用户通过用户名和密码发送请求</li> <li>服务器端验证</li> <li>服务器端返回一个带签名的 token，给客户端</li> <li>客户端储存 token，并且每次用于发送请求</li> <li>服务器验证 token 并且返回数据</li></ol> <p>每一次请求都需要 token</p> <p><strong>cookie 与 session 区别</strong></p> <ol><li>cookie 数据存放在客户的浏览器上，session 数据放在服务器上。</li> <li>cookie 不是很安全，别人可以分析存放在本地的 COOKIE 并进行 COOKIE 欺骗考虑到安全应当使用 session。</li> <li>session 会在一定时间内保存在服务器上。当访问增多，会比较占用你服务器的性能考虑到减轻服务器性能方面，应当使用 COOKIE。</li> <li>单个 cookie 保存的数据不能超过 4K，很多浏览器都限制一个站点最多保存 20 个 cookie。</li></ol> <p><strong>session 与 token 区别</strong></p> <ol><li>session 认证只是把简单的 User 的信息存储 Session 里面，sessionID 不可预测，一种认证手段。只存在服务端，不能共享到其他的网站和第三方 App</li> <li>token 是 oAuth Token，提供的是认证和授权，认证针对用户，授权是针对 App，目的就是让某 APP 有权访问某用户的的信息。Token 是唯一的， token 不能转移到其他的 App，也不能转到其他用户上。（适用于 App）</li> <li>session 的状态是存在服务器端的，客户端只存在 session id， Token 状态是存储在客户端的 。</li></ol> <p><strong>Cookie 的弊端有哪些？？？（优势：保存客户端数据，分担了服务器存储的负担）</strong></p> <ol><li>数量和长度的限制。每个特定的域名下最多生成 20 个 cookie（chorme 和 safari 没有限制）</li> <li>安全性问题</li></ol> <h2 id="手写代码"><a href="#手写代码" class="header-anchor">#</a> 手写代码</h2> <ol><li><p>动手实现一个 bind（原理通过 apply，call）</p></li> <li><p>AJAX</p></li></ol> <div class="language-text extra-class"><pre class="language-text"><code> ajax的原理：相当于在用户和服务器之间加一个中间层（ajax引擎),使用户操作与服务器响应异步化。  优点：在不刷新整个页面的前提下与服务器通信维护数据。不会导致页面的重载        可以把前端服务器的任务转嫁到客服端来处理，减轻服务器负担，节省宽带  劣势：不支持back。对搜索引擎的支持比较弱；不容易调试	  怎么解决呢？通过location.hash值来解决Ajax过程中导致的浏览器前进后退按键失效，  解决以前被人常遇到的重复加载的问题。主要比较前后的hash值，看其是否相等，在判断是否触发ajax
+</code></pre></div><ol start="3"><li><p>函数节流（throttle）</p> <div class="language- extra-class"><pre class="language-text"><code> function throttle (func, wait) {        var timeout;        var previous = 0;        return function () {            context = this;            args = arguments;            if (!timeout) {                timeout = setTimeout(() =&gt; {                    timeout = null;                    func.apply(context,args)                }, wait);            }        }    }     }
+</code></pre></div></li> <li><p>函数防抖（debounce）</p></li></ol> <div class="language- extra-class"><pre class="language-text"><code>function debounce (func, wait) {         var timeout;         return function() {             var context = this;             var args = arguments;             clearTimeout(timeout);             timeout = setTimeout(() =&gt; {                 func.apply(context,args)             }, wait);         }     }
+</code></pre></div><ol start="5"><li>实现一个函数 clone，可以对 JavaScript 中的 5 种主要的数据类型（包括 Number、String、Object、Array、Boolean）进行值复制</li> <li><a href="https://juejin.im/post/6844903625769091079" target="_blank" rel="noopener noreferrer">实现一个简单的 Promise<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>发布订阅者模式（观察者模式）</li> <li>手动写一个 node 服务器</li></ol> <div class="language- extra-class"><pre class="language-text"><code>const http = require('http');const fs = require('fs');const server = http.createServer((req,res) =&gt; {	if (reu.url == '/') {	const indexFile = fs.createReadStream('./index.html')	req.writeHead(200,{'context-Type':'text/html;charset = utf8})	indexFile.pipe(res)}server.listen(8080)
+</code></pre></div><h2 id="vue-的相关问题"><a href="#vue-的相关问题" class="header-anchor">#</a> Vue 的相关问题</h2> <h3 id="vue-和-react-有什么区别"><a href="#vue-和-react-有什么区别" class="header-anchor">#</a> VUE 和 REACT 有什么区别？</h3> <p>react 整体是函数式的思想，把组件设计成纯组件，状态和逻辑通过参数传入，所以在 react 中，是单向数据流；</p> <p>vue 的思想是响应式的，也就是基于是数据可变的，通过对每一个属性建立 Watcher 来监听，当属性变化的时候，响应式的更新对应的虚拟 dom。</p> <h3 id="谈谈对-vue-的理解"><a href="#谈谈对-vue-的理解" class="header-anchor">#</a> 谈谈对 vue 的理解</h3> <blockquote><p>vue 是一个渐进式的 JS 框架。他易用，灵活，高效； 可以把一个页面分隔成多个组件；当其他页面有类似功能时，直接让封装的组件进行复用； 他是构建用户界面的声明式框架，只关心图层；不关心具体是如何实现的</p></blockquote> <h3 id="vue-响应式原理"><a href="#vue-响应式原理" class="header-anchor">#</a> vue 响应式原理</h3> <h3 id="vue-虚拟-dom-diff-算法"><a href="#vue-虚拟-dom-diff-算法" class="header-anchor">#</a> vue 虚拟 dom &amp; diff 算法</h3> <h3 id="vue3-解决什么问题"><a href="#vue3-解决什么问题" class="header-anchor">#</a> vue3 解决什么问题</h3> <h3 id="vue-为什么不能检测数组和对象的变化-怎么处理-为什么通过索引操作数组不能触发响应式"><a href="#vue-为什么不能检测数组和对象的变化-怎么处理-为什么通过索引操作数组不能触发响应式" class="header-anchor">#</a> Vue 为什么不能检测数组和对象的变化,怎么处理(为什么通过索引操作数组不能触发响应式)</h3> <h3 id="vue-router-原理"><a href="#vue-router-原理" class="header-anchor">#</a> vue router 原理</h3> <h3 id="v-model-实现原理"><a href="#v-model-实现原理" class="header-anchor">#</a> v-model 实现原理</h3> <blockquote><p>Vue 的双向数据绑定是由数据劫持结合发布者订阅者实现的。 数据劫持是通过 Object.defineProperty()来劫持对象数据的 setter 和 getter 操作。 在数据变动时作你想做的事</p> <p>原理 通过 Observer 来监听自己的 model 数据变化，通过 Compile 来解析编译模板指令，最终利用 Watcher 搭起 Observer 和 Compile 之间的通信桥梁，达到数据变化-&gt;视图更新 在初始化 vue 实例时，遍历 data 这个对象，给每一个键值对利用 Object.definedProperty 对 data 的键值对新增 get 和 set 方法，利用了事件监听 DOM 的机制，让视图去改变数据。</p></blockquote> <h3 id="vue-nexttick"><a href="#vue-nexttick" class="header-anchor">#</a> vue.nexttick</h3> <h3 id="谈谈对生命周期的理解"><a href="#谈谈对生命周期的理解" class="header-anchor">#</a> 谈谈对生命周期的理解</h3> <blockquote><p>beforeCreate 阶段：vue 实例的挂载元素 el 和数据对象 data 都是 undefined，还没有初始化。
+created 阶段：vue 实例的数据对象 data 有了，可以访问里面的数据和方法，未挂载到 DOM，el 还没有
+beforeMount 阶段：vue 实例的 el 和 data 都初始化了，但是挂载之前为虚拟的 dom 节点
+mounted 阶段：vue 实例挂载到真实 DOM 上，就可以通过 DOM 获取 DOM 节点
+beforeUpdate 阶段：响应式数据更新时调用，发生在虚拟 DOM 打补丁之前，适合在更新之前访问现有的 DOM，比如手动移除已添加的事件监听器
+updated 阶段：虚拟 DOM 重新渲染和打补丁之后调用，组成新的 DOM 已经更新，避免在这个钩子函数中操作数据，防止死循环
+beforeDestroy 阶段：实例销毁前调用，实例还可以用，this 能获取到实例，常用于销毁定时器，解绑事件
+destroyed 阶段：实例销毁后调用，调用后所有事件监听器会被移除，所有的子实例都会被销毁</p></blockquote> <h3 id="vue-路由的两种模式"><a href="#vue-路由的两种模式" class="header-anchor">#</a> vue 路由的两种模式</h3> <p>hash ——即地址栏 URL 中的#符号（此 hsah 不是密码学里的散列运算） hash 虽然出现 URL 中，但不会被包含在 HTTP 请求中，对后端完全没有影响，因此改变 hash 不会重新加载页面。
+history ——利用了 HTML5 History Interface 中新增的 pushState() 和 replaceState() 方法
+这两个方法应用于浏览器的历史记录站，在当前已有的 back、forward、go 的基础之上，它们提供了对历史记录进行修改的功能。只是当它们执行修改是，虽然改变了当前的 URL，但你浏览器不会立即向后端发送请求。</p> <h3 id="vuex-的流程"><a href="#vuex-的流程" class="header-anchor">#</a> vuex 的流程</h3> <p>页面通过 mapAction 异步提交事件到 action。action 通过 commit 把对应参数同步提交到 mutation。
+mutation 会修改 state 中对于的值。 最后通过 getter 把对应值跑出去，在页面的计算属性中
+通过 mapGetter 来动态获取 state 中的值</p> <h3 id="vuex-有哪几种状态和属性"><a href="#vuex-有哪几种状态和属性" class="header-anchor">#</a> vuex 有哪几种状态和属性</h3> <p>state 中保存着共有数据，数据是响应式的
+getter 可以对 state 进行计算操作，主要用来过滤一些数据，可以在多组件之间复用
+mutations 定义的方法动态修改 state 中的数据，通过 commit 提交方法，方法必须是同步的
+actions 将 mutations 里面处理数据的方法变成异步的，就是异步操作数据，通 store.dispatch 来分发 actions，把异步的方法写在 actions 中，通过 commit 提交 mutations，进行修改数据。
+modules：模块化 vuex</p> <h3 id="vue-中-key-值的作用"><a href="#vue-中-key-值的作用" class="header-anchor">#</a> vue 中 key 值的作用</h3> <p>当 Vue.js 用 v-for 正在更新已渲染过的元素列表时，它默认用“就地复用”策略。 如果数据项的顺序被改变，Vue 将不会移动 DOM 元素来匹配数据项的顺序，而是简单复用此处每个元素，并且确保它在特定索引下显示已被渲染过的每个元素。</p> <p>key 的作用主要是为了高效的更新虚拟 DOM。</p> <h3 id="route和-router的区别"><a href="#route和-router的区别" class="header-anchor">#</a> <code>$route</code>和<code>$router</code>的区别</h3> <blockquote><p>$route是“路由信息对象”，包括path，params，hash，query，fullPath，matched，name等路由信息参数。
+$router 是“路由实例”对象包括了路由的跳转方法，钩子函数等。</p></blockquote> <h3 id="vue-router-守卫"><a href="#vue-router-守卫" class="header-anchor">#</a> vue-router 守卫</h3> <blockquote><p>导航守卫 router.beforeEach 全局前置守卫
+to: Route: 即将要进入的目标（路由对象）
+from: Route: 当前导航正要离开的路由
+next: Function: 一定要调用该方法来 resolve 这个钩子。（一定要用这个函数才能去到下一个路由，如果不用就拦截） 执行效果依赖 next 方法的调用参数。
+next(): 进行管道中的下一个钩子。如果全部钩子执行完了，则导航的状态就是 confirmed (确认的)。
+next(false): 取消进入路由，url 地址重置为 from 路由地址(也就是将要离开的路由地址)。</p></blockquote> <blockquote><p>路由独享的守卫 你可以在路由配置上直接定义 beforeEnter 守卫</p> <p>组件内的守卫 你可以在路由组件内直接定义以下路由导航守卫</p></blockquote> <h3 id="vue-修饰符"><a href="#vue-修饰符" class="header-anchor">#</a> vue 修饰符</h3> <blockquote><p>stop：阻止事件的冒泡
+prevent：阻止事件的默认行为
+once：只触发一次
+self：只触发自己的事件行为时，才会执行</p></blockquote> <h3 id="vue-项目中的性能优化"><a href="#vue-项目中的性能优化" class="header-anchor">#</a> vue 项目中的性能优化</h3> <blockquote><p>1.不要在模板里面写过多表达式</p> <p>2.循环调用子组件时添加 key</p> <p>3.频繁切换的使用 v-show，不频繁切换的使用 v-if</p> <p>4.尽量少用 float，可以用 flex</p> <p>5.按需加载，可以用 require 或者 import()按需加载需要的组件</p> <p>6.路由懒加载</p></blockquote> <h3 id="vue-extend-和-vue-component"><a href="#vue-extend-和-vue-component" class="header-anchor">#</a> .vue.extend 和 vue.component</h3> <blockquote><p>extend 是构造一个组件的语法器。 然后这个组件你可以作用到 Vue.component 这个全局注册方法里 还可以在任意 vue 模板里使用组件。 也可以作用到 vue 实例或者某个组件中的 components 属性中并在内部使用 apple 组件。
+Vue.component 你可以创建 ，也可以取组件。</p> <p>常见的兼容问题
+png24 位的图片在 iE6 浏览器上出现背景 解决方案是做成 PNG8.也可以引用一段脚本处理.</p> <p>浏览器默认的 margin 和 padding 不同。 解决方案是加一个全局的*{margin:0;padding:0;}来统一。</p> <p>IE6 双边距 bug:块属性标签 float 后，又有横行的 margin 情况下，在 ie6 显示 margin 比设置的大。</p> <p>浮动 ie 产生的双倍距离（IE6 双边距问题：在 IE6 下，如果对元素设置了浮动，同时又设置了 margin-left 或 margin-right，margin 值会加倍。） #box{ float:left; width:10px; margin:0 0 0 100px;}</p></blockquote> <h2 id="其它"><a href="#其它" class="header-anchor">#</a> 其它</h2> <details class="custom-block details"><summary>题目</summary> <h3 id="js-的数据类型以及是如何存储的"><a href="#js-的数据类型以及是如何存储的" class="header-anchor">#</a> JS 的数据类型以及是如何存储的</h3> <p>JavaScript 一共有 8 种数据类型，其中有 7 种基本数据类型：Undefined、Null、Boolean、Number、String、Symbol（es6 新增，表示独一无二的值）和 BigInt（es10 新增）；</p> <p>1 种引用数据类型——Object（Object 本质上是由一组无序的名值对组成的）。里面包含 function、Array、Date 等。JavaScript 不支持任何创建自定义类型的机制，而所有值最终都将是上述 8 种数据类型之一。</p> <p>原始数据类型：直接存储在<strong>栈</strong>（stack）中，占据空间小、大小固定，属于被频繁使用数据，所以放入栈中存储。</p> <p>引用数据类型：同时存储在<strong>栈</strong>（stack）和<strong>堆</strong>（heap）中，占据空间大、大小不固定。引用数据类型在栈中存储了指针，该指针指向堆中该实体的起始地址。当解释器寻找引用值时，会首先检索其在栈中的地址，取得地址后从堆中获得实体。</p> <h3 id="、-、-运算符"><a href="#、-、-运算符" class="header-anchor">#</a> &amp;&amp;、||、！！运算符</h3> <ul><li><code>&amp;&amp;</code> 叫逻辑与，在其操作数中找到第一个虚值表达式并返回它，如果没有找到任何虚值表达式，则返回最后一个真值表达式。它采用短路来防止不必要的工作。</li> <li><code>||</code> 叫逻辑或，在其操作数中找到第一个真值表达式并返回它。这也使用了短路来防止不必要的工作。在支持 ES6 默认函数参数之前，它用于初始化函数中的默认参数值。</li> <li><code>!!</code> 运算符可以将右侧的值强制转换为布尔值，这也是将值转换为布尔值的一种简单方法。</li></ul> <h3 id="js-数据类型判断"><a href="#js-数据类型判断" class="header-anchor">#</a> JS 数据类型判断</h3> <p><strong>（1）typeof</strong></p> <p>typeof 对于原始类型来说，除了 null 都可以显示正确的类型</p> <div class="language- extra-class"><pre class="language-text"><code>console.log(typeof 2);               // number
+console.log(typeof true);            // boolean
+console.log(typeof 'str');           // string
+console.log(typeof []);              // object     []数组的数据类型在 typeof 中被解释为 object
+console.log(typeof function(){});    // function
+console.log(typeof {});              // object
+console.log(typeof undefined);       // undefined
+console.log(typeof null);            // object     null 的数据类型被 typeof 解释为 object
+</code></pre></div><p>typeof 对于对象来说，除了函数都会显示 object，所以说 typeof 并不能准确判断变量到底是什么类型,所以想判断一个对象的正确类型，这时候可以考虑使用 instanceof</p> <p><strong>（2）instanceof</strong></p> <p>instanceof 可以正确的判断对象的类型，因为内部机制是通过判断对象的原型链中是不是能找到类型的 prototype。</p> <div class="language- extra-class"><pre class="language-text"><code>console.log(2 instanceof Number);                    // false
+console.log(true instanceof Boolean);                // false
+console.log('str' instanceof String);                // false
+console.log([] instanceof Array);                    // true
+console.log(function(){} instanceof Function);       // true
+console.log({} instanceof Object);                   // true
+// console.log(undefined instanceof Undefined);
+// console.log(null instanceof Null);
+</code></pre></div><p>可以看出直接的字面量值判断数据类型，instanceof 可以精准判断引用数据类型（Array，Function，Object），而基本数据类型不能被 instanceof 精准判断。</p> <p>因为数组属于 object 中的一种，所以数组 instanceof object,也是 true.</p> <p>我们来看一下 instanceof 在 MDN 中的解释：instanceof 运算符用来测试一个对象在其原型链中是否存在一个构造函数的 prototype 属性。其意思就是判断对象是否是某一数据类型（如 Array）的实例，请重点关注一下是判断一个对象是否是数据类型的实例。在这里字面量值，2， true ，'str'不是实例，所以判断值为 false。</p> <p><strong>（3）constructor</strong></p> <p>除了 undefined 和 null，其他类型的变量均能使用 constructor 判断出类型.</p> <p>缺点：这个方法容易被改写</p> <div class="language- extra-class"><pre class="language-text"><code>console.log((2).constructor === Number); // true
+console.log((true).constructor === Boolean); // true
+console.log(('str').constructor === String); // true
+console.log(([]).constructor === Array); // true
+console.log((function() {}).constructor === Function); // true
+console.log(({}).constructor === Object); // true
+这里有一个坑，如果我创建一个对象，更改它的原型，constructor就会变得不可靠了
+function Fn(){};
+
+Fn.prototype=new Array();
+
+var f=new Fn();
+
+console.log(f.constructor===Fn);    // false
+console.log(f.constructor===Array); // true
+</code></pre></div><p>**（4）Object.prototype.toString.call()**使用 Object 对象的原型方法 toString ，使用 call 进行狸猫换太子，借用 Object 的 toString 方法</p> <div class="language- extra-class"><pre class="language-text"><code>var a = Object.prototype.toString;
+
+console.log(a.call(2));
+console.log(a.call(true));
+console.log(a.call('str'));
+console.log(a.call([]));
+console.log(a.call(function(){}));
+console.log(a.call({}));
+console.log(a.call(undefined));
+console.log(a.call(null));
+</code></pre></div><h3 id="js-数据类型转换"><a href="#js-数据类型转换" class="header-anchor">#</a> JS 数据类型转换</h3> <p>在 JS 中类型转换只有三种情况，分别是：</p> <ul><li>转换为布尔值（调用 Boolean()方法）</li> <li>转换为数字（调用 Number()、parseInt()和 parseFloat()方法）</li> <li>转换为字符串（调用.toString()或者 String()方法）</li></ul> <div class="language- extra-class"><pre class="language-text"><code>null和underfined没有.toString方法
+</code></pre></div><h3 id="js-的内置对象"><a href="#js-的内置对象" class="header-anchor">#</a> JS 的内置对象</h3> <h3 id="undefined-与-undeclared-的区别"><a href="#undefined-与-undeclared-的区别" class="header-anchor">#</a> undefined 与 undeclared 的区别</h3> <h3 id="undefined-与-null-的区别"><a href="#undefined-与-null-的区别" class="header-anchor">#</a> undefined 与 null 的区别</h3> <h3 id="valueof-和-tostring"><a href="#valueof-和-tostring" class="header-anchor">#</a> valueOf 和 toString</h3> <p>{} 的 valueOf 结果为 {} ，toString 的结果为 &quot;[object Object]&quot;</p> <p>[] 的 valueOf 结果为 [] ，toString 的结果为 &quot;&quot;</p> <p><strong>数据的转换</strong></p> <p>所有对象继承了两个转换方法：</p> <p><strong>第一个是 toString(),它的作用是返回一个反映这个对象的字符串</strong></p> <p><strong>第二个是 valueOf(),它的作用是返回它相应的原始值</strong></p> <ul><li>JS 的作用域和作用域链</li> <li>this,call,apply 和 bind</li> <li>JS 原型，原型链</li> <li>JS 获取原型的方法</li> <li>箭头函数和普通函数有什么区别</li> <li>闭包</li> <li>DOM 和 BOM</li> <li>三种事件模型</li> <li>事件委托</li> <li>事件传播</li> <li>事件捕获</li> <li>事件冒泡</li> <li>事件循环</li> <li>DOM 操作</li> <li>Object.defineProperties</li> <li>JS 数组和对象的原生方法</li> <li>正则表达式</li> <li>AJAX</li> <li>JS 延迟加载</li> <li>模块化开发的理解</li> <li>模块规范</li> <li>AMD 和 CMD 规范的区别</li> <li>ES6 模块与 CommonJS 模块、AMD、CMD 的差异</li> <li>require JS 的核心原理</li> <li>JS 的运行机制</li> <li>arguments</li></ul> <p>arguments 对象是函数中传递的参数值的集合。它是一个类似数组的对象，因为它有一个 length 属性，我们可以使用数组索引表示法 arguments[1]来访问单个值，但它没有数组中的内置方法，如：forEach、reduce、filter 和 map。</p> <p>我们可以使用 Array.prototype.slice 将 arguments 对象转换成一个数组。</p> <ul><li>V8 引擎的垃圾回收机制</li> <li>内存泄漏</li> <li>ECMAScript</li></ul> <p>ECMAScript 是编写脚本语言的标准，这意味着 JavaScript 遵循 ECMAScript 标准中的规范变化，因为它是 JavaScript 的蓝图。</p> <h3 id="es6-新特性"><a href="#es6-新特性" class="header-anchor">#</a> ES6 新特性</h3> <ul><li>块作用域</li> <li>类</li> <li>箭头函数</li> <li>模板字符串</li> <li>加强的对象字面</li> <li>对象解构</li> <li>Promise</li> <li>模块</li> <li>Symbol</li> <li>代理（proxy）Set</li> <li>函数默认参数</li> <li>rest 和展开</li></ul> <h3 id="var-let-和-const-的区别"><a href="#var-let-和-const-的区别" class="header-anchor">#</a> var,let 和 const 的区别</h3> <p>var 声明的变量会挂载在 window 上，而 let 和 const 声明的变量不会；var 声明的变量会挂载在 window 上，而 let 和 const 声明的变量不会；let 和 const 声明形成块作用域；同一作用域下 let 和 const 不能声明同名变量，而 var 可以</p> <h3 id="箭头函数"><a href="#箭头函数" class="header-anchor">#</a> 箭头函数</h3> <p>箭头函数表达式得语法比函数表达式更简洁，并且没有自己的 this，arguments,super 或 new.target。箭头函数表达式更适用于那些本来需要匿名函数的地方，并且它不能用作构造函数。</p> <h3 id="类"><a href="#类" class="header-anchor">#</a> 类</h3> <p>类是在 JS 中编写构造函数得新方法。它是使用构造函数的语法糖，在底层中使用仍然是原型和基于原型得继承</p> <h3 id="模板字符串"><a href="#模板字符串" class="header-anchor">#</a> 模板字符串</h3> <p>模板字符串是在 JS 中创建字符串的一种新闻坊，我们可以通过使用反引号使模板字符串化，可以使用${expr}添加表达式或值，不需要转义字符，比 ES5 版本更简洁</p> <h3 id="对象解构"><a href="#对象解构" class="header-anchor">#</a> 对象解构</h3> <p>对象解构是从对象或者数组中获取或提取值得一种新的更简洁得方法</p> <ul><li>Set</li> <li>Proxy</li> <li>函数式编程</li> <li>高阶函数</li> <li>为什么函数被称为一等公民</li> <li>回调函数</li> <li>Promise</li> <li>Iterator</li> <li>Generator 函数</li> <li>async/await</li> <li>节流与防抖</li> <li>设计模式</li></ul> <h3 id="node"><a href="#node" class="header-anchor">#</a> node</h3> <ul><li>egg 了解吗</li> <li>洋葱模型</li> <li>node 的 eventLoop 和浏览器的区别</li> <li>如何保证 node 的高可用，容灾等措施</li> <li>node 如何发布</li></ul> <h3 id="浏览器相关问题"><a href="#浏览器相关问题" class="header-anchor">#</a> 浏览器相关问题</h3> <ul><li>eventLoop</li> <li>关键渲染路径</li> <li>加载原理</li> <li>DOM 树和渲染树区别</li> <li>回流和重绘</li></ul></details></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Other/Interview/Url.html" class="prev">
+        从输入 URL 到页面加载的过程
+      </a></span> <span class="next"><a href="/Other/Interview/Other.html">
+        面试一
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.51963213.js" defer></script><script src="/assets/js/2.d3d2c42b.js" defer></script><script src="/assets/js/235.64174a74.js" defer></script>
+  </body>
+</html>

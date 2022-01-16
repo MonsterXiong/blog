@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MongoDB | Monster</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/assets/favicon.ico">
+    <meta name="description" content="个人收藏夹">
+    
+    <link rel="preload" href="/assets/css/0.styles.ccbbb76c.css" as="style"><link rel="preload" href="/assets/js/app.51963213.js" as="script"><link rel="preload" href="/assets/js/2.d3d2c42b.js" as="script"><link rel="preload" href="/assets/js/191.20398c96.js" as="script"><link rel="prefetch" href="/assets/js/10.26c993fa.js"><link rel="prefetch" href="/assets/js/100.4c3533ca.js"><link rel="prefetch" href="/assets/js/101.83f4c2fa.js"><link rel="prefetch" href="/assets/js/102.a68e5f2f.js"><link rel="prefetch" href="/assets/js/103.30e3f8ad.js"><link rel="prefetch" href="/assets/js/104.e1880ec5.js"><link rel="prefetch" href="/assets/js/105.edd46bf2.js"><link rel="prefetch" href="/assets/js/106.9afe0065.js"><link rel="prefetch" href="/assets/js/107.b27ec771.js"><link rel="prefetch" href="/assets/js/108.b61037b1.js"><link rel="prefetch" href="/assets/js/109.c172e4ec.js"><link rel="prefetch" href="/assets/js/11.0e8e41c3.js"><link rel="prefetch" href="/assets/js/110.b5f429dc.js"><link rel="prefetch" href="/assets/js/111.49dd6d9e.js"><link rel="prefetch" href="/assets/js/112.4c2fd181.js"><link rel="prefetch" href="/assets/js/113.efdd6a66.js"><link rel="prefetch" href="/assets/js/114.da2cae8a.js"><link rel="prefetch" href="/assets/js/115.67aa37ac.js"><link rel="prefetch" href="/assets/js/116.218d2a87.js"><link rel="prefetch" href="/assets/js/117.f1089a5c.js"><link rel="prefetch" href="/assets/js/118.75a378fc.js"><link rel="prefetch" href="/assets/js/119.46a07f3c.js"><link rel="prefetch" href="/assets/js/12.9bea25ca.js"><link rel="prefetch" href="/assets/js/120.42d8c42f.js"><link rel="prefetch" href="/assets/js/121.c2130312.js"><link rel="prefetch" href="/assets/js/122.393993ea.js"><link rel="prefetch" href="/assets/js/123.19f6914b.js"><link rel="prefetch" href="/assets/js/124.e19da728.js"><link rel="prefetch" href="/assets/js/125.1eea5b9b.js"><link rel="prefetch" href="/assets/js/126.bfb7f9e3.js"><link rel="prefetch" href="/assets/js/127.e3e8dd7f.js"><link rel="prefetch" href="/assets/js/128.769ec229.js"><link rel="prefetch" href="/assets/js/129.87cb8905.js"><link rel="prefetch" href="/assets/js/13.905fde5a.js"><link rel="prefetch" href="/assets/js/130.1e4a079b.js"><link rel="prefetch" href="/assets/js/131.962cd205.js"><link rel="prefetch" href="/assets/js/132.d0562ec3.js"><link rel="prefetch" href="/assets/js/133.d148ba67.js"><link rel="prefetch" href="/assets/js/134.00060a1d.js"><link rel="prefetch" href="/assets/js/135.762bedc2.js"><link rel="prefetch" href="/assets/js/136.40ae3720.js"><link rel="prefetch" href="/assets/js/137.fb298d3d.js"><link rel="prefetch" href="/assets/js/138.c1c84826.js"><link rel="prefetch" href="/assets/js/139.c80231ee.js"><link rel="prefetch" href="/assets/js/14.d242a799.js"><link rel="prefetch" href="/assets/js/140.4e8d6c1e.js"><link rel="prefetch" href="/assets/js/141.79feb0cf.js"><link rel="prefetch" href="/assets/js/142.3258ec18.js"><link rel="prefetch" href="/assets/js/143.398996fc.js"><link rel="prefetch" href="/assets/js/144.762572a3.js"><link rel="prefetch" href="/assets/js/145.7ad1e028.js"><link rel="prefetch" href="/assets/js/146.d978186d.js"><link rel="prefetch" href="/assets/js/147.37c6fbc7.js"><link rel="prefetch" href="/assets/js/148.599a5f59.js"><link rel="prefetch" href="/assets/js/149.450675fe.js"><link rel="prefetch" href="/assets/js/15.ce68cc14.js"><link rel="prefetch" href="/assets/js/150.5c90e277.js"><link rel="prefetch" href="/assets/js/151.b99bfd4f.js"><link rel="prefetch" href="/assets/js/152.de3c1075.js"><link rel="prefetch" href="/assets/js/153.3194fef9.js"><link rel="prefetch" href="/assets/js/154.bdf274cf.js"><link rel="prefetch" href="/assets/js/155.ac37a552.js"><link rel="prefetch" href="/assets/js/156.61e9d530.js"><link rel="prefetch" href="/assets/js/157.71861fb1.js"><link rel="prefetch" href="/assets/js/158.ff809b2b.js"><link rel="prefetch" href="/assets/js/159.f66a988b.js"><link rel="prefetch" href="/assets/js/16.b47ab1cb.js"><link rel="prefetch" href="/assets/js/160.1c9cf486.js"><link rel="prefetch" href="/assets/js/161.7e707b5a.js"><link rel="prefetch" href="/assets/js/162.98b088bd.js"><link rel="prefetch" href="/assets/js/163.cd3250f1.js"><link rel="prefetch" href="/assets/js/164.a567c478.js"><link rel="prefetch" href="/assets/js/165.4e9c624e.js"><link rel="prefetch" href="/assets/js/166.d182ed23.js"><link rel="prefetch" href="/assets/js/167.c01dce2e.js"><link rel="prefetch" href="/assets/js/168.abb64f0a.js"><link rel="prefetch" href="/assets/js/169.4455b779.js"><link rel="prefetch" href="/assets/js/17.59927b82.js"><link rel="prefetch" href="/assets/js/170.6106c644.js"><link rel="prefetch" href="/assets/js/171.dddf8d4a.js"><link rel="prefetch" href="/assets/js/172.d22915bd.js"><link rel="prefetch" href="/assets/js/173.9d3388a3.js"><link rel="prefetch" href="/assets/js/174.86a9ecc4.js"><link rel="prefetch" href="/assets/js/175.cca1f469.js"><link rel="prefetch" href="/assets/js/176.0c249788.js"><link rel="prefetch" href="/assets/js/177.b5de8cbd.js"><link rel="prefetch" href="/assets/js/178.27cfa270.js"><link rel="prefetch" href="/assets/js/179.413e87cc.js"><link rel="prefetch" href="/assets/js/18.7e7cf28d.js"><link rel="prefetch" href="/assets/js/180.759b9411.js"><link rel="prefetch" href="/assets/js/181.3a71051e.js"><link rel="prefetch" href="/assets/js/182.cbf716ab.js"><link rel="prefetch" href="/assets/js/183.aeb50482.js"><link rel="prefetch" href="/assets/js/184.29c69bd9.js"><link rel="prefetch" href="/assets/js/185.e51a3da4.js"><link rel="prefetch" href="/assets/js/186.18c287d3.js"><link rel="prefetch" href="/assets/js/187.4b6ff81c.js"><link rel="prefetch" href="/assets/js/188.ff9ceb16.js"><link rel="prefetch" href="/assets/js/189.2403c877.js"><link rel="prefetch" href="/assets/js/19.9b274655.js"><link rel="prefetch" href="/assets/js/190.99b0d1fb.js"><link rel="prefetch" href="/assets/js/192.8a7996c0.js"><link rel="prefetch" href="/assets/js/193.859b0aa5.js"><link rel="prefetch" href="/assets/js/194.cfa3114d.js"><link rel="prefetch" href="/assets/js/195.7a0d211c.js"><link rel="prefetch" href="/assets/js/196.0ecc8a70.js"><link rel="prefetch" href="/assets/js/197.39d4896a.js"><link rel="prefetch" href="/assets/js/198.4c798790.js"><link rel="prefetch" href="/assets/js/199.d55261fa.js"><link rel="prefetch" href="/assets/js/20.cce3fd05.js"><link rel="prefetch" href="/assets/js/200.a049406f.js"><link rel="prefetch" href="/assets/js/201.f10653fb.js"><link rel="prefetch" href="/assets/js/202.f420cb56.js"><link rel="prefetch" href="/assets/js/203.e98347b7.js"><link rel="prefetch" href="/assets/js/204.f72d5b4f.js"><link rel="prefetch" href="/assets/js/205.58aef437.js"><link rel="prefetch" href="/assets/js/206.c923f761.js"><link rel="prefetch" href="/assets/js/207.d0ec7a5c.js"><link rel="prefetch" href="/assets/js/208.018e9653.js"><link rel="prefetch" href="/assets/js/209.dbce6a36.js"><link rel="prefetch" href="/assets/js/21.11cfa259.js"><link rel="prefetch" href="/assets/js/210.b37c9493.js"><link rel="prefetch" href="/assets/js/211.96988e7a.js"><link rel="prefetch" href="/assets/js/212.370f5382.js"><link rel="prefetch" href="/assets/js/213.a1b48312.js"><link rel="prefetch" href="/assets/js/214.7817a6b6.js"><link rel="prefetch" href="/assets/js/215.f4af78fb.js"><link rel="prefetch" href="/assets/js/216.a6d73e28.js"><link rel="prefetch" href="/assets/js/217.1b5f990e.js"><link rel="prefetch" href="/assets/js/218.05bb2023.js"><link rel="prefetch" href="/assets/js/219.f13be346.js"><link rel="prefetch" href="/assets/js/22.366f8c53.js"><link rel="prefetch" href="/assets/js/220.efecc1b4.js"><link rel="prefetch" href="/assets/js/221.0686f8ee.js"><link rel="prefetch" href="/assets/js/222.f4724858.js"><link rel="prefetch" href="/assets/js/223.1363290b.js"><link rel="prefetch" href="/assets/js/224.193196ad.js"><link rel="prefetch" href="/assets/js/225.326eef39.js"><link rel="prefetch" href="/assets/js/226.6cb29260.js"><link rel="prefetch" href="/assets/js/227.d227af20.js"><link rel="prefetch" href="/assets/js/228.70183150.js"><link rel="prefetch" href="/assets/js/229.e09f02e1.js"><link rel="prefetch" href="/assets/js/23.13e428f6.js"><link rel="prefetch" href="/assets/js/230.adb3547f.js"><link rel="prefetch" href="/assets/js/231.9d71788b.js"><link rel="prefetch" href="/assets/js/232.68a4a79a.js"><link rel="prefetch" href="/assets/js/233.adacbde2.js"><link rel="prefetch" href="/assets/js/234.72e40d86.js"><link rel="prefetch" href="/assets/js/235.64174a74.js"><link rel="prefetch" href="/assets/js/236.edf191aa.js"><link rel="prefetch" href="/assets/js/237.f52cf4fa.js"><link rel="prefetch" href="/assets/js/238.800dc15e.js"><link rel="prefetch" href="/assets/js/239.10d056f6.js"><link rel="prefetch" href="/assets/js/24.a75434a8.js"><link rel="prefetch" href="/assets/js/240.deed77e1.js"><link rel="prefetch" href="/assets/js/241.464e9bf0.js"><link rel="prefetch" href="/assets/js/242.7273d677.js"><link rel="prefetch" href="/assets/js/243.99fdcdc5.js"><link rel="prefetch" href="/assets/js/244.047fa678.js"><link rel="prefetch" href="/assets/js/245.bc611e24.js"><link rel="prefetch" href="/assets/js/246.bd893381.js"><link rel="prefetch" href="/assets/js/247.4b316a04.js"><link rel="prefetch" href="/assets/js/248.16c95d6a.js"><link rel="prefetch" href="/assets/js/249.489a221b.js"><link rel="prefetch" href="/assets/js/25.7c629b84.js"><link rel="prefetch" href="/assets/js/250.b8d57897.js"><link rel="prefetch" href="/assets/js/251.87cd587c.js"><link rel="prefetch" href="/assets/js/252.64208931.js"><link rel="prefetch" href="/assets/js/253.6d3b5f5e.js"><link rel="prefetch" href="/assets/js/254.c2d32b8e.js"><link rel="prefetch" href="/assets/js/255.515dad88.js"><link rel="prefetch" href="/assets/js/256.1df94050.js"><link rel="prefetch" href="/assets/js/257.0bb8f180.js"><link rel="prefetch" href="/assets/js/258.fc156d1e.js"><link rel="prefetch" href="/assets/js/259.f220aad5.js"><link rel="prefetch" href="/assets/js/26.13d5164c.js"><link rel="prefetch" href="/assets/js/260.f9aa733b.js"><link rel="prefetch" href="/assets/js/261.728e6974.js"><link rel="prefetch" href="/assets/js/262.9f5a41d6.js"><link rel="prefetch" href="/assets/js/263.5f9f4654.js"><link rel="prefetch" href="/assets/js/264.7155ed8c.js"><link rel="prefetch" href="/assets/js/265.cebcc996.js"><link rel="prefetch" href="/assets/js/266.78971ec0.js"><link rel="prefetch" href="/assets/js/267.35e0faf0.js"><link rel="prefetch" href="/assets/js/268.b4ccf3dd.js"><link rel="prefetch" href="/assets/js/27.194c4027.js"><link rel="prefetch" href="/assets/js/28.bfeb316f.js"><link rel="prefetch" href="/assets/js/29.65adeb4c.js"><link rel="prefetch" href="/assets/js/3.12c4eb56.js"><link rel="prefetch" href="/assets/js/30.91b0ba37.js"><link rel="prefetch" href="/assets/js/31.2b44dede.js"><link rel="prefetch" href="/assets/js/32.45e8e983.js"><link rel="prefetch" href="/assets/js/33.b9179deb.js"><link rel="prefetch" href="/assets/js/34.64bbbe88.js"><link rel="prefetch" href="/assets/js/35.46e9ec3d.js"><link rel="prefetch" href="/assets/js/36.ea0ca6d7.js"><link rel="prefetch" href="/assets/js/37.c8565b91.js"><link rel="prefetch" href="/assets/js/38.9b3567c5.js"><link rel="prefetch" href="/assets/js/39.69251b47.js"><link rel="prefetch" href="/assets/js/4.409d92c0.js"><link rel="prefetch" href="/assets/js/40.3b0f9976.js"><link rel="prefetch" href="/assets/js/41.268e2ee8.js"><link rel="prefetch" href="/assets/js/42.6cdee852.js"><link rel="prefetch" href="/assets/js/43.ccd86f85.js"><link rel="prefetch" href="/assets/js/44.d5aa9413.js"><link rel="prefetch" href="/assets/js/45.4982e424.js"><link rel="prefetch" href="/assets/js/46.bf810886.js"><link rel="prefetch" href="/assets/js/47.7ec8e205.js"><link rel="prefetch" href="/assets/js/48.58665ce3.js"><link rel="prefetch" href="/assets/js/49.b3dc7130.js"><link rel="prefetch" href="/assets/js/5.b1272c4d.js"><link rel="prefetch" href="/assets/js/50.04ca0c16.js"><link rel="prefetch" href="/assets/js/51.f4b2da0b.js"><link rel="prefetch" href="/assets/js/52.17519a17.js"><link rel="prefetch" href="/assets/js/53.b78b6830.js"><link rel="prefetch" href="/assets/js/54.ca2c50ff.js"><link rel="prefetch" href="/assets/js/55.c31ab05c.js"><link rel="prefetch" href="/assets/js/56.5c22b272.js"><link rel="prefetch" href="/assets/js/57.f352430d.js"><link rel="prefetch" href="/assets/js/58.3ad299f1.js"><link rel="prefetch" href="/assets/js/59.8780a57d.js"><link rel="prefetch" href="/assets/js/6.f48c38d5.js"><link rel="prefetch" href="/assets/js/60.1fe6825d.js"><link rel="prefetch" href="/assets/js/61.2a9797e9.js"><link rel="prefetch" href="/assets/js/62.3508bbc0.js"><link rel="prefetch" href="/assets/js/63.5dd3c7ec.js"><link rel="prefetch" href="/assets/js/64.f4ef7806.js"><link rel="prefetch" href="/assets/js/65.31325a9c.js"><link rel="prefetch" href="/assets/js/66.18715d65.js"><link rel="prefetch" href="/assets/js/67.45ed5066.js"><link rel="prefetch" href="/assets/js/68.bf97b711.js"><link rel="prefetch" href="/assets/js/69.3fca1c15.js"><link rel="prefetch" href="/assets/js/7.967862d3.js"><link rel="prefetch" href="/assets/js/70.a85182b0.js"><link rel="prefetch" href="/assets/js/71.dae87348.js"><link rel="prefetch" href="/assets/js/72.eb2f1490.js"><link rel="prefetch" href="/assets/js/73.81784cd9.js"><link rel="prefetch" href="/assets/js/74.df09c1ac.js"><link rel="prefetch" href="/assets/js/75.2b0ad4b6.js"><link rel="prefetch" href="/assets/js/76.66b47957.js"><link rel="prefetch" href="/assets/js/77.b62c7a01.js"><link rel="prefetch" href="/assets/js/78.28c5811a.js"><link rel="prefetch" href="/assets/js/79.95d475d5.js"><link rel="prefetch" href="/assets/js/8.673a7c19.js"><link rel="prefetch" href="/assets/js/80.2d75d773.js"><link rel="prefetch" href="/assets/js/81.cfda913f.js"><link rel="prefetch" href="/assets/js/82.9e763e4c.js"><link rel="prefetch" href="/assets/js/83.01d9915e.js"><link rel="prefetch" href="/assets/js/84.e226c26e.js"><link rel="prefetch" href="/assets/js/85.5d0b08f7.js"><link rel="prefetch" href="/assets/js/86.e830df14.js"><link rel="prefetch" href="/assets/js/87.3de70613.js"><link rel="prefetch" href="/assets/js/88.f8d2125b.js"><link rel="prefetch" href="/assets/js/89.0e7414a0.js"><link rel="prefetch" href="/assets/js/9.063ff9b8.js"><link rel="prefetch" href="/assets/js/90.38486cc7.js"><link rel="prefetch" href="/assets/js/91.f8e110f3.js"><link rel="prefetch" href="/assets/js/92.493e9700.js"><link rel="prefetch" href="/assets/js/93.5e93d215.js"><link rel="prefetch" href="/assets/js/94.3afd7f6b.js"><link rel="prefetch" href="/assets/js/95.2bbb27a0.js"><link rel="prefetch" href="/assets/js/96.aa439df5.js"><link rel="prefetch" href="/assets/js/97.962d08ca.js"><link rel="prefetch" href="/assets/js/98.e6b9d371.js"><link rel="prefetch" href="/assets/js/99.f7ed391d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ccbbb76c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Monster</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Daily/" class="nav-link">
+  😇 日常
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌈 CSS" class="dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌈 CSS" class="mobile-dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/CSS/Introduce/" class="nav-link">
+  介绍
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Structure/" class="nav-link">
+  架构
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Tools/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><h4>
+          预处理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Less/" class="nav-link">
+  Less
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Sass/" class="nav-link">
+  Sass
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Stylus/" class="nav-link">
+  Stylus
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🚀 JS" class="dropdown-title"><span class="title">🚀 JS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🚀 JS" class="mobile-dropdown-title"><span class="title">🚀 JS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/JavaScript/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/ES@NEXT/" class="nav-link">
+  ES@next
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/Code/" class="nav-link">
+  手撕代码
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/FP/" class="nav-link">
+  函数式编程
+</a></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vuex/" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Router/" class="nav-link">
+  Vue Router
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue SSR/" class="nav-link">
+  Vue SSR
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue CLI/" class="nav-link">
+  Vue CLI
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Loader/" class="nav-link">
+  Vue Loader
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/React/React/" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌇 工程化" class="dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌇 工程化" class="mobile-dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Engineering/Summary/" class="nav-link">
+  概述
+</a></li><li class="dropdown-item"><h4>
+          编译构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Babel/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Vite/" class="nav-link">
+  Vite
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Rollup/" class="nav-link">
+  Rollup
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Gulp/" class="nav-link">
+  Gulp
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Grunt/" class="nav-link">
+  Grunt
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Snowpack/" class="nav-link">
+  Snowpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Parcel/" class="nav-link">
+  Parcel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/SWC/" class="nav-link">
+  SWC
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Esbuild/" class="nav-link">
+  Esbuild
+</a></li></ul></li><li class="dropdown-item"><h4>
+          CI/CD
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Github Action/" class="nav-link">
+  Github Action
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Docker/" class="nav-link">
+  Docker
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Lerna/" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-subitem"><a href="/Engineering/PackageManager/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-subitem"><a href="/Engineering/CLI/" class="nav-link">
+  脚手架
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎁 其它" class="dropdown-title"><span class="title">🎁 其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎁 其它" class="mobile-dropdown-title"><span class="title">🎁 其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Other/DataStructure/" class="nav-link">
+  🛠 数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/Other/DesignModel/" class="nav-link">
+  🖊 设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Internet/" class="nav-link">
+  🔗 网络协议
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Performance/" class="nav-link">
+  ⏳ 性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Safe/" class="nav-link">
+  🚨 安全
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Test/" class="nav-link">
+  💯 测试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Interview/" class="nav-link">
+  🀄 面试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Window/" class="nav-link">
+  💻 Window
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Linux/" class="nav-link">
+  🖥 Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Mock/" class="nav-link">
+  ❌ Mock
+</a></li><li class="dropdown-item"><!----> <a href="/Other/VScode/" class="nav-link">
+  🆚 VScode
+</a></li><li class="dropdown-item"><h4>
+          📖 文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-subitem"><a href="/Other/Markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/Other/Plan/" class="nav-link">
+  计划
+</a></li><li class="dropdown-subitem"><a href="/Other/More/" class="nav-link">
+  后续
+</a></li></ul></li><li class="dropdown-item"><h4>
+          🛢 数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/DataBase/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/MongoDB/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/Redis/" class="nav-link">
+  Redis
+</a></li></ul></li><li class="dropdown-item"><h4>
+          📲 应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Application/MiniProgram/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/PC/" class="nav-link">
+  PC
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/H5/" class="nav-link">
+  H5
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Code/" class="nav-link">
+  👊源码
+</a></div><div class="nav-item"><a href="https://monsterxiong.github.io/Node/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  😍 Node
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/MonsterXiong/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  👷GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Daily/" class="nav-link">
+  😇 日常
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌈 CSS" class="dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌈 CSS" class="mobile-dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/CSS/Introduce/" class="nav-link">
+  介绍
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Structure/" class="nav-link">
+  架构
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Tools/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><h4>
+          预处理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Less/" class="nav-link">
+  Less
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Sass/" class="nav-link">
+  Sass
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Stylus/" class="nav-link">
+  Stylus
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🚀 JS" class="dropdown-title"><span class="title">🚀 JS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🚀 JS" class="mobile-dropdown-title"><span class="title">🚀 JS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/JavaScript/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/ES@NEXT/" class="nav-link">
+  ES@next
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/Code/" class="nav-link">
+  手撕代码
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/FP/" class="nav-link">
+  函数式编程
+</a></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vuex/" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Router/" class="nav-link">
+  Vue Router
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue SSR/" class="nav-link">
+  Vue SSR
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue CLI/" class="nav-link">
+  Vue CLI
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Loader/" class="nav-link">
+  Vue Loader
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/React/React/" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌇 工程化" class="dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌇 工程化" class="mobile-dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Engineering/Summary/" class="nav-link">
+  概述
+</a></li><li class="dropdown-item"><h4>
+          编译构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Babel/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Vite/" class="nav-link">
+  Vite
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Rollup/" class="nav-link">
+  Rollup
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Gulp/" class="nav-link">
+  Gulp
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Grunt/" class="nav-link">
+  Grunt
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Snowpack/" class="nav-link">
+  Snowpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Parcel/" class="nav-link">
+  Parcel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/SWC/" class="nav-link">
+  SWC
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Esbuild/" class="nav-link">
+  Esbuild
+</a></li></ul></li><li class="dropdown-item"><h4>
+          CI/CD
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Github Action/" class="nav-link">
+  Github Action
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Docker/" class="nav-link">
+  Docker
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Lerna/" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-subitem"><a href="/Engineering/PackageManager/" class="nav-link">
+  包管理器
+</a></li><li class="dropdown-subitem"><a href="/Engineering/CLI/" class="nav-link">
+  脚手架
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎁 其它" class="dropdown-title"><span class="title">🎁 其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎁 其它" class="mobile-dropdown-title"><span class="title">🎁 其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Other/DataStructure/" class="nav-link">
+  🛠 数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/Other/DesignModel/" class="nav-link">
+  🖊 设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Internet/" class="nav-link">
+  🔗 网络协议
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Performance/" class="nav-link">
+  ⏳ 性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Safe/" class="nav-link">
+  🚨 安全
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Test/" class="nav-link">
+  💯 测试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Interview/" class="nav-link">
+  🀄 面试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Window/" class="nav-link">
+  💻 Window
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Linux/" class="nav-link">
+  🖥 Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Mock/" class="nav-link">
+  ❌ Mock
+</a></li><li class="dropdown-item"><!----> <a href="/Other/VScode/" class="nav-link">
+  🆚 VScode
+</a></li><li class="dropdown-item"><h4>
+          📖 文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-subitem"><a href="/Other/Markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/Other/Plan/" class="nav-link">
+  计划
+</a></li><li class="dropdown-subitem"><a href="/Other/More/" class="nav-link">
+  后续
+</a></li></ul></li><li class="dropdown-item"><h4>
+          🛢 数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/DataBase/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/MongoDB/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/Redis/" class="nav-link">
+  Redis
+</a></li></ul></li><li class="dropdown-item"><h4>
+          📲 应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Application/MiniProgram/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/PC/" class="nav-link">
+  PC
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/H5/" class="nav-link">
+  H5
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Code/" class="nav-link">
+  👊源码
+</a></div><div class="nav-item"><a href="https://monsterxiong.github.io/Node/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  😍 Node
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/MonsterXiong/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  👷GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/Other/DataBase/MongoDB/" aria-current="page" class="active sidebar-link">MongoDB</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#查看数据库" class="sidebar-link">查看数据库</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#删除数据库" class="sidebar-link">删除数据库</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#选择数据库" class="sidebar-link">选择数据库</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#查看集合" class="sidebar-link">查看集合</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#创建集合" class="sidebar-link">创建集合</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#删除语法" class="sidebar-link">删除语法</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#mongodb-文档增删改查-curd" class="sidebar-link">MongoDB 文档增删改查（CURD）</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#c-新增" class="sidebar-link">C 新增</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#思考-1-是否可以自定义-id-值" class="sidebar-link">思考 1：是否可以自定义_id 值？</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#思考-2-如何一次性插入多条记录" class="sidebar-link">思考 2：如何一次性插入多条记录？</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#思考-3-如何快速插入-10-条数据" class="sidebar-link">思考 3：如何快速插入 10 条数据</a></li></ul></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#r-查询" class="sidebar-link">R 查询</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#练习-1-查询所有数据" class="sidebar-link">练习 1：查询所有数据</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#练习-2-查询年龄大于-5-岁的数据" class="sidebar-link">练习 2：查询年龄大于 5 岁的数据？</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#练习-3-查询年龄是-5-岁、8-岁、10-岁的数据" class="sidebar-link">练习 3：查询年龄是 5 岁、8 岁、10 岁的数据</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#练习-4-只看年龄列-或者年龄以外的列-id-别管它" class="sidebar-link">练习 4：只看年龄列，或者年龄以外的列（_id 别管它）？</a></li></ul></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#u-修改" class="sidebar-link">U 修改</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#准备工作" class="sidebar-link">准备工作</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#练习-1-将-uname-zs1-改为-uname-zs2" class="sidebar-link">练习 1：将{uname:&quot;zs1&quot;}改为{uname:&quot;zs2&quot;}</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#练习-2-将-uname-zs3-的年龄增加-2-岁或者减少-2-岁" class="sidebar-link">练习 2：将{uname:&quot;zs3&quot;}的年龄增加 2 岁或者减少 2 岁</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#练习-3-修改器综合练习" class="sidebar-link">练习 3：修改器综合练习</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#练习-4-验证语法最后两个参数-了解" class="sidebar-link">练习 4：验证语法最后两个参数（了解）</a></li></ul></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#d-删除" class="sidebar-link">D 删除</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#教学管理系统数据库设计" class="sidebar-link">教学管理系统数据库设计</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#数据库设计流程" class="sidebar-link">数据库设计流程</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#练习" class="sidebar-link">练习</a></li></ul></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#mongodb-排序-分页" class="sidebar-link">MongoDB 排序&amp;分页</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#排序" class="sidebar-link">排序</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#分页-limit-与-skip-方法" class="sidebar-link">分页：Limit 与 Skip 方法</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#实战分页" class="sidebar-link">实战分页</a></li></ul></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#mongodb-聚合查询" class="sidebar-link">MongoDB 聚合查询</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#明确需求" class="sidebar-link">明确需求</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#概念" class="sidebar-link">概念</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#语法" class="sidebar-link">语法</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#准备" class="sidebar-link">准备</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#练习-2" class="sidebar-link">练习</a></li></ul></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#mongodb-优化索引" class="sidebar-link">MongoDB 优化索引</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#生活中的索引" class="sidebar-link">生活中的索引</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#数据库中的索引" class="sidebar-link">数据库中的索引</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#索引优缺点" class="sidebar-link">索引优缺点</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#语法-2" class="sidebar-link">语法</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#练习-3" class="sidebar-link">练习</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#分析索引-explain" class="sidebar-link">分析索引（explain）</a></li><li class="sidebar-sub-header"><a href="/Other/DataBase/MongoDB/#选择规则-如何选择合适的列创建索引" class="sidebar-link">选择规则（如何选择合适的列创建索引）</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="mongodb"><a href="#mongodb" class="header-anchor">#</a> MongoDB</h1> <h2 id="查看数据库"><a href="#查看数据库" class="header-anchor">#</a> 查看数据库</h2> <p>语法： show databases (show dbs)</p> <h2 id="删除数据库"><a href="#删除数据库" class="header-anchor">#</a> 删除数据库</h2> <p>语法：</p> <ol><li>通过 use 语法选中数据库</li> <li>db.dropDatabase()</li></ol> <h2 id="选择数据库"><a href="#选择数据库" class="header-anchor">#</a> 选择数据库</h2> <p>语法： use 数据库名</p> <p>留心：在 MongoDB 中选择不存在的数据库不会报错，后期当该数据库有数据时，系统自动创建（隐式创建）</p> <h2 id="查看集合"><a href="#查看集合" class="header-anchor">#</a> 查看集合</h2> <p>语法： show collections</p> <h2 id="创建集合"><a href="#创建集合" class="header-anchor">#</a> 创建集合</h2> <p>语法： db.createCollections('c1')</p> <h2 id="删除语法"><a href="#删除语法" class="header-anchor">#</a> 删除语法</h2> <p>语法：db.集合名.drop()</p> <h2 id="mongodb-文档增删改查-curd"><a href="#mongodb-文档增删改查-curd" class="header-anchor">#</a> MongoDB 文档增删改查（CURD）</h2> <h3 id="c-新增"><a href="#c-新增" class="header-anchor">#</a> C 新增</h3> <p>语法：db.集合名.insert(JSON 数据)</p> <p>说明：集合存在-则直接插入数据，集合不存在-隐式创建</p> <p>练习：在 test2 数据库的 C1 集合中插入数据（姓名叫张三，年龄 18 岁）</p> <div class="language- extra-class"><pre class="language-text"><code>use test2
+db.c1.insert({
+	username:&quot;张三&quot;,
+	age：18
+})
+留心1：数据库和集合都不存在=》都隐式创建
+留心2：对象的键同意不加引号方便看，但是查看集合数据时系统会自动加
+留心3：mongodb会给每条数据增加一个全球唯一的_id键
+多学一招_id的组成
+</code></pre></div><h3 id="思考-1-是否可以自定义-id-值"><a href="#思考-1-是否可以自定义-id-值" class="header-anchor">#</a> 思考 1：是否可以自定义_id 值？</h3> <p>回答：可以，只需要给插入的 JSON 数据增加_id 键即可覆盖(不推荐)</p> <div class="language- extra-class"><pre class="language-text"><code>db.c1.insert({_id:1,uname:&quot;web&quot;,age:18})
+</code></pre></div><h3 id="思考-2-如何一次性插入多条记录"><a href="#思考-2-如何一次性插入多条记录" class="header-anchor">#</a> 思考 2：如何一次性插入多条记录？</h3> <p>回答：传递数据，在数组中写一个个 JSON 数据即可</p> <div class="language- extra-class"><pre class="language-text"><code>db.c1.insert([
+	{uname:&quot;z3&quot;,age:3},
+	{uname:&quot;z4&quot;,age:4}
+])
+</code></pre></div><h3 id="思考-3-如何快速插入-10-条数据"><a href="#思考-3-如何快速插入-10-条数据" class="header-anchor">#</a> 思考 3：如何快速插入 10 条数据</h3> <p>回答：mongodb 底层使用 JS 引擎实现的，所以支持部分 js 语法</p> <p>因此：可以写 for 循环</p> <div class="language- extra-class"><pre class="language-text"><code>需求：在test2数据库c2集合中插入10条数据，分别为a1 a2 ... a10
+use test2
+for(var i=1;i&lt;=10;i++){
+	db.c2.insert({uname:&quot;a&quot;+i,age:i})
+}
+
+for循环是一条一条插入，前九条的提示看不到，最后一条提示可以出现
+</code></pre></div><h2 id="r-查询"><a href="#r-查询" class="header-anchor">#</a> R 查询</h2> <p>基础语法：</p> <div class="language- extra-class"><pre class="language-text"><code>db.集合名.find(条件[,查询的列])
+</code></pre></div><p>升级语法：</p> <div class="language- extra-class"><pre class="language-text"><code>db.集合名.find({键：值})	注：值不直接写
+				  {运算符：值}
+
+db.集合名.find({
+	键：{运算符：值}
+})
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>条件
+	查询所有的数据			    {}或者不写
+	查询age=6的数据			 {age:6}
+	既要age=6又要性别=男		{age:6,sex:'男'}
+
+查询的列（可选参数
+	不写-这查询全部列（字段
+	{age:1}-只显示age列（字段
+	{age:0}-除了age列（字段都显示
+	留心：不管你怎么写，系统自定义的_id都会在
+</code></pre></div><table><thead><tr><th>运算符</th> <th>作用</th></tr></thead> <tbody><tr><td>$gt</td> <td>大于</td></tr> <tr><td>$gte</td> <td>大于等于</td></tr> <tr><td>$lt</td> <td>小于</td></tr> <tr><td>$lte</td> <td>小于等于</td></tr> <tr><td>$ne</td> <td>不等于</td></tr> <tr><td>$in</td> <td>in</td></tr> <tr><td>$nin</td> <td>not in</td></tr></tbody></table> <h3 id="练习-1-查询所有数据"><a href="#练习-1-查询所有数据" class="header-anchor">#</a> 练习 1：查询所有数据</h3> <p>db.c1.find()</p> <h3 id="练习-2-查询年龄大于-5-岁的数据"><a href="#练习-2-查询年龄大于-5-岁的数据" class="header-anchor">#</a> 练习 2：查询年龄大于 5 岁的数据？</h3> <p>db.c1.find({</p> <p>​ age:{$gt:5}</p> <p>})</p> <h3 id="练习-3-查询年龄是-5-岁、8-岁、10-岁的数据"><a href="#练习-3-查询年龄是-5-岁、8-岁、10-岁的数据" class="header-anchor">#</a> 练习 3：查询年龄是 5 岁、8 岁、10 岁的数据</h3> <p>db.c1.find({</p> <p>​ age:{$in:[5,8,10,]}</p> <p>})</p> <h3 id="练习-4-只看年龄列-或者年龄以外的列-id-别管它"><a href="#练习-4-只看年龄列-或者年龄以外的列-id-别管它" class="header-anchor">#</a> 练习 4：只看年龄列，或者年龄以外的列（_id 别管它）？</h3> <h5 id="只看年龄列"><a href="#只看年龄列" class="header-anchor">#</a> 只看年龄列</h5> <p>db.c1.find({},{age:1})</p> <h5 id="年龄以外的列"><a href="#年龄以外的列" class="header-anchor">#</a> 年龄以外的列</h5> <p>db.c1.find({},{age:0})</p> <h2 id="u-修改"><a href="#u-修改" class="header-anchor">#</a> U 修改</h2> <p>基础语法：</p> <div class="language- extra-class"><pre class="language-text"><code>db.集合名.update(条件，新数据[,是否新增，是否修改多条])
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>是否新增：指条件匹配不到数据插入（true是插入，false否，不插入，默认）是否修改多条：指将匹配的成功的数据都修改（true是，false否,默认）
+</code></pre></div><p>升级语法：</p> <div class="language- extra-class"><pre class="language-text"><code>db.集合名.update(条件，新数据)					{修改器：{键：值}}
+</code></pre></div><table><thead><tr><th>修改器</th> <th>作用</th></tr></thead> <tbody><tr><td>$inc</td> <td>递增</td></tr> <tr><td>$rename</td> <td>重命名列</td></tr> <tr><td>$set</td> <td>修改列值</td></tr> <tr><td>$unset</td> <td>删除列</td></tr></tbody></table> <h3 id="准备工作"><a href="#准备工作" class="header-anchor">#</a> 准备工作</h3> <div class="language- extra-class"><pre class="language-text"><code>for (var i=1;i&lt;=10;i++){ db.test3.insert({&quot;uname&quot;:&quot;zs&quot;+i,&quot;age&quot;:i})}
+</code></pre></div><h3 id="练习-1-将-uname-zs1-改为-uname-zs2"><a href="#练习-1-将-uname-zs1-改为-uname-zs2" class="header-anchor">#</a> 练习 1：将{uname:&quot;zs1&quot;}改为{uname:&quot;zs2&quot;}</h3> <blockquote><p>发现： db.test3.update({uname:&quot;zs1&quot;},{uname:&quot;zs2&quot;}),替换，只剩下_id 和 uname:&quot;zs2&quot;的列值，默认不是修改，而是替换</p> <p>解决：使用升级语法 修改器</p> <p>需求：使用修改器将 zs3 的姓名修改为 zs33</p></blockquote> <h3 id="练习-2-将-uname-zs3-的年龄增加-2-岁或者减少-2-岁"><a href="#练习-2-将-uname-zs3-的年龄增加-2-岁或者减少-2-岁" class="header-anchor">#</a> 练习 2：将{uname:&quot;zs3&quot;}的年龄增加 2 岁或者减少 2 岁</h3> <div class="language- extra-class"><pre class="language-text"><code>db.test3.update({uname:&quot;zs3&quot;},{$inc:{age:2}}) //增加db.test3.update({uname:&quot;zs2&quot;},{$inc:{age:-2}}) //减少
+</code></pre></div><h3 id="练习-3-修改器综合练习"><a href="#练习-3-修改器综合练习" class="header-anchor">#</a> 练习 3：修改器综合练习</h3> <p>插入数据：db.c4.insert({uname:&quot;神龙教主&quot;，age:888,who:&quot;男&quot;,other:&quot;非国人&quot;});</p> <blockquote><p>完成需求：</p> <p>uname:改成神龙教主 （修改器：$set）</p> <p>age 增加 111 （修改器：$inc）</p> <p>who 改字段 sex （修改器：$rename）</p> <p>other 删除 （修改器：$unset）</p></blockquote> <p>语法|分析：</p> <div class="language- extra-class"><pre class="language-text"><code>db.c4.update({uname:&quot;神龙教主&quot;,{uname:&quot;web&quot;}) #错误 替换							{$set:{uname:&quot;web&quot;}}							{$inc:{age:111}}							{$rename:{who:&quot;sex&quot;}}							{$unset:{other:true}}留心：如何一次性写多个修改器db.c4.update({uname:&quot;神龙教主&quot;,{	$set:{uname:&quot;web&quot;}，	$inc:{age:111}，	$rename:{who:&quot;sex&quot;}，	$unset:{other:true}}）
+</code></pre></div><h3 id="练习-4-验证语法最后两个参数-了解"><a href="#练习-4-验证语法最后两个参数-了解" class="header-anchor">#</a> 练习 4：验证语法最后两个参数（了解）</h3> <p>【验证】是否新增 true 是 false 否：修改 uname 等于 zs30 的年龄 30 岁</p> <div class="language- extra-class"><pre class="language-text"><code>db.c4.update({uname:&quot;zs30&quot;},{$set:{age:30}})db.c4.update({uname:&quot;zs30&quot;},{$set:{age:30}},false)// 不存在就插入db.c4.update({uname:&quot;zs30&quot;},{$set:{age:30}},true)
+</code></pre></div><p>【验证】是否修改多条 true 是，false 否默认</p> <div class="language- extra-class"><pre class="language-text"><code>// 只修改一条db.c4.update({},{$set:{age:10}},false,false)// 修改多条db.c4.update({},{$set:{age:20}},false,true)
+</code></pre></div><h2 id="d-删除"><a href="#d-删除" class="header-anchor">#</a> D 删除</h2> <p>语法：</p> <div class="language- extra-class"><pre class="language-text"><code>db.集合名.remove(条件[,是否删除一条])注意：是否删除一条true是，false否 默认
+</code></pre></div><h2 id="教学管理系统数据库设计"><a href="#教学管理系统数据库设计" class="header-anchor">#</a> 教学管理系统数据库设计</h2> <h3 id="数据库设计流程"><a href="#数据库设计流程" class="header-anchor">#</a> 数据库设计流程</h3> <p>根据 UI 设计稿</p> <p>1 确定功能模块所属集合</p> <p>2 确定集合字段</p> <div class="language- extra-class"><pre class="language-text"><code>UI设计稿每个展示内容对应一个字段创建于字段更新于字段状态字段最后：先中文、再英文留心：上述规则照顾基础差的，如果大神或者久而久之就变成肌肉记忆，下意识直接创建
+</code></pre></div><h3 id="练习"><a href="#练习" class="header-anchor">#</a> 练习</h3> <ul><li>需求：根据教学系统，设置存放学生信息的集合，并插入 20 条测试数据</li> <li>代码</li></ul> <div class="language- extra-class"><pre class="language-text"><code>1. 先中文集合名词：学生集合集合字段：编号、学号、姓名、电话、性别、年龄、学历、备注2. 再英文use schoolfor(var num=1;num&lt;=20;num++){	db.stu.insert({        id:num,        no:&quot;QF&quot;+num,        uname:&quot;神龙教&quot;+num,        tel:&quot;1111111111111&quot;,        sex:'女',        age:num,        school:&quot;研究生&quot;,        remark:&quot;土豪&quot;	})}db.stu.find().pretty()
+</code></pre></div><h2 id="mongodb-排序-分页"><a href="#mongodb-排序-分页" class="header-anchor">#</a> MongoDB 排序&amp;分页</h2> <h3 id="排序"><a href="#排序" class="header-anchor">#</a> 排序</h3> <ul><li>语法：db.集合名.find().sort(JSON 数据)</li> <li>说明：键-就是要排序的列/字段、值：1 升序 -1 降序</li> <li>练习：年龄升序&amp;降序</li></ul> <blockquote><p>db.test.find().sort({age:1})</p></blockquote> <h3 id="分页-limit-与-skip-方法"><a href="#分页-limit-与-skip-方法" class="header-anchor">#</a> 分页：Limit 与 Skip 方法</h3> <ul><li>语法：db.集合名.find().sort().skip(数字).limit(数字)</li> <li>说明：skip 跳过指定数量（可选），limit 限制查询的数量</li> <li>练习：1-降序查询查询 2 条，2-降序跳过两条并查询 2 条</li></ul> <blockquote><p>db.test.find().sort({age:-1}).skip(2).limit(2)</p></blockquote> <h3 id="实战分页"><a href="#实战分页" class="header-anchor">#</a> 实战分页</h3> <p>需求：数据库 1-10 数据，每页显示两条(5 页)</p> <p>语法：db.集合名.find().skip.limit(2)=》count()-统计总数量</p> <div class="language- extra-class"><pre class="language-text"><code>skip计算公式：（当前页-1）*每页显示条数1页	1  2	02页	3  4	13页	5  6	24页	7  8	35页	9  10	4
+</code></pre></div><h2 id="mongodb-聚合查询"><a href="#mongodb-聚合查询" class="header-anchor">#</a> MongoDB 聚合查询</h2> <h3 id="明确需求"><a href="#明确需求" class="header-anchor">#</a> 明确需求</h3> <p>思考：如何统计数据、如何实现分组统计等？</p> <p>回答：通过 MongoDB 聚合查询</p> <h3 id="概念"><a href="#概念" class="header-anchor">#</a> 概念</h3> <p>顾名思义就是把数据聚起来，然后统计</p> <h3 id="语法"><a href="#语法" class="header-anchor">#</a> 语法</h3> <p>语法：</p> <div class="language- extra-class"><pre class="language-text"><code>db.集合名称.aggregate([	{管道:{表达式}}	...])
+</code></pre></div><p>常用管道</p> <div class="language- extra-class"><pre class="language-text"><code>$group	将集合中的文档分组，用于统计结果$match	过滤数据，只要输出符合条件的文档$sort	聚合数据进一步排序$skip	跳过指定文档数$limit	限制集合数据返回文档数...
+</code></pre></div><p>常用表达式</p> <div class="language- extra-class"><pre class="language-text"><code>$sum 总和		$sum:1同count表示统计$avg 平均$min 最小值$max 最大值...
+</code></pre></div><h3 id="准备"><a href="#准备" class="header-anchor">#</a> 准备</h3> <div class="language- extra-class"><pre class="language-text"><code>use test4db.c1.insert({_id:1,name:&quot;a&quot;,sex:1,age:1})db.c1.insert({_id:2,name:&quot;b&quot;,sex:1,age:2})db.c1.insert({_id:3,name:&quot;c&quot;,sex:2,age:3})db.c1.insert({_id:4,name:&quot;d&quot;,sex:2,age:4})db.c1.insert({_id:5,name:&quot;e&quot;,sex:2,age:5})
+</code></pre></div><h3 id="练习-2"><a href="#练习-2" class="header-anchor">#</a> 练习</h3> <ul><li>统计男生、女生的总年龄</li></ul> <div class="language- extra-class"><pre class="language-text"><code>db.c1.aggregate([
+    {
+        $group:{
+            _id:&quot;$sex&quot;,
+            rs:{
+                $sum:&quot;$age&quot;
+                }
+            }
+    }
+])
+</code></pre></div><ul><li>统计男生、女生的总人数</li></ul> <div class="language- extra-class"><pre class="language-text"><code>db.c1.aggregate([
+    {
+        $group:{
+            _id:&quot;$sex&quot;,
+            rs:{
+                $sum:1
+            }
+        }
+    }
+])
+</code></pre></div><ul><li>求学生总数和平均年龄</li></ul> <div class="language- extra-class"><pre class="language-text"><code>db.c1.aggregate([
+    {
+        $group:{
+            _id:null,
+            total_num:{
+                $sum:1
+            },
+            total_avg:{
+                $avg:&quot;$age&quot;
+            }
+        }
+    }
+])
+</code></pre></div><ul><li>查询男生、女生人数，按人数升序</li></ul> <div class="language- extra-class"><pre class="language-text"><code>db.c1.aggregate([
+    {
+        $group:{
+            _id:&quot;$sex&quot;,
+            rs:{
+                $sum:1
+            }
+        }
+    },
+    {
+        $sort:{
+            rs:1
+        }
+    }
+])
+</code></pre></div><h2 id="mongodb-优化索引"><a href="#mongodb-优化索引" class="header-anchor">#</a> MongoDB 优化索引</h2> <h3 id="生活中的索引"><a href="#生活中的索引" class="header-anchor">#</a> 生活中的索引</h3> <p>公交车站牌-新华字典-写字楼办公区域索引=》加快找到目标速度</p> <h3 id="数据库中的索引"><a href="#数据库中的索引" class="header-anchor">#</a> 数据库中的索引</h3> <ul><li>说明：索引是一种排序好的便于快速查询的数据结构</li> <li>作用：帮助数据库高效的查询数据</li></ul> <h3 id="索引优缺点"><a href="#索引优缺点" class="header-anchor">#</a> 索引优缺点</h3> <ul><li>优点</li></ul> <blockquote><p>提高数据查询的效率，降低数据库的 IO 成本</p> <p>通过索引对数据进行排序，降低数据排序的成本，降低 CPU 的消耗</p></blockquote> <ul><li>缺点</li></ul> <blockquote><p>占用磁盘空间</p> <p>大量索引影响 SQL 语句效率，因为每次插入何修改数据都需要更新索引</p></blockquote> <h3 id="语法-2"><a href="#语法-2" class="header-anchor">#</a> 语法</h3> <ul><li>创建索引语法：db.集合名.createIndex(带创建索引的列，[，额外选项])</li> <li>参数：</li></ul> <blockquote><p>带创建索引的列：{键：1，...，键：-1}</p> <p>说明：1 升序 -1 降序（）例如{age:1}表示创建 age 索引并按照升序的方式存储</p> <p>额外选项：设置索引的名称或者唯一索引等等</p></blockquote> <ul><li>删除索引语法：</li></ul> <blockquote><p>全部删除：db.集合名.dropIndexes()</p> <p>删除指定：db.集合名.dropindex(索引名)</p></blockquote> <ul><li>查看索引语法：db.集合名.getIndexes()</li></ul> <h3 id="练习-3"><a href="#练习-3" class="header-anchor">#</a> 练习</h3> <p>**准备：**向数据库新增十万条数据</p> <div class="language- extra-class"><pre class="language-text"><code>// 选择数据库use test5;
+
+// 向数据库中添加数据
+for(var i=0;i&lt;100000;i++){
+    db.c1.insert({'name':&quot;aaa&quot;+i,&quot;age&quot;:i})
+}
+</code></pre></div><p><strong>创建普通索引</strong></p> <blockquote><p>需求：给 name 添加普通索引</p> <p>练习 1：给 name 添加普通索引，命令：</p> <p>db.c1.createIndex({name:1})</p> <p>练习 2：删除 name 索引，命令：</p> <p>db.c1.dropIndex(&quot;name_1&quot;)</p> <p>练习 3：给 name 创建索引并起名 webopenfather</p> <p>命令：db.c1.createIndex({name:1},{name:&quot;webopenfather&quot;})</p></blockquote> <p><strong>创建复合/组合索引</strong></p> <blockquote><p>需求：给 name 和 age 添加组合索引</p> <p>说明：一次性给两个字段建立索引</p> <p>语法：db.集合名.createIndex({键 1：方式，键 2：方式})</p></blockquote> <p><strong>创建唯一索引</strong></p> <blockquote><p>需求：给 name 添加普通索引</p> <p>语法：db.集合名.createIndex(待添加索引的列，{unique:列名})</p> <p>练习 1：删除全部索引，命令：</p> <p>db.c1.dropIndexes(); //系统的还在</p> <p>练习 2：设置唯一索引，命令：</p> <p>db.createIndex({name:1},{unique:&quot;name&quot;})</p> <p>练习 3：测试唯一索引特性，命令：</p> <p>db.c1.insert({name:&quot;a&quot;});=&gt;成功</p> <p>db.c1.insert({name:&quot;a&quot;});=&gt;报错</p></blockquote> <h3 id="分析索引-explain"><a href="#分析索引-explain" class="header-anchor">#</a> 分析索引（explain）</h3> <h3 id="选择规则-如何选择合适的列创建索引"><a href="#选择规则-如何选择合适的列创建索引" class="header-anchor">#</a> 选择规则（如何选择合适的列创建索引）</h3></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.51963213.js" defer></script><script src="/assets/js/2.d3d2c42b.js" defer></script><script src="/assets/js/191.20398c96.js" defer></script>
+  </body>
+</html>

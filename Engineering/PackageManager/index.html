@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>包管理器 | Monster</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/assets/favicon.ico">
+    <meta name="description" content="个人收藏夹">
+    
+    <link rel="preload" href="/assets/css/0.styles.ccbbb76c.css" as="style"><link rel="preload" href="/assets/js/app.51963213.js" as="script"><link rel="preload" href="/assets/js/2.d3d2c42b.js" as="script"><link rel="preload" href="/assets/js/77.b62c7a01.js" as="script"><link rel="prefetch" href="/assets/js/10.26c993fa.js"><link rel="prefetch" href="/assets/js/100.4c3533ca.js"><link rel="prefetch" href="/assets/js/101.83f4c2fa.js"><link rel="prefetch" href="/assets/js/102.a68e5f2f.js"><link rel="prefetch" href="/assets/js/103.30e3f8ad.js"><link rel="prefetch" href="/assets/js/104.e1880ec5.js"><link rel="prefetch" href="/assets/js/105.edd46bf2.js"><link rel="prefetch" href="/assets/js/106.9afe0065.js"><link rel="prefetch" href="/assets/js/107.b27ec771.js"><link rel="prefetch" href="/assets/js/108.b61037b1.js"><link rel="prefetch" href="/assets/js/109.c172e4ec.js"><link rel="prefetch" href="/assets/js/11.0e8e41c3.js"><link rel="prefetch" href="/assets/js/110.b5f429dc.js"><link rel="prefetch" href="/assets/js/111.49dd6d9e.js"><link rel="prefetch" href="/assets/js/112.4c2fd181.js"><link rel="prefetch" href="/assets/js/113.efdd6a66.js"><link rel="prefetch" href="/assets/js/114.da2cae8a.js"><link rel="prefetch" href="/assets/js/115.67aa37ac.js"><link rel="prefetch" href="/assets/js/116.218d2a87.js"><link rel="prefetch" href="/assets/js/117.f1089a5c.js"><link rel="prefetch" href="/assets/js/118.75a378fc.js"><link rel="prefetch" href="/assets/js/119.46a07f3c.js"><link rel="prefetch" href="/assets/js/12.9bea25ca.js"><link rel="prefetch" href="/assets/js/120.42d8c42f.js"><link rel="prefetch" href="/assets/js/121.c2130312.js"><link rel="prefetch" href="/assets/js/122.393993ea.js"><link rel="prefetch" href="/assets/js/123.19f6914b.js"><link rel="prefetch" href="/assets/js/124.e19da728.js"><link rel="prefetch" href="/assets/js/125.1eea5b9b.js"><link rel="prefetch" href="/assets/js/126.bfb7f9e3.js"><link rel="prefetch" href="/assets/js/127.e3e8dd7f.js"><link rel="prefetch" href="/assets/js/128.769ec229.js"><link rel="prefetch" href="/assets/js/129.87cb8905.js"><link rel="prefetch" href="/assets/js/13.905fde5a.js"><link rel="prefetch" href="/assets/js/130.1e4a079b.js"><link rel="prefetch" href="/assets/js/131.962cd205.js"><link rel="prefetch" href="/assets/js/132.d0562ec3.js"><link rel="prefetch" href="/assets/js/133.d148ba67.js"><link rel="prefetch" href="/assets/js/134.00060a1d.js"><link rel="prefetch" href="/assets/js/135.762bedc2.js"><link rel="prefetch" href="/assets/js/136.40ae3720.js"><link rel="prefetch" href="/assets/js/137.fb298d3d.js"><link rel="prefetch" href="/assets/js/138.c1c84826.js"><link rel="prefetch" href="/assets/js/139.c80231ee.js"><link rel="prefetch" href="/assets/js/14.d242a799.js"><link rel="prefetch" href="/assets/js/140.4e8d6c1e.js"><link rel="prefetch" href="/assets/js/141.79feb0cf.js"><link rel="prefetch" href="/assets/js/142.3258ec18.js"><link rel="prefetch" href="/assets/js/143.398996fc.js"><link rel="prefetch" href="/assets/js/144.762572a3.js"><link rel="prefetch" href="/assets/js/145.7ad1e028.js"><link rel="prefetch" href="/assets/js/146.d978186d.js"><link rel="prefetch" href="/assets/js/147.37c6fbc7.js"><link rel="prefetch" href="/assets/js/148.599a5f59.js"><link rel="prefetch" href="/assets/js/149.450675fe.js"><link rel="prefetch" href="/assets/js/15.ce68cc14.js"><link rel="prefetch" href="/assets/js/150.5c90e277.js"><link rel="prefetch" href="/assets/js/151.b99bfd4f.js"><link rel="prefetch" href="/assets/js/152.de3c1075.js"><link rel="prefetch" href="/assets/js/153.3194fef9.js"><link rel="prefetch" href="/assets/js/154.bdf274cf.js"><link rel="prefetch" href="/assets/js/155.ac37a552.js"><link rel="prefetch" href="/assets/js/156.61e9d530.js"><link rel="prefetch" href="/assets/js/157.71861fb1.js"><link rel="prefetch" href="/assets/js/158.ff809b2b.js"><link rel="prefetch" href="/assets/js/159.f66a988b.js"><link rel="prefetch" href="/assets/js/16.b47ab1cb.js"><link rel="prefetch" href="/assets/js/160.1c9cf486.js"><link rel="prefetch" href="/assets/js/161.7e707b5a.js"><link rel="prefetch" href="/assets/js/162.98b088bd.js"><link rel="prefetch" href="/assets/js/163.cd3250f1.js"><link rel="prefetch" href="/assets/js/164.a567c478.js"><link rel="prefetch" href="/assets/js/165.4e9c624e.js"><link rel="prefetch" href="/assets/js/166.d182ed23.js"><link rel="prefetch" href="/assets/js/167.c01dce2e.js"><link rel="prefetch" href="/assets/js/168.abb64f0a.js"><link rel="prefetch" href="/assets/js/169.4455b779.js"><link rel="prefetch" href="/assets/js/17.59927b82.js"><link rel="prefetch" href="/assets/js/170.6106c644.js"><link rel="prefetch" href="/assets/js/171.dddf8d4a.js"><link rel="prefetch" href="/assets/js/172.d22915bd.js"><link rel="prefetch" href="/assets/js/173.9d3388a3.js"><link rel="prefetch" href="/assets/js/174.86a9ecc4.js"><link rel="prefetch" href="/assets/js/175.cca1f469.js"><link rel="prefetch" href="/assets/js/176.0c249788.js"><link rel="prefetch" href="/assets/js/177.b5de8cbd.js"><link rel="prefetch" href="/assets/js/178.27cfa270.js"><link rel="prefetch" href="/assets/js/179.413e87cc.js"><link rel="prefetch" href="/assets/js/18.7e7cf28d.js"><link rel="prefetch" href="/assets/js/180.759b9411.js"><link rel="prefetch" href="/assets/js/181.3a71051e.js"><link rel="prefetch" href="/assets/js/182.cbf716ab.js"><link rel="prefetch" href="/assets/js/183.aeb50482.js"><link rel="prefetch" href="/assets/js/184.29c69bd9.js"><link rel="prefetch" href="/assets/js/185.e51a3da4.js"><link rel="prefetch" href="/assets/js/186.18c287d3.js"><link rel="prefetch" href="/assets/js/187.4b6ff81c.js"><link rel="prefetch" href="/assets/js/188.ff9ceb16.js"><link rel="prefetch" href="/assets/js/189.2403c877.js"><link rel="prefetch" href="/assets/js/19.9b274655.js"><link rel="prefetch" href="/assets/js/190.99b0d1fb.js"><link rel="prefetch" href="/assets/js/191.20398c96.js"><link rel="prefetch" href="/assets/js/192.8a7996c0.js"><link rel="prefetch" href="/assets/js/193.859b0aa5.js"><link rel="prefetch" href="/assets/js/194.cfa3114d.js"><link rel="prefetch" href="/assets/js/195.7a0d211c.js"><link rel="prefetch" href="/assets/js/196.0ecc8a70.js"><link rel="prefetch" href="/assets/js/197.39d4896a.js"><link rel="prefetch" href="/assets/js/198.4c798790.js"><link rel="prefetch" href="/assets/js/199.d55261fa.js"><link rel="prefetch" href="/assets/js/20.cce3fd05.js"><link rel="prefetch" href="/assets/js/200.a049406f.js"><link rel="prefetch" href="/assets/js/201.f10653fb.js"><link rel="prefetch" href="/assets/js/202.f420cb56.js"><link rel="prefetch" href="/assets/js/203.e98347b7.js"><link rel="prefetch" href="/assets/js/204.f72d5b4f.js"><link rel="prefetch" href="/assets/js/205.58aef437.js"><link rel="prefetch" href="/assets/js/206.c923f761.js"><link rel="prefetch" href="/assets/js/207.d0ec7a5c.js"><link rel="prefetch" href="/assets/js/208.018e9653.js"><link rel="prefetch" href="/assets/js/209.dbce6a36.js"><link rel="prefetch" href="/assets/js/21.11cfa259.js"><link rel="prefetch" href="/assets/js/210.b37c9493.js"><link rel="prefetch" href="/assets/js/211.96988e7a.js"><link rel="prefetch" href="/assets/js/212.370f5382.js"><link rel="prefetch" href="/assets/js/213.a1b48312.js"><link rel="prefetch" href="/assets/js/214.7817a6b6.js"><link rel="prefetch" href="/assets/js/215.f4af78fb.js"><link rel="prefetch" href="/assets/js/216.a6d73e28.js"><link rel="prefetch" href="/assets/js/217.1b5f990e.js"><link rel="prefetch" href="/assets/js/218.05bb2023.js"><link rel="prefetch" href="/assets/js/219.f13be346.js"><link rel="prefetch" href="/assets/js/22.366f8c53.js"><link rel="prefetch" href="/assets/js/220.efecc1b4.js"><link rel="prefetch" href="/assets/js/221.0686f8ee.js"><link rel="prefetch" href="/assets/js/222.f4724858.js"><link rel="prefetch" href="/assets/js/223.1363290b.js"><link rel="prefetch" href="/assets/js/224.193196ad.js"><link rel="prefetch" href="/assets/js/225.326eef39.js"><link rel="prefetch" href="/assets/js/226.6cb29260.js"><link rel="prefetch" href="/assets/js/227.d227af20.js"><link rel="prefetch" href="/assets/js/228.70183150.js"><link rel="prefetch" href="/assets/js/229.e09f02e1.js"><link rel="prefetch" href="/assets/js/23.13e428f6.js"><link rel="prefetch" href="/assets/js/230.adb3547f.js"><link rel="prefetch" href="/assets/js/231.9d71788b.js"><link rel="prefetch" href="/assets/js/232.68a4a79a.js"><link rel="prefetch" href="/assets/js/233.adacbde2.js"><link rel="prefetch" href="/assets/js/234.72e40d86.js"><link rel="prefetch" href="/assets/js/235.64174a74.js"><link rel="prefetch" href="/assets/js/236.edf191aa.js"><link rel="prefetch" href="/assets/js/237.f52cf4fa.js"><link rel="prefetch" href="/assets/js/238.800dc15e.js"><link rel="prefetch" href="/assets/js/239.10d056f6.js"><link rel="prefetch" href="/assets/js/24.a75434a8.js"><link rel="prefetch" href="/assets/js/240.deed77e1.js"><link rel="prefetch" href="/assets/js/241.464e9bf0.js"><link rel="prefetch" href="/assets/js/242.7273d677.js"><link rel="prefetch" href="/assets/js/243.99fdcdc5.js"><link rel="prefetch" href="/assets/js/244.047fa678.js"><link rel="prefetch" href="/assets/js/245.bc611e24.js"><link rel="prefetch" href="/assets/js/246.bd893381.js"><link rel="prefetch" href="/assets/js/247.4b316a04.js"><link rel="prefetch" href="/assets/js/248.16c95d6a.js"><link rel="prefetch" href="/assets/js/249.489a221b.js"><link rel="prefetch" href="/assets/js/25.7c629b84.js"><link rel="prefetch" href="/assets/js/250.b8d57897.js"><link rel="prefetch" href="/assets/js/251.87cd587c.js"><link rel="prefetch" href="/assets/js/252.64208931.js"><link rel="prefetch" href="/assets/js/253.6d3b5f5e.js"><link rel="prefetch" href="/assets/js/254.c2d32b8e.js"><link rel="prefetch" href="/assets/js/255.515dad88.js"><link rel="prefetch" href="/assets/js/256.1df94050.js"><link rel="prefetch" href="/assets/js/257.0bb8f180.js"><link rel="prefetch" href="/assets/js/258.fc156d1e.js"><link rel="prefetch" href="/assets/js/259.f220aad5.js"><link rel="prefetch" href="/assets/js/26.13d5164c.js"><link rel="prefetch" href="/assets/js/260.f9aa733b.js"><link rel="prefetch" href="/assets/js/261.728e6974.js"><link rel="prefetch" href="/assets/js/262.9f5a41d6.js"><link rel="prefetch" href="/assets/js/263.5f9f4654.js"><link rel="prefetch" href="/assets/js/264.7155ed8c.js"><link rel="prefetch" href="/assets/js/265.cebcc996.js"><link rel="prefetch" href="/assets/js/266.78971ec0.js"><link rel="prefetch" href="/assets/js/267.35e0faf0.js"><link rel="prefetch" href="/assets/js/268.b4ccf3dd.js"><link rel="prefetch" href="/assets/js/27.194c4027.js"><link rel="prefetch" href="/assets/js/28.bfeb316f.js"><link rel="prefetch" href="/assets/js/29.65adeb4c.js"><link rel="prefetch" href="/assets/js/3.12c4eb56.js"><link rel="prefetch" href="/assets/js/30.91b0ba37.js"><link rel="prefetch" href="/assets/js/31.2b44dede.js"><link rel="prefetch" href="/assets/js/32.45e8e983.js"><link rel="prefetch" href="/assets/js/33.b9179deb.js"><link rel="prefetch" href="/assets/js/34.64bbbe88.js"><link rel="prefetch" href="/assets/js/35.46e9ec3d.js"><link rel="prefetch" href="/assets/js/36.ea0ca6d7.js"><link rel="prefetch" href="/assets/js/37.c8565b91.js"><link rel="prefetch" href="/assets/js/38.9b3567c5.js"><link rel="prefetch" href="/assets/js/39.69251b47.js"><link rel="prefetch" href="/assets/js/4.409d92c0.js"><link rel="prefetch" href="/assets/js/40.3b0f9976.js"><link rel="prefetch" href="/assets/js/41.268e2ee8.js"><link rel="prefetch" href="/assets/js/42.6cdee852.js"><link rel="prefetch" href="/assets/js/43.ccd86f85.js"><link rel="prefetch" href="/assets/js/44.d5aa9413.js"><link rel="prefetch" href="/assets/js/45.4982e424.js"><link rel="prefetch" href="/assets/js/46.bf810886.js"><link rel="prefetch" href="/assets/js/47.7ec8e205.js"><link rel="prefetch" href="/assets/js/48.58665ce3.js"><link rel="prefetch" href="/assets/js/49.b3dc7130.js"><link rel="prefetch" href="/assets/js/5.b1272c4d.js"><link rel="prefetch" href="/assets/js/50.04ca0c16.js"><link rel="prefetch" href="/assets/js/51.f4b2da0b.js"><link rel="prefetch" href="/assets/js/52.17519a17.js"><link rel="prefetch" href="/assets/js/53.b78b6830.js"><link rel="prefetch" href="/assets/js/54.ca2c50ff.js"><link rel="prefetch" href="/assets/js/55.c31ab05c.js"><link rel="prefetch" href="/assets/js/56.5c22b272.js"><link rel="prefetch" href="/assets/js/57.f352430d.js"><link rel="prefetch" href="/assets/js/58.3ad299f1.js"><link rel="prefetch" href="/assets/js/59.8780a57d.js"><link rel="prefetch" href="/assets/js/6.f48c38d5.js"><link rel="prefetch" href="/assets/js/60.1fe6825d.js"><link rel="prefetch" href="/assets/js/61.2a9797e9.js"><link rel="prefetch" href="/assets/js/62.3508bbc0.js"><link rel="prefetch" href="/assets/js/63.5dd3c7ec.js"><link rel="prefetch" href="/assets/js/64.f4ef7806.js"><link rel="prefetch" href="/assets/js/65.31325a9c.js"><link rel="prefetch" href="/assets/js/66.18715d65.js"><link rel="prefetch" href="/assets/js/67.45ed5066.js"><link rel="prefetch" href="/assets/js/68.bf97b711.js"><link rel="prefetch" href="/assets/js/69.3fca1c15.js"><link rel="prefetch" href="/assets/js/7.967862d3.js"><link rel="prefetch" href="/assets/js/70.a85182b0.js"><link rel="prefetch" href="/assets/js/71.dae87348.js"><link rel="prefetch" href="/assets/js/72.eb2f1490.js"><link rel="prefetch" href="/assets/js/73.81784cd9.js"><link rel="prefetch" href="/assets/js/74.df09c1ac.js"><link rel="prefetch" href="/assets/js/75.2b0ad4b6.js"><link rel="prefetch" href="/assets/js/76.66b47957.js"><link rel="prefetch" href="/assets/js/78.28c5811a.js"><link rel="prefetch" href="/assets/js/79.95d475d5.js"><link rel="prefetch" href="/assets/js/8.673a7c19.js"><link rel="prefetch" href="/assets/js/80.2d75d773.js"><link rel="prefetch" href="/assets/js/81.cfda913f.js"><link rel="prefetch" href="/assets/js/82.9e763e4c.js"><link rel="prefetch" href="/assets/js/83.01d9915e.js"><link rel="prefetch" href="/assets/js/84.e226c26e.js"><link rel="prefetch" href="/assets/js/85.5d0b08f7.js"><link rel="prefetch" href="/assets/js/86.e830df14.js"><link rel="prefetch" href="/assets/js/87.3de70613.js"><link rel="prefetch" href="/assets/js/88.f8d2125b.js"><link rel="prefetch" href="/assets/js/89.0e7414a0.js"><link rel="prefetch" href="/assets/js/9.063ff9b8.js"><link rel="prefetch" href="/assets/js/90.38486cc7.js"><link rel="prefetch" href="/assets/js/91.f8e110f3.js"><link rel="prefetch" href="/assets/js/92.493e9700.js"><link rel="prefetch" href="/assets/js/93.5e93d215.js"><link rel="prefetch" href="/assets/js/94.3afd7f6b.js"><link rel="prefetch" href="/assets/js/95.2bbb27a0.js"><link rel="prefetch" href="/assets/js/96.aa439df5.js"><link rel="prefetch" href="/assets/js/97.962d08ca.js"><link rel="prefetch" href="/assets/js/98.e6b9d371.js"><link rel="prefetch" href="/assets/js/99.f7ed391d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ccbbb76c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Monster</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Daily/" class="nav-link">
+  😇 日常
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌈 CSS" class="dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌈 CSS" class="mobile-dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/CSS/Introduce/" class="nav-link">
+  介绍
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Structure/" class="nav-link">
+  架构
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Tools/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><h4>
+          预处理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Less/" class="nav-link">
+  Less
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Sass/" class="nav-link">
+  Sass
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Stylus/" class="nav-link">
+  Stylus
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🚀 JS" class="dropdown-title"><span class="title">🚀 JS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🚀 JS" class="mobile-dropdown-title"><span class="title">🚀 JS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/JavaScript/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/ES@NEXT/" class="nav-link">
+  ES@next
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/Code/" class="nav-link">
+  手撕代码
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/FP/" class="nav-link">
+  函数式编程
+</a></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vuex/" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Router/" class="nav-link">
+  Vue Router
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue SSR/" class="nav-link">
+  Vue SSR
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue CLI/" class="nav-link">
+  Vue CLI
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Loader/" class="nav-link">
+  Vue Loader
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/React/React/" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌇 工程化" class="dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌇 工程化" class="mobile-dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Engineering/Summary/" class="nav-link">
+  概述
+</a></li><li class="dropdown-item"><h4>
+          编译构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Babel/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Vite/" class="nav-link">
+  Vite
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Rollup/" class="nav-link">
+  Rollup
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Gulp/" class="nav-link">
+  Gulp
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Grunt/" class="nav-link">
+  Grunt
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Snowpack/" class="nav-link">
+  Snowpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Parcel/" class="nav-link">
+  Parcel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/SWC/" class="nav-link">
+  SWC
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Esbuild/" class="nav-link">
+  Esbuild
+</a></li></ul></li><li class="dropdown-item"><h4>
+          CI/CD
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Github Action/" class="nav-link">
+  Github Action
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Docker/" class="nav-link">
+  Docker
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Lerna/" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-subitem"><a href="/Engineering/PackageManager/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  包管理器
+</a></li><li class="dropdown-subitem"><a href="/Engineering/CLI/" class="nav-link">
+  脚手架
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎁 其它" class="dropdown-title"><span class="title">🎁 其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎁 其它" class="mobile-dropdown-title"><span class="title">🎁 其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Other/DataStructure/" class="nav-link">
+  🛠 数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/Other/DesignModel/" class="nav-link">
+  🖊 设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Internet/" class="nav-link">
+  🔗 网络协议
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Performance/" class="nav-link">
+  ⏳ 性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Safe/" class="nav-link">
+  🚨 安全
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Test/" class="nav-link">
+  💯 测试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Interview/" class="nav-link">
+  🀄 面试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Window/" class="nav-link">
+  💻 Window
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Linux/" class="nav-link">
+  🖥 Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Mock/" class="nav-link">
+  ❌ Mock
+</a></li><li class="dropdown-item"><!----> <a href="/Other/VScode/" class="nav-link">
+  🆚 VScode
+</a></li><li class="dropdown-item"><h4>
+          📖 文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-subitem"><a href="/Other/Markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/Other/Plan/" class="nav-link">
+  计划
+</a></li><li class="dropdown-subitem"><a href="/Other/More/" class="nav-link">
+  后续
+</a></li></ul></li><li class="dropdown-item"><h4>
+          🛢 数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/DataBase/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/MongoDB/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/Redis/" class="nav-link">
+  Redis
+</a></li></ul></li><li class="dropdown-item"><h4>
+          📲 应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Application/MiniProgram/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/PC/" class="nav-link">
+  PC
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/H5/" class="nav-link">
+  H5
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Code/" class="nav-link">
+  👊源码
+</a></div><div class="nav-item"><a href="https://monsterxiong.github.io/Node/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  😍 Node
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/MonsterXiong/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  👷GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Daily/" class="nav-link">
+  😇 日常
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌈 CSS" class="dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌈 CSS" class="mobile-dropdown-title"><span class="title">🌈 CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/CSS/Introduce/" class="nav-link">
+  介绍
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Structure/" class="nav-link">
+  架构
+</a></li><li class="dropdown-item"><!----> <a href="/CSS/Tools/" class="nav-link">
+  工具
+</a></li><li class="dropdown-item"><h4>
+          预处理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Less/" class="nav-link">
+  Less
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Sass/" class="nav-link">
+  Sass
+</a></li><li class="dropdown-subitem"><a href="/CSS/Preprocessing/Stylus/" class="nav-link">
+  Stylus
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🚀 JS" class="dropdown-title"><span class="title">🚀 JS</span> <span class="arrow down"></span></button> <button type="button" aria-label="🚀 JS" class="mobile-dropdown-title"><span class="title">🚀 JS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/JavaScript/Base/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/ES@NEXT/" class="nav-link">
+  ES@next
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/Code/" class="nav-link">
+  手撕代码
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/FP/" class="nav-link">
+  函数式编程
+</a></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vuex/" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Router/" class="nav-link">
+  Vue Router
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue SSR/" class="nav-link">
+  Vue SSR
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue CLI/" class="nav-link">
+  Vue CLI
+</a></li><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/Vue/Vue Loader/" class="nav-link">
+  Vue Loader
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/JavaScript/FrameWork/React/React/" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🌇 工程化" class="dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow down"></span></button> <button type="button" aria-label="🌇 工程化" class="mobile-dropdown-title"><span class="title">🌇 工程化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Engineering/Summary/" class="nav-link">
+  概述
+</a></li><li class="dropdown-item"><h4>
+          编译构建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Babel/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Vite/" class="nav-link">
+  Vite
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Rollup/" class="nav-link">
+  Rollup
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Gulp/" class="nav-link">
+  Gulp
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Grunt/" class="nav-link">
+  Grunt
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Snowpack/" class="nav-link">
+  Snowpack
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Parcel/" class="nav-link">
+  Parcel
+</a></li><li class="dropdown-subitem"><a href="/Engineering/SWC/" class="nav-link">
+  SWC
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Esbuild/" class="nav-link">
+  Esbuild
+</a></li></ul></li><li class="dropdown-item"><h4>
+          CI/CD
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Github Action/" class="nav-link">
+  Github Action
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Docker/" class="nav-link">
+  Docker
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Engineering/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-subitem"><a href="/Engineering/Lerna/" class="nav-link">
+  Lerna
+</a></li><li class="dropdown-subitem"><a href="/Engineering/PackageManager/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  包管理器
+</a></li><li class="dropdown-subitem"><a href="/Engineering/CLI/" class="nav-link">
+  脚手架
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🎁 其它" class="dropdown-title"><span class="title">🎁 其它</span> <span class="arrow down"></span></button> <button type="button" aria-label="🎁 其它" class="mobile-dropdown-title"><span class="title">🎁 其它</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Other/DataStructure/" class="nav-link">
+  🛠 数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/Other/DesignModel/" class="nav-link">
+  🖊 设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Internet/" class="nav-link">
+  🔗 网络协议
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Performance/" class="nav-link">
+  ⏳ 性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Safe/" class="nav-link">
+  🚨 安全
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Test/" class="nav-link">
+  💯 测试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Interview/" class="nav-link">
+  🀄 面试
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Window/" class="nav-link">
+  💻 Window
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Linux/" class="nav-link">
+  🖥 Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Mock/" class="nav-link">
+  ❌ Mock
+</a></li><li class="dropdown-item"><!----> <a href="/Other/VScode/" class="nav-link">
+  🆚 VScode
+</a></li><li class="dropdown-item"><h4>
+          📖 文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-subitem"><a href="/Other/Markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-subitem"><a href="/Other/Plan/" class="nav-link">
+  计划
+</a></li><li class="dropdown-subitem"><a href="/Other/More/" class="nav-link">
+  后续
+</a></li></ul></li><li class="dropdown-item"><h4>
+          🛢 数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/DataBase/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/MongoDB/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-subitem"><a href="/Other/DataBase/Redis/" class="nav-link">
+  Redis
+</a></li></ul></li><li class="dropdown-item"><h4>
+          📲 应用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Other/Application/MiniProgram/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/PC/" class="nav-link">
+  PC
+</a></li><li class="dropdown-subitem"><a href="/Other/Application/H5/" class="nav-link">
+  H5
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Code/" class="nav-link">
+  👊源码
+</a></div><div class="nav-item"><a href="https://monsterxiong.github.io/Node/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  😍 Node
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/MonsterXiong/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  👷GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>包管理器</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Engineering/PackageManager/#npm" class="sidebar-link">npm</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Engineering/PackageManager/#npx" class="sidebar-link">npx</a></li><li class="sidebar-sub-header"><a href="/Engineering/PackageManager/#npm-link" class="sidebar-link">npm link</a></li><li class="sidebar-sub-header"><a href="/Engineering/PackageManager/#npm-的困境" class="sidebar-link">npm 的困境</a></li></ul></li><li><a href="/Engineering/PackageManager/#yarn" class="sidebar-link">Yarn</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Engineering/PackageManager/#特性" class="sidebar-link">特性</a></li><li class="sidebar-sub-header"><a href="/Engineering/PackageManager/#简介" class="sidebar-link">简介</a></li><li class="sidebar-sub-header"><a href="/Engineering/PackageManager/#快速入门" class="sidebar-link">快速入门</a></li><li class="sidebar-sub-header"><a href="/Engineering/PackageManager/#yarn-工作流" class="sidebar-link">Yarn 工作流</a></li></ul></li><li><a href="/Engineering/PackageManager/#pnpm" class="sidebar-link">Pnpm</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Engineering/PackageManager/#特性-2" class="sidebar-link">特性</a></li><li class="sidebar-sub-header"><a href="/Engineering/PackageManager/#快速入门-2" class="sidebar-link">快速入门</a></li><li class="sidebar-sub-header"><a href="/Engineering/PackageManager/#pnpx" class="sidebar-link">pnpx</a></li></ul></li><li><a href="/Engineering/PackageManager/#npm、yarn、pnpm-比较" class="sidebar-link">npm、yarn、pnpm 比较</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Engineering/PackageManager/#cnpm" class="sidebar-link">cnpm</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Engineering/PackageManager/#nrm" class="sidebar-link">nrm</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Engineering/PackageManager/#nrm-操作" class="sidebar-link">nrm 操作</a></li></ul></li><li><a href="/Engineering/PackageManager/#nvs" class="sidebar-link">nvs</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Engineering/PackageManager/#配置镜像地址" class="sidebar-link">配置镜像地址</a></li><li class="sidebar-sub-header"><a href="/Engineering/PackageManager/#nvs-使用指南" class="sidebar-link">nvs 使用指南</a></li><li class="sidebar-sub-header"><a href="/Engineering/PackageManager/#共用-npm-全局模块" class="sidebar-link">共用 npm 全局模块</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="包管理器"><a href="#包管理器" class="header-anchor">#</a> 包管理器</h1> <h2 id="npm"><a href="#npm" class="header-anchor">#</a> npm</h2> <p><strong>node package management</strong> 是 nodejs 内置的软件包管理器</p> <p>npm 由三大独立部分组成：</p> <ul><li>网站：开发者查找包、设置参数以及管理 npm 使用的主要途径，网址为：<a href="%5Bhttps://www.npmjs.com/%5D(https://links.jianshu.com/go?to=https%3A%2F%2Fwww.npmjs.com%2F)">点击</a></li> <li>注册表：是一个巨大的数据库，保存了每个包的基本信息。</li> <li>命令行工具：开发者与 npm 包打交道的工具。</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># 安装nrm</span>
+<span class="token function">npm</span> i nrm -g --registry<span class="token operator">=</span>https://registry.npm.taobao.org
+
+<span class="token comment"># 更改源地址</span>
+<span class="token function">npm</span> <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org/
+
+<span class="token comment"># 查看源地址</span>
+<span class="token function">npm</span> config list
+
+<span class="token comment"># 删除源地址</span>
+<span class="token function">npm</span> config <span class="token function">rm</span> registry
+</code></pre></div><h3 id="npx"><a href="#npx" class="header-anchor">#</a> npx</h3> <p>npm 从 5.2 版本开始增加了 npx 命令。</p> <p>Node 自带 npm 模块，所以可以直接使用 npx 命令，万一不能用，就手动安装一下。</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> i -g npx
+</code></pre></div><h4 id="调用项目安装的模块"><a href="#调用项目安装的模块" class="header-anchor">#</a> 调用项目安装的模块</h4> <p>npx 想要解决的主要问题就是调用项目内部安装的模块。比如项目内部安装了测试工具 Mocha。</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> i -D mocha
+</code></pre></div><p>一般来说，调用 Mocha，只能在项目脚本和 package.json 的 scripts 字段里面，如果想在命令行下调用，必须像下面这样。</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># 在项目根目录下执行</span>
+node_modules/.bin/mocha --version
+</code></pre></div><p>npx 就是想解决这个问题，让项目内部安装的模块用起来更方便，只要像下面这样调用就行可。</p> <div class="language-sh extra-class"><pre class="language-sh"><code>npx mocha --version
+</code></pre></div><p>npx 的原理很简单，就是运行的时候，会到 node_modules/.bin 路径和环境变量<code>$PATH</code>里面，检查命令是否存在。</p> <p>由于 npx 会检查环境变量<code>$PATH</code>,所以系统命令可以调用。</p> <div class="language-sh extra-class"><pre class="language-sh"><code>npx <span class="token function">ls</span>
+</code></pre></div><p>主要以，Bash 内置的命令不在<code>$PATH</code>里面，所以不能用。比如，cd 是 Bash 命令，因此不能用<code>npx cd</code>。</p> <h4 id="避免全局安装模块"><a href="#避免全局安装模块" class="header-anchor">#</a> 避免全局安装模块</h4> <p>create-react-app 这个模块是全局安装，npx 可以运行它，而且不进行全局安装。</p> <div class="language-sh extra-class"><pre class="language-sh"><code>npx create-react-app my-react-app
+</code></pre></div><p>上面代码运行时，npx 将<code>create-react-app</code>下载到一个临时目录，使用后再删除。所以，以后再执行上面的命令，会重新下载<code>create-react-app</code>。</p> <p>下载全局模块时，npx 允许指定版本</p> <div class="language-sh extra-class"><pre class="language-sh"><code>$ npx uglify-js@3.1.0 main.js -o ./dist/main.js
+</code></pre></div><p>只要 npx 后面的模块无法在本地发现，就会下载同名模块。比如，本地没有安装<code>http-server</code>模块，下面的命令就会自动下载该模块，在当前目录启动一个 Web 服务。</p> <div class="language-sh extra-class"><pre class="language-sh"><code>npx http-server
+</code></pre></div><h4 id="参数"><a href="#参数" class="header-anchor">#</a> 参数</h4> <p><strong>--no-install 参数</strong></p> <p>如果想让 npx 强制使用本地模块，不下载远程模块，可以使用<code>--no-install</code>参数，如果本地不存在该模块就会报错。</p> <div class="language-sh extra-class"><pre class="language-sh"><code>npx --no-install http-server
+</code></pre></div><p><strong>--ignore-existing 参数</strong></p> <p>如果忽略本地的同名模块，强制安装使用远程模块，可以使用<code>--ignore-existing</code>参数。比如，本地已经全局安装了 create-react-app，但还是想使用远程模块,就用这个参数。</p> <div class="language-sh extra-class"><pre class="language-sh"><code>npx --ignore-existing create-react-app my-react-app
+</code></pre></div><p><strong>-p 参数</strong>
+-p 参数用以指定 npx 所要安装的模块，所以可以这样</p> <div class="language-sh extra-class"><pre class="language-sh"><code>npx -p node@14.16.0 node-v
+</code></pre></div><p>先指定安装<code>node@14.16.0</code>，然后再执行<code>node -v</code>命令</p> <p><strong>-c 参数</strong></p> <p>如果 npx 安装多个模块，默认情况下，所执行的命令之中，只有第一个可执行项会使用 npx 安装的模块，后面的可执行项还是会交给 Shell 解释。</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># 会报错</span>
+npx -p lolcatjs -p cowsay <span class="token string">'cowsay hello | lolcatjs'</span>
+
+</code></pre></div><p>上面代码中，<code>cowsay hello | lolcatjs</code>执行时会报错，原因是第一项<code>cowsay</code>由 npx 解释，而第二项命令<code>localcatjs</code>由 Shell 解释，但是<code>lolcatjs</code>并没有全局安装，所以报错。</p> <p>-c 参数可以将所有命令都用 npx 解释。有了它，下面代码就可以正常执行了。</p> <div class="language-sh extra-class"><pre class="language-sh"><code>npx -p lolcatjs -p cowsay -c <span class="token string">'cowsay hello | lolcatjs'</span>
+</code></pre></div><p><code>-c</code>参数的另一个作用，是将环境变量带入所要执行的命令。举例来说，npm 提供当前项目的一些环境变量，可以用下面的命令查看。</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> run <span class="token function">env</span> <span class="token operator">|</span> <span class="token function">grep</span> npm_
+</code></pre></div><p><code>-c</code>参数可以把这些 npm 的环境变量带入 npx 命令。</p> <div class="language-sh extra-class"><pre class="language-sh"><code>npx -c <span class="token string">'echo &quot;$npm_package_name&quot;'</span>
+</code></pre></div><p>上面代码会输出当前项目的项目名。</p> <h4 id="使用不同版本的-node"><a href="#使用不同版本的-node" class="header-anchor">#</a> 使用不同版本的 Node</h4> <p>利用 npx 可以下载模块这个特点，可以指定某个版本的 Node 运行脚本。它的窍门就是使用 npm 的 node 模块。</p> <div class="language-sh extra-class"><pre class="language-sh"><code>npx node@14.16.0 -v
+</code></pre></div><p>上面命令会使用 14.16.0 版本的 Node 执行脚本。原理是从 npm 下载这个版本的 node，使用后再删掉。</p> <p>某些场景下，这个方法用来切换 Node 版本，要比 nvm 那样的版本管理器方便一些。</p> <h4 id="执行-github-源码"><a href="#执行-github-源码" class="header-anchor">#</a> 执行 GitHub 源码</h4> <p>npx 还可以执行 GitHub 上面的模块源码。</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># 执行 Gist 代码</span>
+npx https://gist.github.com/zkat/4bc19503fe9e9309e2bfaa2c58074d32
+
+<span class="token comment"># 执行仓库代码</span>
+npx github:piuccio/cowsay hello
+</code></pre></div><p>注意，远程代码必须是一个模块，即必须包含 package.json 和入口脚本。</p> <h3 id="npm-link"><a href="#npm-link" class="header-anchor">#</a> npm link</h3> <p>npm link 用来在本地项目和本地 npm 模块之间建立连接，可以在本地进行模块测试</p> <p>具体用法：</p> <ol><li>项目和模块在同一个目录下，可以使用相对路径</li></ol> <p>npm link ../module</p> <ol start="2"><li>项目和模块不在同一个目录下</li></ol> <p>cd 到模块目录，npm link，进行全局 link</p> <p>cd 到项目目录，npm link 模块名(package.json 中的 name)</p> <ol start="3"><li>解除 link</li></ol> <p>解除项目和模块 link，项目目录下，npm unlink 模块名</p> <p>解除模块全局 link，模块目录下，npm unlink 模块名</p> <h3 id="npm-的困境"><a href="#npm-的困境" class="header-anchor">#</a> npm 的困境</h3> <p>通过抽离 npm 包可以进行代码复用。</p> <p>问题一：
+如果项目 A,以来了某某工具包，工具包里面又依赖了某一个 xxx 模块。某一天 xxx 模块发布了一个新的包，但这个包是有问题了。整体项目没有 package-lock.json 的情况下或者重新安装会出现问题。只能提 issue,进行修复。</p> <p>问题二：
+通过 lerna 进行项目管理，一个 repo 中有多个 packages,然后通过 lerna publish 发布后。如果出了问题，必须全盘回滚。</p> <p>因为 A 如果写死了 1.1.0 版本，那么 11.1.0 版本里面的依赖 B，也是 1.1.0，还会安装到 1.1.0 版本，所以还是可能出错。</p> <h4 id="解决办法"><a href="#解决办法" class="header-anchor">#</a> 解决办法</h4> <p>如何来屏蔽他人给我们带来的不确定因素，因为我们自身的代码可以通过单元测试等流程进行保障。</p> <p>[确定的自己 + [不确定的第三方] ] ?= 稳定</p> <p>让这个整体变的稳定，大概流程：</p> <ul><li>[ 确定的自己 + [不确定的第三方] ] = [ version 包 ]</li> <li>[ version 包 ] = 稳定</li></ul> <p>通过 ncc 这个工具来解决，ncc 是一个 Node Cli 工具，停驶也能作为 api 将 Node 程序编译到一个 Javascript 文件中。</p> <p>我们通过 ncc 将我们的 npm 包，打包成一个 JS 文件。</p> <p>然后我们发布的 npm 包，package.json 里面的 dependencies 也不需要去加对应的依赖，npm 安装的时候，也就不用去安装对应的依赖了。</p> <p>这样的好处：</p> <ol><li><p>将依赖包都固定在发包时刻的包里面的内容，其他包再发包，也不影响我们，因为我们最终发的是 ncc 的产物。</p></li> <li><p>安装速度变快了，比如原来的模式 xxx 依赖 A，B，C，A 又可能引用别的包。最终可能安装一个包，实际安装了几十个包或者上百个包。现在只需要安装 1 个。</p></li> <li><p>安装的结果是变少了，比如原来 node_modules 可能占用了 50M，现在你可能只要安装 900KB 的东西，硬盘不会因为前端项目太多，导致 node_modules 大量占用空间了。</p></li> <li><p>启动速度也能变快，因为原来 xxx 模块，会去引用 A，B，C，都是需要走 require 的流程，这个过程就会耗费一些时间</p></li></ol> <h4 id="相关问题"><a href="#相关问题" class="header-anchor">#</a> 相关问题</h4> <p>1、ncc 跟 pkg 有什么区别？</p> <p>ncc 生成的产物是 javascript 文件(text)，而 pkg 工具的产物是 binary 的可执行文件(binary)，ncc 的产物，我们还需要借助 node xxx.js 运行，而 pkg 的产物自带运行时，因此在宿主机未安装 Node 的情况下也可以运行。两者有相同之处，也有各自的应用场景</p> <h2 id="yarn"><a href="#yarn" class="header-anchor">#</a> Yarn</h2> <p>快速、可靠、安全的依赖管理工具.</p> <h3 id="特性"><a href="#特性" class="header-anchor">#</a> 特性</h3> <ul><li>速度超快——Yarn 缓存了每个下载过的包，所以再次使用时无需重复下载。 同时利用并行下载以最大化资源利用率，因此安装速度更快。</li> <li>超级安全——在执行代码之前，Yarn 会通过算法校验每个安装包的完整性。</li> <li>超级安全——使用详细、简洁的锁文件格式和明确的安装算法，Yarn 能够保证在不同系统上无差异的工作。</li></ul> <h3 id="简介"><a href="#简介" class="header-anchor">#</a> 简介</h3> <ul><li>离线模式——如果你以前安装过某个包，再次安装时可以在没有任何互联网连接的情况下进行。</li> <li>确定性——不管安装顺序如何，相同的依赖关系将在每台机器上以相同的方式安装。</li> <li>网络性能——Yarn 有效地对请求进行排队处理，避免发起的请求如瀑布般倾泻，以便最大限度地利用网络资源。</li> <li>相同的软件包——从 npm 安装软件包并保持相同的包管理流程。</li> <li>网络弹性——重试机制确保单个请求失败并不会导致整个安装失败。</li> <li>扁平模式——将依赖包的不同版本归结为单个版本，以避免创建多个副本。</li></ul> <h3 id="快速入门"><a href="#快速入门" class="header-anchor">#</a> 快速入门</h3> <p>代码通过包(package)(或者称为模块(module))的方式来共享.一个包里包含所有需要共享的代码,以及描述包信息的文件,成为<code>package.json</code>。</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># 安装</span>
+<span class="token function">npm</span> i -g <span class="token function">yarn</span>
+
+<span class="token comment"># 查看版本</span>
+<span class="token function">yarn</span> -v
+
+<span class="token comment"># 初始化一个新项目</span>
+<span class="token function">yarn</span> init
+
+<span class="token comment"># 添加依赖包</span>
+<span class="token function">yarn</span> <span class="token function">add</span> <span class="token punctuation">[</span>package<span class="token punctuation">]</span>
+<span class="token function">yarn</span> <span class="token function">add</span> <span class="token punctuation">[</span>package<span class="token punctuation">]</span>@<span class="token punctuation">[</span>version<span class="token punctuation">]</span>
+<span class="token function">yarn</span> <span class="token function">add</span> <span class="token punctuation">[</span>package<span class="token punctuation">]</span>@<span class="token punctuation">[</span>tag<span class="token punctuation">]</span>
+
+<span class="token comment"># 将依赖项太牛加到不同的依赖类别中</span>
+<span class="token comment"># 添加到devDependencies</span>
+<span class="token function">yarn</span> <span class="token function">add</span> <span class="token punctuation">[</span>package<span class="token punctuation">]</span> --dev
+
+<span class="token comment"># 添加到peerDependencies</span>
+<span class="token function">yarn</span> <span class="token function">add</span> <span class="token punctuation">[</span>package<span class="token punctuation">]</span> --peer
+
+<span class="token comment"># 添加到optionalDependencies</span>
+<span class="token function">yarn</span> <span class="token function">add</span> <span class="token punctuation">[</span>package<span class="token punctuation">]</span> --optional
+
+<span class="token comment"># 升级依赖包</span>
+<span class="token function">yarn</span> upgrade <span class="token punctuation">[</span>package<span class="token punctuation">]</span>
+<span class="token function">yarn</span> upgrade <span class="token punctuation">[</span>package<span class="token punctuation">]</span>@<span class="token punctuation">[</span>version<span class="token punctuation">]</span>
+<span class="token function">yarn</span> upgrade <span class="token punctuation">[</span>package<span class="token punctuation">]</span>@<span class="token punctuation">[</span>tag<span class="token punctuation">]</span>
+
+<span class="token comment"># 移除依赖包</span>
+<span class="token function">yarn</span> remove <span class="token punctuation">[</span>package<span class="token punctuation">]</span>
+
+<span class="token comment"># 安装项目的全部依赖(等同于yarn install)</span>
+<span class="token function">yarn</span>
+
+</code></pre></div><h3 id="yarn-工作流"><a href="#yarn-工作流" class="header-anchor">#</a> Yarn 工作流</h3> <ol><li>创建一个新项目</li> <li>添加/更新/删除依赖项</li> <li>安装/重新安装依赖项</li> <li>使用版本管理工具（例如 git）</li> <li>持续集成</li></ol> <h2 id="pnpm"><a href="#pnpm" class="header-anchor">#</a> Pnpm</h2> <p>速度快,节省磁盘空间的软件包管理工具。</p> <h3 id="特性-2"><a href="#特性-2" class="header-anchor">#</a> 特性</h3> <ul><li>快速——pnpm 是同类工具速度的将近 2 倍</li> <li>高效——node_modules 中的所有文件文件是从一个单一的可内容寻址的存储中链接过来的(均链接自单一存储位置)</li> <li>支持 monorepos——pnpm 内置了对单个源码仓库中包含多个软件包的支持</li> <li>严格——pnpm 创建的 node_modules 并非扁平结构，因此代码不能对任意软件包进行访问</li></ul> <h3 id="快速入门-2"><a href="#快速入门-2" class="header-anchor">#</a> 快速入门</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># 通过npm安装</span>
+<span class="token function">npm</span> i -g <span class="token function">pnpm</span>
+
+<span class="token comment"># 通过npx安装</span>
+npx <span class="token function">pnpm</span> <span class="token function">add</span> -g <span class="token function">pnpm</span>
+
+<span class="token comment"># 安装依赖</span>
+<span class="token function">pnpm</span> <span class="token function">add</span> <span class="token operator">&lt;</span>pkg<span class="token operator">&gt;</span>
+
+<span class="token comment"># 执行脚本</span>
+<span class="token function">pnpm</span> <span class="token operator">&lt;</span>cmd<span class="token operator">&gt;</span>
+
+</code></pre></div><h3 id="pnpx"><a href="#pnpx" class="header-anchor">#</a> pnpx</h3> <p>npm 有一个很棒的包运行器叫做 npx。 pnpm 通过 pnpx 命令提供相同的工具。 唯一的不同是 pnpx 使用 pnpm 安装软件包。</p> <h2 id="npm、yarn、pnpm-比较"><a href="#npm、yarn、pnpm-比较" class="header-anchor">#</a> npm、yarn、pnpm 比较</h2> <h2 id="cnpm"><a href="#cnpm" class="header-anchor">#</a> cnpm</h2> <p>使用中国镜像源地址</p> <h2 id="nrm"><a href="#nrm" class="header-anchor">#</a> nrm</h2> <p>nrm(npm registry manager )是 npm 的镜像源管理工具,允许你快速地在 npm 源间切换。</p> <h3 id="nrm-操作"><a href="#nrm-操作" class="header-anchor">#</a> nrm 操作</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># 全局安装nrm</span>
+<span class="token function">npm</span> i -g nrm
+
+<span class="token comment"># nrm自带默认配置,*为当前的配置</span>
+nrm <span class="token function">ls</span>
+
+<span class="token comment"># 切换当前源地址</span>
+nrm use taobao
+
+<span class="token comment"># 删除源地址</span>
+nrm del taobao
+
+<span class="token comment"># 添加源地址</span>
+nrm <span class="token function">add</span> <span class="token punctuation">[</span>name<span class="token punctuation">]</span> <span class="token punctuation">[</span>url<span class="token punctuation">]</span>
+
+<span class="token comment"># 测试时间</span>
+nrm <span class="token builtin class-name">test</span> <span class="token function">npm</span>
+
+</code></pre></div><h2 id="nvs"><a href="#nvs" class="header-anchor">#</a> nvs</h2> <p>nvs 管理本地 Node 版本</p> <ul><li>nvs 是跨平台的</li> <li>nvs 是基于 Node 编写的</li></ul> <h3 id="配置镜像地址"><a href="#配置镜像地址" class="header-anchor">#</a> 配置镜像地址</h3> <div class="language-sh extra-class"><pre class="language-sh"><code>nvs remote node https://npm.taobao.org/mirrors/node/
+nvs remote
+default             node
+nvs remote chakracore https://github.com/nodejs/node-chakracore/releases/
+nvs remote chakracore-nightly https://nodejs.org/download/chakracore-nightly/
+nvs remote nightly  https://nodejs.org/download/nightly/
+nvs remote node https://nodejs.org/dist/
+</code></pre></div><h3 id="nvs-使用指南"><a href="#nvs-使用指南" class="header-anchor">#</a> nvs 使用指南</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># 安装最新的LTS</span>
+nvs <span class="token function">add</span> lts
+
+<span class="token comment"># 配置为默认版本</span>
+nvs <span class="token function">link</span> lts
+
+<span class="token comment"># 安装其他版本</span>
+nvs <span class="token function">add</span> <span class="token punctuation">[</span>version<span class="token punctuation">]</span>
+
+<span class="token comment"># 查看已安装的版本</span>
+nvs <span class="token function">ls</span>
+
+<span class="token comment"># 切换版本</span>
+nvs use <span class="token punctuation">[</span>version<span class="token punctuation">]</span>
+</code></pre></div><h3 id="共用-npm-全局模块"><a href="#共用-npm-全局模块" class="header-anchor">#</a> 共用 npm 全局模块</h3> <p>使用 nvs 时,默认的 prefix 是当前激活的 Node.js 版本的安装路径,切换版本之后,之前安装全局命令模块需要重新安装.</p> <p>解决方案:配置统一的全局模块安装路径</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.51963213.js" defer></script><script src="/assets/js/2.d3d2c42b.js" defer></script><script src="/assets/js/77.b62c7a01.js" defer></script>
+  </body>
+</html>
