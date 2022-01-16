@@ -6,7 +6,7 @@
 2. wget 下载(推荐)
 
 ```sh
-wget https://nodejs.org/dist/latest-v16.x/node-v16.13.1-linux-x64.tar.xz
+wget https://nodejs.org/dist/v16.13.1/node-v16.13.1-linux-x64.tar.xz
 ```
 
 > **历史版本可从https://nodejs.org/dist/下载**
